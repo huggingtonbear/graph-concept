@@ -1,20 +1,31 @@
+/*Boostrap Overwritten Rules*/
 body {
 	font-family: Roboto, Helvetica, sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Roboto ,Helvetica,Arial,sans-serif;
     font-weight: 300;
     line-height: 1.1;
     color: #555;
 }
-
-.reader-container p {
+.btn {
+	border-radius: 0;
+}
+/*Custom Reader Style*/
+.reader-container p,ul {
 	font-size: 1em;
 	line-height: 1.8em;
 	margin-bottom: 20px
 }
-
+.mediaobject {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+.informalexample {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+/*Locked content for non-subscribers*/
 .fade_out {
     position: absolute;
     bottom: 0;
@@ -29,30 +40,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
     background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
 }
-
+/*Section Complete on titles*/
 .completed-section {
 	border-right: solid 10px #74C31E
 }
-
-.mediaobject {
-	margin-top: 30px;
-	margin-bottom: 30px
-}
-.informalexample {
-	margin-top: 30px;
-	margin-bottom: 30px
-}
-
-.btn {
-	border-radius: 0;
-}
-
 @media(min-width:768px) {
-
-.reader-container p {
-	font-size: 1.1em;
-	line-height: 1.9em;
-	margin-bottom: 20px
+	.reader-container p {
+		font-size: 1.1em;
+		line-height: 1.9em;
+		margin-bottom: 20px
+	}
 }
-
+@media(min-width:992px) {
+	/*Extending Search Bar on devices over 992px wide*/
+	.navbar-form .form-control:focus,.navbar-form .form-control:active {
+		width: 350px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.navbar-form .form-control {
+		width:200px;
+	    -webkit-transition: all 0.5s ease;
+	    -moz-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    transition: all 0.5s ease;
+	}
 }
