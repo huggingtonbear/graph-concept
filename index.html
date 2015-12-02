@@ -1,14 +1,168 @@
-<!-- Graph-Concept Index -->
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    <p>Hello World!</p>
+<body class="language-markup">
+
+  
+
+    <div id="wrapper">
+
+        <!-- Top Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="library.html">PacktLib</a>
+                  <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-lg nav-icon"></i> </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="https://www.packtpub.com">Store</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret ml5"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="#">View Account</a></li> 
+                            <li><a href="#">View Subscriptions</a></li> 
+                            <li><a href="#">View Licences</a></li> 
+                            <li role="separator" class="divider"></li> 
+                            <li><a href="index-lo.html">Logout</a></li> 
+                        </ul> 
+                    </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="Search the library...">
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+
+            <ul class="sidebar-nav">
+                <div>
+                    <div class="btn-group tab btn-group-justified" role="group" aria-label="Justified button group">
+              <a href="#" class="btn btn-default active" role="button">Contents</a>
+              <a href="#" class="btn btn-default" role="button">Bookmarks (5)</a>
+            </div>
+                </div>
+                <form class="col-sm-12 mt15 mb15">
+                    <input type="text" class="form-control" placeholder="Search this title..." id="box">
+                </form>
+                <div class="clearfix"></div>
+                <li><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
+                <li><a href="#" class="completed-section">Preface</a></li>
+                <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
+                <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
+                <li class="active"><a href="#">3. Looping</a></li> 
+                <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
+                <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
+                <li class="sub-nav"><a href="#">The 'if' loop</a></li>
+                <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li>
+                <li><a href="#">4. Forms and Entries</a></li>
+                <li><a href="#">5. Functions and Macros</a></li>
+                <li><a href="#">6. Dynamic Memory Allocation</a></li>
+                <li><a href="#">7. If, Else and Switch</a></li>
+                <li><a href="#">8. Actors and Roles</a></li>
+            </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper" class="book-page ng-scope">
+
+    <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
+                <div class="reader-container col-xs-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
+                    
+                    <div class="row">
+                        <div class="btn-group pull-right mb10" role="group">
+                            <a href="#" class="btn btn-default"><i class="fa fa-bookmark-o fa-lg"></i></a>
+                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart fa-lg mr5"></i> Buy eBook</a>
+                            <a href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></a>
+                            <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
+                        </div>
+                        <div style="position:relative;" class="book-content" ng-non-bindable="">
+                                <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
+                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating our first view</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Creating our first view</h2></div></div><hr></div><p>Now that <a id="id89" class="indexterm"></a>we have created our URL and interpreted by the routing system, we must ensure that a view (which is a controller in the MVC pattern) meets the customer's demand.</p><p>This is the function of the second parameter of the URLs present in <code class="literal">urls.py</code>. This parameter will define the method that will play the role of a view. Take, for example, our first URL: </p><div class="informalexample"><pre class="programlisting  language-markup">url (r'^$', 'TasksManager.views.index.page'), </pre></div><p>Firstly, as we have seen when studying regular expressions, this URL will be valid only if we browse the <code class="literal">http://localhost:8000</code> URL. The second parameter in the URL means that in the <code class="literal">index.py</code> file, there is a method called <code class="literal">page</code> that will process the request. The <code class="literal">index.py</code> file is located in the <code class="literal">views</code> package at the root of the <code class="literal">TasksManager</code> application.</p><p>When we <a id="id90" class="indexterm"></a>want a folder to be recognized as a package by Python, we need to create a folder that contains the <code class="literal">__init__.py</code> file that we can leave blank.</p><p>You can choose another structure to store your views. You must choose the structure that best fits your project. Have a long-term vision of your project in order to define quality architecture from the first line of code.</p><p>In our <code class="literal">index.py</code> file, we will create a method called <code class="literal">page()</code>. This method will return an HTML page<a id="id91" class="indexterm"></a> to the client. The page is being returned by the HTTP protocol, so we will use the <code class="literal">HttpResponse()</code> function and its importation. The argument of this <code class="literal">HttpResponse()</code> function returns the HTML content that we will return<a id="id92" class="indexterm"></a> to the browser. To simplify reading this example, we do not use a proper HTML structure, because we just return <code class="literal">Hello world!</code> to the client, as shown in the following code:</p><div class="informalexample"><pre class="programlisting  language-markup"># - * - Coding: utf -8 - * -
+                                    from django.http import HttpResponse
+                                    # View for index page.
+                                    def page (request) :
+                                     return HttpResponse ("Hello world!" )</pre></div><p>As we can see in the previous example, we added a comment before our <code class="literal">page()</code> method. Comments are very important. They help you understand your code very quickly.</p><p>We also set the encoding of the UTF-8 characters. This will improve our application's compatibility with other languages. We do not necessarily indicate it later in the book, but it is advisable to use it.</p></div>
+                                    </div>                                                          </div>
+                    </div>
+                    <div class="row"> 
+                        <hr>      
+                    
+                            <h4 class="pull-left"><strong>Up Next: </strong>Routing in Django</h4><a href="for-loop.html" class="btn btn-primary pull-right">Next Section</a>
+                    </div>
+                    <div class="row"> 
+                        <hr>
+                    </div>
+</div></div>
+                                        <div class="text-center col-xs-12 mb20">
+                        <small>ISBN 9781783983704 © Packt Publishing Limited. All Rights Reserved </small>
+                    </div>
+                </div>
+</div>
+</div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <!-- Syntax Highlighting Script -->
+    <script src="js/prism.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+
 </body>
 
 </html>

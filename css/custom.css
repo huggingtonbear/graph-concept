@@ -1,0 +1,58 @@
+body {
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Roboto ,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #555;
+}
+
+.reader-container p {
+	font-size: 1em;
+	line-height: 1.8em;
+	margin-bottom: 20px
+}
+
+.fade_out {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 150px 0;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+}
+
+.completed-section {
+	border-right: solid 10px #74C31E
+}
+
+.mediaobject {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+.informalexample {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+.btn {
+	border-radius: 0;
+}
+
+@media(min-width:768px) {
+
+.reader-container p {
+	font-size: 1.1em;
+	line-height: 1.9em;
+	margin-bottom: 20px
+}
+
+}
