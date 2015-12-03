@@ -121,8 +121,9 @@
     <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
                 <div class="reader-container col-xs-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
                     <div class="row">
-                        <div class="btn-group pull-right mb10" role="group">
-                            <a href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i></a>
+                        <div class="col-sm-12">
+                            <div class="btn-group mb10" role="group">
+                            <button href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i></button>
                              <div class="btn-group" role="group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <i class="fa fa-download fa-lg mr5"></i>Download eBook
@@ -134,9 +135,12 @@
                                   <li><a href="#">Download Mobi</a></li>
                                 </ul>
                               </div>
-                            <a href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></a> 
+                            <button href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></button> 
                             <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
                         </div>
+                    </div>
+                        
+                    </div>
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
 
