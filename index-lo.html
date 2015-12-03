@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="library.html">PacktLib</a>
-                  <ul class="nav navbar-nav"> <li class=""><a href="#menu-toggle" id="menu-toggle">Toggle Nav</a></li> </ul>
+                  <a class="navbar-brand toggle-nav" href="#menu-toggle" id="menu-toggle">Toggle Nav</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -64,7 +64,12 @@
                         <li><button type="button" class="btn btn-info navbar-btn mr5">Sign in</button></li>
                     </ul>
                     <form class="navbar-form navbar-right">
-                        <input type="text" class="form-control" placeholder="Search the library...">
+                        <div class="form-group pull-right" style="display:inline;">
+                            <div class="input-group">
+                              <input class="form-control" type="text" placeholder="Search the library...">
+                              <span class="input-group-btn"><a href="search.html" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></a></span>
+                            </div>
+                        </div>
                     </form>
                 </div><!--/.nav-collapse -->
             </div>
