@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .course-listing {
 	margin-bottom: 0px;
 }
+.navbar-default .in .search-nav-collapse {
+	height: 58px;
+}
+}
 /*Custom Reader Style*/
 .reader-container p,ul {
 	font-size: 1em;
@@ -43,7 +47,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-top: 30px;
 	margin-bottom: 30px
 }
-/*Locked content for non-subscribers*/
+.login-modal {
+	max-width: 350px;
+}
+/* Logged out section */
 .fade_out {
     position: absolute;
     bottom: 0;

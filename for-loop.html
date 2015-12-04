@@ -42,6 +42,24 @@
   
 
     <div id="wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Just Checking...</h4>
+              </div>
+              <div class="modal-body">
+                Are you sure you would like to use one of your tokens to purchase this title?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Top Nav Bar -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -72,7 +90,7 @@
                         </ul> 
                     </li>
                     </ul>
-                    <form class="navbar-form navbar-right">
+                    <form class="navbar-form navbar-right search-nav-collapse">
                         <div class="form-group pull-right" style="display:inline;">
                             <div class="input-group">
                               <input class="form-control" type="text" placeholder="Search the library...">
@@ -118,29 +136,29 @@
 
         <div id="page-content-wrapper" class="book-page ng-scope">
 
-    <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
+    <!-- ngInclude:  -->
+        <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
                 <div class="reader-container col-xs-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="btn-group mb10" role="group">
-                            <button href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i></button>
-                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <i class="fa fa-download fa-lg mr5"></i>Download eBook
-                                  <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#">Download ePub</a></li>
-                                  <li><a href="#">Download PDF</a></li>
-                                  <li><a href="#">Download Mobi</a></li>
-                                </ul>
-                              </div>
-                            <button href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></button> 
-                            <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
-                        </div>
-                    </div>
+                        <div class="btn-group mb10" role="group">
+                                <button href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i></button>
+                                 <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-shopping-cart fa-lg mr5"></i>Buy eBook
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Buy from Store</a></li>
+                                      <li><a data-toggle="modal" data-target="#myModal">Claim using Token</a></li>
+                                      <li role="separator" class="divider"></li>
+                                      <li class="disabled"><a href="#">You have <strong>4</strong> Token(s) Remaining</a></li>
+                                    </ul>
+                                  </div>
+                                <button href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></button> 
+                                <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
+                            </div>
+
                         
-                    </div>
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
 
@@ -183,7 +201,7 @@ Please check out: http://continuum.io/thanks and https://binstar.org
 &gt;&gt;&gt;
 </pre></div><p>Congratulations, you have installed Anaconda! Now proceed to the section on updating pandas.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec13"></a>Installing Anaconda on Mac OS X</h3></div></div></div><p>On<a id="id82" class="indexterm"></a> downloading Anaconda on a Mac, you will get <a id="id83" class="indexterm"></a>an installation package, as shown in the <a id="id84" class="indexterm"></a>following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_02.jpg" class="img-responsive"></div><p>Open<a id="id85" class="indexterm"></a> the package to start the installation. You<a id="id86" class="indexterm"></a> will <a id="id87" class="indexterm"></a>see an installation wizard:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_03.jpg" class="img-responsive"></div><p>Continue through the wizard. When completed, open a terminal session and issue the <code class="literal">python</code> command. If <a id="id88" class="indexterm"></a>all went well, you will see <a id="id89" class="indexterm"></a>output similar to what is shown in the<a id="id90" class="indexterm"></a> following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_04.jpg" class="img-responsive"></div><p>Anaconda is successfully installed, and you can continue to the section on updating pandas with <code class="literal">conda</code>.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec14"></a>Installing Anaconda on Windows</h3></div></div></div><p>Downloading <a id="id91" class="indexterm"></a>Anaconda on a Windows system<a id="id92" class="indexterm"></a> will provide you with an installation executable<a id="id93" class="indexterm"></a> similar to the one shown in the following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_05.jpg" class="img-responsive"></div><p>Run the<a id="id94" class="indexterm"></a> installer, and you will see an installation <a id="id95" class="indexterm"></a>wizard. It will be similar to the wizard<a id="id96" class="indexterm"></a> shown in the next screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_06.jpg" class="img-responsive"></div><p>Continue<a id="id97" class="indexterm"></a> through the wizard. When completed, open<a id="id98" class="indexterm"></a> a command window and issue<a id="id99" class="indexterm"></a> the <code class="literal">python</code> command. If all went well, you will see output similar to what is shown in the following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_07.jpg" class="img-responsive"></div><p>Anaconda<a id="id100" class="indexterm"></a> is up and running and it is time to ensure<a id="id101" class="indexterm"></a> pandas <a id="id102" class="indexterm"></a>is up to date.</p></div></div>
 </div>                                                          </div>
-                    </div>
+                  
                     <div class="row"> 
                         <hr>      
                     
