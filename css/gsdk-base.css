@@ -13,6 +13,11 @@
 .btn-round.btn-lg{
     padding: 15px 30px;
 }
+.jumbotron {
+    background: #f5f5f5;
+    background-repeat: repeat;
+
+}
 /*           Labels & Progress-bar              */
 .label{
     padding: 0.2em 0.6em 0.2em;
@@ -316,9 +321,9 @@ label small{
 
 
 .card{
-    background-color: #FFFFFF;
+/*    background-color: #FFFFFF;
     padding: 10px 0 20px;
-    width: 100%;
+    width: 100%;*/
 }
 
 .pick-class-label{
@@ -356,13 +361,13 @@ label{
     z-index: 3;
 }
 .wizard-card{
-    min-height: 310px;
+/*    min-height: 310px;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 10px 0;
     transition: all 0.2s;
-    -webkit-transition: all 0.2s;
+    -webkit-transition: all 0.2s;*/
 }
 .wizard-card .picture-container{
     position: relative;
@@ -420,7 +425,6 @@ label{
 }
 
 .wizard-card .wizard-footer{
-    padding: 0 20px 10px 20px;
 }
 
 .wizard-card .disabled{
@@ -431,9 +435,13 @@ label{
     margin-bottom: 25px;
 }
 
-.wizard-card .wizard-header h3{
+.wizard-card .wizard-header h2{
     font-weight: 200;
     text-align: center;
+}
+.wizard-card .wizard-header h2 small{
+    font-size: 16px;
+    color: #777;
 }
 .wizard-card .nav-pills > li{
     text-align: center;
@@ -441,7 +449,7 @@ label{
 .wizard-card .nav-pills > li a {
     border: 0 !important;
     text-transform: uppercase;
-    background-color: #D5D5D5;
+    background-color: rgba(0,0,0,0.3);
     color: #FFFFFF !important;
     font-size: 12px;
 }
@@ -462,7 +470,7 @@ label{
 }
 
 .wizard-card .nav-pills > li > a:hover, .wizard-card .nav-pills > li > a:focus{
-    background-color: #999999;
+    background-color: rgba(0,0,0,0.6);
     cursor: default;
 } 
 .wizard-card .btn{
@@ -491,7 +499,7 @@ label{
    height: 116px;
    width: 116px;
    border-radius: 50%;
-   background-color: #999999;
+   background-color: rgba(0,0,0,0.3);
    color: #FFFFFF;
    margin: 0 auto 20px;
    border: 4px solid #CCCCCC;

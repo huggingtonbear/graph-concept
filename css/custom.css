@@ -32,6 +32,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-default .in .search-nav-collapse {
 	height: 58px;
 }
+.logout-wrapper {
+	padding: none;
 }
 /*Custom Reader Style*/
 .reader-container p,ul {
