@@ -107,30 +107,33 @@
         <div id="sidebar-wrapper">
 
             <ul class="sidebar-nav">
-                <div>
-<!--    Bookmarks disabled if logged out                 <div class="btn-group tab btn-group-justified" role="group" aria-label="Justified button group">
-              <a href="#" class="btn btn-default active" role="button">Contents</a>
-              <a href="#" class="btn btn-default" role="button">Bookmarks (5)</a>
-            </div> -->
+                <ul id="toc" class="nav nav-tabs mt15" role="tablist">
+                    <li class="active ml15" style="text-indent: 0px;">
+                        <a href="#contents" id="contents-tab" role="tab" data-toggle="tab" aria-controls="contents" aria-expanded="true">Contents</a>
+                    </li>
+                </ul>
+                <div id="TocContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active pt15" id="contents" aria-labelledby="contents-tab"> 
+                        <form class="col-sm-12 mt15 mb15">
+                            <input type="text" class="form-control" placeholder="Search this title..." id="box">
+                        </form>
+                        <div class="clearfix"></div>
+                        <li><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
+                        <li><a href="#" class="completed-section">Preface</a></li>
+                        <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
+                        <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
+                        <li class="active"><a href="index.html">3. Looping</a></li> 
+                        <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
+                        <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
+                        <li class="sub-nav"><a href="#">The 'if' loop</a></li>
+                        <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li>
+                        <li><a href="#">4. Forms and Entries</a></li>
+                        <li><a href="#">5. Functions and Macros</a></li>
+                        <li><a href="#">6. Dynamic Memory Allocation</a></li>
+                        <li><a href="#">7. If, Else and Switch</a></li>
+                        <li><a href="#">8. Actors and Roles</a></li>
+                    </div>
                 </div>
-                <form class="col-sm-12 mt15 mb15">
-                    <input type="text" class="form-control" placeholder="Search this title..." id="box">
-                </form>
-                <div class="clearfix"></div>
-                <li><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
-                <li><a href="#" class="completed-section">Preface</a></li>
-                <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
-                <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
-                <li class="active"><a href="#">3. Looping</a></li> 
-                <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
-                <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
-                <li class="sub-nav"><a href="#">The 'if' loop</a></li>
-                <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li>
-                <li><a href="#">4. Forms and Entries</a></li>
-                <li><a href="#">5. Functions and Macros</a></li>
-                <li><a href="#">6. Dynamic Memory Allocation</a></li>
-                <li><a href="#">7. If, Else and Switch</a></li>
-                <li><a href="#">8. Actors and Roles</a></li>
             </ul>
         </div>
 

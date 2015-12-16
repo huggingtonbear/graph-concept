@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-top:3px;
 	color: lightslategray;
 }
+.sidebar-nav>.nav-tabs>li.active {
+	background: none;
+}
+.sidebar-nav>.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	background-color: #f5f5f5;
+}
 .tabbed-content {
 	border-top-right-radius: 0px;
     border-top-left-radius: 0px;

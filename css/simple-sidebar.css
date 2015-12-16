@@ -114,6 +114,11 @@
     background: none;
 }
 
+/* TOC Styling */
+#bookmark,#contents {
+    background: none;
+}
+
 @media(min-width:992px) {
     #wrapper {
         padding-left: 250px;

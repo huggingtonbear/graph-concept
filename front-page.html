@@ -87,30 +87,40 @@
         <div id="sidebar-wrapper">
 
             <ul class="sidebar-nav">
-                <div>
-                    <div class="btn-group tab btn-group-justified" role="group" aria-label="Justified button group">
-              <a href="#" class="btn btn-default active" role="button">Contents</a>
-              <a href="#" class="btn btn-default" role="button">Bookmarks (5)</a>
-            </div>
+                <ul id="toc" class="nav nav-tabs mt15" role="tablist">
+                    <li class="active ml15" style="text-indent: 0px;">
+                        <a href="#contents" id="contents-tab" role="tab" data-toggle="tab" aria-controls="contents" aria-expanded="true">Contents</a>
+                    </li>
+                    <li style="text-indent: 0px;">
+                        <a href="#bookmark" role="tab" id="bookmark-tab" data-toggle="tab" aria-controls="bookmark" aria-expanded="false">Bookmarks (2)</a>
+                    </li>
+                </ul>
+                <div id="TocContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active pt15" id="contents" aria-labelledby="contents-tab"> 
+                        <form class="col-sm-12 mt15 mb15">
+                            <input type="text" class="form-control" placeholder="Search this title..." id="box">
+                        </form>
+                        <div class="clearfix"></div>
+                        <li class="active"><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
+                        <li><a href="#" class="completed-section">Preface</a></li>
+                        <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
+                        <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
+                        <li ><a href="index.html">3. Looping</a></li> <!-- 
+                        <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
+                        <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
+                        <li class="sub-nav"><a href="#">The 'if' loop</a></li>
+                        <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li> -->
+                        <li><a href="#">4. Forms and Entries</a></li>
+                        <li><a href="#">5. Functions and Macros</a></li>
+                        <li><a href="#">6. Dynamic Memory Allocation</a></li>
+                        <li><a href="#">7. If, Else and Switch</a></li>
+                        <li><a href="#">8. Actors and Roles</a></li>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade pt15" id="bookmark" aria-labelledby="bookmark-tab"> 
+                        <li><a href="#" class="completed-section">Preface</a></li>
+                        <li><a href="#" class="completed-section">1. Preparing your Data</a></li> 
+                    </div>
                 </div>
-                <form class="col-sm-12 mt15 mb15">
-                    <input type="text" class="form-control" placeholder="Search this title..." id="box">
-                </form>
-                <div class="clearfix"></div>
-                <li class="active"><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
-                <li><a href="#" class="completed-section">Preface</a></li>
-                <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
-                <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
-                <li ><a href="index.html">3. Looping</a></li> 
-                <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
-                <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
-                <li class="sub-nav"><a href="#">The 'if' loop</a></li>
-                <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li>
-                <li><a href="#">4. Forms and Entries</a></li>
-                <li><a href="#">5. Functions and Macros</a></li>
-                <li><a href="#">6. Dynamic Memory Allocation</a></li>
-                <li><a href="#">7. If, Else and Switch</a></li>
-                <li><a href="#">8. Actors and Roles</a></li>
             </ul>
         </div>
 
@@ -122,21 +132,7 @@
                 <div class="reader-container col-xs-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
                     
                     <div class="row">
-                        <div class="btn-group mb10" role="group">                                 
-                            <a href="#" class="btn btn-default "><i class="fa fa-plus mr5"></i>Add to Collection</a>      
-                            <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <i class="fa fa-download fa-lg mr5"></i>Download eBook
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Download ePub</a></li>
-                                      <li><a href="#">Download PDF</a></li>
-                                      <li><a href="#">Download Mobi</a></li>
-                                    </ul>
-                                  </div>
-                                  <a href="#" class="btn btn-warning "><i class="fa fa-download mr5"></i>Code Files</a>
-                            </div>
+                        
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
                                     <meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
@@ -148,14 +144,35 @@
                                                 </div>
                                             </div>
                                             <hr>
-                                            <div>
-                                                <p>William Sherif</p>
+                                            <div class="col-sm-2">
+                                                <img src="http://ecx.images-amazon.com/images/I/51FK15jmwTL._SX419_BO1,204,203,200_.jpg" class="img-responsive mb20"/>
+                                            </div>
+                                            <div class="col-sm-10">
                                                 <small>01/02/2015</small>
+                                                <p>William Sherif</p>
                                                 <p>Learn C++ programming with a fun, real-world application that allows you to create your own games!</p>
+                                                <div class="btn-group mb30" role="group">                                 
+                                                    <a href="#" class="btn btn-default "><i class="fa fa-plus mr5"></i>Add to Collection</a>      
+                                                    <div class="btn-group" role="group">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              <i class="fa fa-download fa-lg mr5"></i>Download eBook
+                                                              <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a href="#">Download ePub</a></li>
+                                                              <li><a href="#">Download PDF</a></li>
+                                                              <li><a href="#">Download Mobi</a></li>
+                                                            </ul>
+                                                    </div>
+                                                        <a href="#" class="btn btn-warning "><i class="fa fa-download mr5"></i>Code Files</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
                                                 <div class="visible-xs">
                                                     <a href="#" class="btn btn-default btn-block"><i class="fa fa-plus mr5"></i>Add to Collection</a>      
                                                     <a href="for-loop.html" class="btn btn-primary btn-block mb20">Continue</a>
                                                 </div>
+
                                                 <ul id="myTabs" class="nav nav-tabs" role="tablist">
                                                     <li class="active">
                                                         <a href="#about" id="about-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">About</a>
