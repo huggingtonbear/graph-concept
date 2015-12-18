@@ -4,7 +4,8 @@ body,h1,h2,h3,h4,h5,p {
 }
 
 .navbar-default {
-	background-color: #4E4E4E;
+	background-color: #1B1C1E;
+    border-color: rgba(255,255,255,0.2);
 }
 
 #sidebar-wrapper {
