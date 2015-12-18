@@ -150,11 +150,11 @@
         <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
                 <div class="reader-container col-xs-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
                     <div class="row">
-                        <div class="btn-group mb10" role="group">
-                                <button href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i></button>
+                         <div class="btn-group mb10" role="group">
+                                <button href="#" class="btn btn-default"><i class="fa fa-minus fa-lg mr5"></i> <span class="hidden-xs"> Remove Bookmark</span></button>
                                  <div class="btn-group" role="group">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <i class="fa fa-shopping-cart fa-lg mr5"></i>Buy eBook
+                                      <i class="fa fa-shopping-cart fa-lg mr5"></i> <span class="hidden-xs"> Buy eBook</span>
                                       <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
@@ -164,11 +164,9 @@
                                       <li class="disabled"><a href="#">You have <strong>4</strong> Token(s) Remaining</a></li>
                                     </ul>
                                   </div>
-                                <button href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></button> 
-                                <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
+                                <button href="#" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg  mr5"></i><span class="hidden-xs"> Nightmode</span></button> 
+                                <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg mr5"></i><span class="hidden-xs"> Font Size</span></button>
                             </div>
-
-                        
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
 
