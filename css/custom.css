@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn {
 	border-radius: 0;
 }
+.brand-logo {
+	height: 30px;
+	margin-top: -5px
+}
 .badge {
 	width: 65px;
 	padding: 4px;
@@ -22,15 +26,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background: rgba(0,0,0,0);
 }
 .badge-learn {
-	background:rgba(31, 138, 112, 0.7);
+	background:rgba(69, 178, 157, 0.7);
 	float: right;
 }
 .badge-master {
-	background:rgba(83, 0, 49, 0.7);
+	background:rgba(51, 77, 92, 0.7);
 	float: right;
 }
 .badge-build {
-	background:rgba(25, 149, 220, 0.7);
+	background:rgba(226, 122, 63, 0.7);
 	float: right;
 }
 .r-date {
@@ -104,7 +108,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 /*Section Complete on titles*/
 .completed-section {
-	border-right: solid 10px #74C31E
+	border-right: solid 10px #45B29D
 }
 @media(min-width:768px) {
 	.reader-container p {
