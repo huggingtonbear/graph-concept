@@ -126,7 +126,7 @@
         <div id="page-content-wrapper" class="book-page ng-scope">
 
             <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
-                <div class="col-xs-12 col-xs-12">
+                <div class="col-sm-12">
                     <div class="row">
                             <a href="library.html" class="btn btn-default pull-right"><i class="fa fa-arrow-left mr15"></i>Back to Dashboard</a>
                         </div>
@@ -134,7 +134,18 @@
                         <h2>JavaScript</h2>
                         <h5>It's one of the cornerstones of the internet and we rely on it every day. Isn't it time you took full advantage of what JavaScript offers?</h5>
                         <hr>
-                        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                        <ul id="myTabs" class="nav nav-pills text-center nav-stacked visible-xs" role="tablist">
+                            <li class="active">
+                                <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn">Video Courses</a>
+                            </li>
+                            <li>
+                                <a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail">Playlists (2)</a>
+                            </li>
+                        </ul>
+                        <ul id="myTabs" class="nav nav-tabs hidden-xs" role="tablist">
                             <li class="active">
                                 <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured</a>
                             </li>

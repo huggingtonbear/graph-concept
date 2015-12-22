@@ -126,12 +126,26 @@
         <div id="page-content-wrapper" class="book-page ng-scope">
 
     <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
-                <div class="col-xs-12">
+                <div class="col-sm-12">
                     
                     <div class="row">
-                        <h2>Welcome Oli,</h2>
-                        <hr>
-                        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                        <h2 class="hidden-xs">Welcome Oli,</h2>
+                        <hr class="hidden-xs">
+                        <ul id="myTabs" class="nav nav-pills nav-stacked text-center visible-xs" role="tablist">
+                            <li class="active">
+                                <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn">My Collection (26)</a>
+                            </li>
+                            <li>
+                                <a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail">Owned (4)</a>
+                            </li>
+                            <li>
+                                <a href="#author" role="tab" id="author-tab" data-toggle="tab" aria-controls="detail">Bookmarks (8)</a>
+                            </li>
+                        </ul>
+                        <ul id="myTabs" class="nav nav-tabs hidden-xs" role="tablist">
                             <li class="active">
                                 <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Dashboard</a>
                             </li>
@@ -147,35 +161,36 @@
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active pt30" id="dashboard" aria-labelledby="dashboard-tab">
-                                <div class="col-sm-8">
-                                    <h3 class="mt0">Monthly Learning Goals</h3>
-                                    <hr>
+                                <div class="col-sm-7">
                                     <ol class="breadcrumb">
-                                            <li>You have <strong>4</strong> Free Token(s) remaining</li>
+                                            <li><i class="fa fa-ticket mr10"></i>You have <strong>4</strong> Free Token(s) remaining</li>
                                     </ol>
-                                    <h4><strong>4</strong> Section(s) Completed<small class="pull-right">25</small></h4>
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        <span class="sr-only">40% Complete (success)</span>
-                                      </div>
-                                    </div>
-                                    <h4><strong>2 </strong>hr(s) <strong>53 </strong>min(s) spent learning<small class="pull-right">4hrs</small></h4>
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                        <span class="sr-only">70% Complete (success)</span>
-                                      </div>
-                                    </div>
-                                    <small>Paying subscribers will receive a Free monthly eBook token if they spend longer than 4 hours learning a month and complete course 25 sections. Learning time is only logged when 'Next Section' is clicked.</small>
-
-                                    <ul id="recommendationTabs" class="nav nav-tabs mt25" role="tablist">
+                                    <ul id="recommendationTabs" class="nav nav-pills nav-stacked text-center mt25 mb25 visible-xs" role="tablist">
                                         <li class="active">
-                                            <a href="#recommended" id="recommended-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Recommended for You</a>
+                                            <a href="#recommended" id="recommended-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Recommended</a>
                                         </li>
                                         <li>
                                             <a href="#popular" role="tab" id="popular-tab" data-toggle="tab" aria-controls="learn">Popular Courses</a>
                                         </li>
                                         <li>
                                             <a href="#new" role="tab" id="new-tab" data-toggle="tab" aria-controls="detail">New Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="#rbooks" role="tab" id="rbook-tab" data-toggle="tab" aria-controls="rbook">Recent Bookmarks</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="recommendationTabs" class="nav nav-tabs mt25 hidden-xs" role="tablist">
+                                        <li class="active">
+                                            <a href="#recommended" id="recommended-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Recommended</a>
+                                        </li>
+                                        <li>
+                                            <a href="#popular" role="tab" id="popular-tab" data-toggle="tab" aria-controls="learn">Popular Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="#new" role="tab" id="new-tab" data-toggle="tab" aria-controls="detail">New Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="#rbook" role="tab" id="rbook-tab" data-toggle="tab" aria-controls="rbook">Recent Bookmarks</a>
                                         </li>
                                     </ul>
                                     <div id="recommendationContent" class="tab-content">
@@ -263,9 +278,35 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div role="tabpanel" class="tab-pane fade in" id="rbook" aria-labelledby="rbook-tab">
+                                                <div class="panel panel-default tabbed-content">
+                                                    <ul class="list-group">
+                                                        <a href="#" class="list-group-item list-name"><strong>Overriding methods and properties</strong> - Mastering Swift 2
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Chapter 6: Using Protocols and Protocol Extensions</strong> - Mastering Swift 2
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Vectorization</strong> - R High Performance Programming
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Using compiled languages in R</strong> - R High Performance Programming
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Optional and keyword arguments</strong> - Getting Started with Julia
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Overriding methods and properties</strong> - Mastering Swift 2
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Chapter 6: Using Protocols and Protocol Extensions</strong> - Mastering Swift 2
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Vectorization</strong> - R High Performance Programming
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Using compiled languages in R</strong> - R High Performance Programming
+                                                        </a>
+                                                        <a href="#" class="list-group-item list-name"><strong>Optional and keyword arguments</strong> - Getting Started with Julia
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-5">
                                     <div class="panel panel-default">
                                           <div class="panel-heading">
                                             <h3 class="panel-title">Last viewed:</h3>
@@ -280,25 +321,28 @@
                                            </div>
                                     </div>
                                     <div class="panel panel-default">
-                                      <div class="panel-heading">
-                                        <h3 class="panel-title">Recent Bookmarks</h3>
+                                          <div class="panel-heading">
+                                            <h3 class="panel-title">Monthly Learning Goals:</h3>
+                                          </div>
+                                          <div class="panel-body">
+                                             <h4 class="lg-title"><strong>4</strong> Section(s) Completed<small class="pull-right">25</small></h4>
+                                            <div class="progress">
+                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
                                       </div>
-                                        <ul class="list-group">
-                                            <a href="#" class="list-group-item list-name"><strong>Overriding methods and properties</strong> - Mastering Swift 2
-                                            </a>
-                                            <a href="#" class="list-group-item list-name"><strong>Chapter 6: Using Protocols and Protocol Extensions</strong> - Mastering Swift 2
-                                            </a>
-                                            <a href="#" class="list-group-item list-name"><strong>Vectorization</strong> - R High Performance Programming
-                                            </a>
-                                            <a href="#" class="list-group-item list-name"><strong>Using compiled languages in R</strong> - R High Performance Programming
-                                            </a>
-                                            <a href="#" class="list-group-item list-name"><strong>Optional and keyword arguments</strong> - Getting Started with Julia
-                                            </a>
-                                        </ul>
-                                       <div class="panel-footer text-right">
-                                        <a href="#author" data-toggle="tab" >View All</a>
-                                        </div>
+                                    </div>
+                                    <h4 class="lg-title"><strong>2 </strong>hr(s) <strong>53 </strong>min(s) spent learning<small class="pull-right">4hrs</small></h4>
+                                    <div class="progress">
+                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <span class="sr-only">70% Complete (success)</span>
                                       </div>
+                                    </div>
+                                    
+                                          </div>
+                                           <div class="panel-footer">
+                                                <small><strong>Note: </strong>Paying subscribers will receive a Free monthly eBook token if they spend longer than 4 hours learning a month and complete 25 sections. Learning time is logged when 'Next Section' is clicked.</small>
+                                           </div>
+                                    </div>
                                 </div>
 
                             </div>

@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background:rgba(226, 122, 63, 0.7);
 	float: right;
 }
+.lg-title {
+	font-size: 14px;
+	font-weight: 500;
+}
 .r-date {
 	float: right;
 	margin-right: 15px;
