@@ -44,7 +44,7 @@
     <div id="wrapper">
 
         <!-- Top Nav Bar -->
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -128,7 +128,7 @@
         <div id="page-content-wrapper" class="book-page ng-scope">
 
     <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
-                <div class="reader-container">
+                <div class="reader-container col-sm-12">
                     
                     <div class="row">
                         
@@ -137,17 +137,19 @@
                                     <meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
                                     <div class="section" lang="en" xml:lang="en">
                                         <div class="titlepage">
-                                            <div class="col-md-12 col-lg-offset-1 col-xl-offset-2 col-lg-10 col-xl-8">
+                                            <div>
+                                                <div>
                                                     <h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Learning C++ by Creating Games with UE4</h2>
-                                                <hr>
-                                                <div class="hidden-xs hidden-sm col-sm-2 col-xl-1">
-                                                    <img src="http://ecx.images-amazon.com/images/I/51FK15jmwTL._SX419_BO1,204,203,200_.jpg" class="img-responsive img-thumbnail hidden-xs"/>
                                                 </div>
-                                                <div class="col-sm-10 col-xl-11">
-                                                    <small>01/02/2015</small>
-                                                    <p>William Sherif</p>
-                                                    <p>Learn C++ programming with a fun, real-world application that allows you to create your own games!</p>
-                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="col-sm-2">
+                                                <img src="http://ecx.images-amazon.com/images/I/51FK15jmwTL._SX419_BO1,204,203,200_.jpg" class="img-responsive hidden-xs mb20"/>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <small>01/02/2015</small>
+                                                <p>William Sherif</p>
+                                                <p>Learn C++ programming with a fun, real-world application that allows you to create your own games!</p>
                                                 <div class="btn-group mb30 hidden-xs" role="group">                                 
                                                     <a href="#" class="btn btn-default "><i class="fa fa-plus mr5"></i>Add to Collection</a>      
                                                     <div class="btn-group" role="group">
@@ -163,12 +165,14 @@
                                                     </div>
                                                         <a href="#" class="btn btn-info "><i class="fa fa-download mr5"></i> Code Files</a>
                                                 </div>
+                                            </div>
+                                            <div class="col-sm-12">
                                                 <div class="visible-xs">
                                                     <a href="#" class="btn btn-default btn-block btn-lg"><i class="fa fa-plus mr5"></i> Collection</a>      
                                                     <a href="for-loop.html" class="btn btn-primary btn-lg btn-block mb20">Continue</a>
                                                 </div>
 
-                                                <ul id="myTabs" class="nav nav-tabs nav-justified" role="tablist">
+                                                <ul id="myTabs" class="nav nav-tabs" role="tablist">
                                                     <li class="active">
                                                         <a href="#about" id="about-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">About</a>
                                                     </li>
@@ -215,20 +219,21 @@
                                                     </div> 
                                                 </div>
 
-                                                <div class="row hidden-xs"> 
-                                                    <hr>     
-                                                        <a href="for-loop.html" class="btn btn-primary pull-right pl40 pr40">Continue</a>
-                                                </div>
-                                                <div class="row"> 
-                                                    <hr>
-                                                </div>
+                                                <h4></h4>
                                                 
                                             </div>
                                         </div>
                                  </div>
                                     </div>                                                          </div>
                     </div>
-                    
+                    <div class="row hidden-xs"> 
+                        <hr>
+                            
+                            <a href="for-loop.html" class="btn btn-primary pull-right pl40 pr40">Continue</a>
+                    </div>
+                    <div class="row"> 
+                        <hr>
+                    </div>
 </div></div>
                                         <div class="text-center col-sm-12 mb20">
                         <small>ISBN 9781783983704 © Packt Publishing Limited. All Rights Reserved </small>
