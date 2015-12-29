@@ -19,6 +19,7 @@
 }
 
 #sidebar-wrapper {
+    margin-top: -50px;
     z-index: 1000;
     position: fixed;
     left: 250px;
@@ -44,7 +45,6 @@
 
 #page-content-wrapper {
     width: 100%;
-    top: 50px;
     position: absolute;
     padding: 15px;
 }
@@ -63,7 +63,6 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 50px;
     width: 250px;
     margin: 0;
     padding: 0;
