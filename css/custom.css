@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mobile-nav-icon {
 	padding: 10px;
 }
+.mobile-title {
+	margin-top: -25px;
+}
 .sidebar-nav>.nav-tabs>li.active {
 	background: none;
 }
