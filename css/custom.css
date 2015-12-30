@@ -119,6 +119,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
     background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
 }
+.fade_out_nm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 150px 0;
+    background: -webkit-linear-gradient( rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 1) 100% );
+    background-image: -moz-linear-gradient( rrgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 1) 100% );
+    background-image: -o-linear-gradient( rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 1) 100% );
+    background-image: linear-gradient( rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 1) 100% );
+    background-image: -ms-linear-gradient( rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 1) 100% );
+}
 /*Section Complete on titles*/
 .completed-section {
 	border-right: solid 10px #45B29D
