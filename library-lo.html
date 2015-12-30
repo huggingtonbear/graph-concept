@@ -158,12 +158,13 @@
                                     <form action="" method="">
                                 <!--        You can switch "ct-wizard-orange"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
                                 
-                                        <div class="wizard-header">
-                                            <h2> Continuously improve your skills and career
+                                        <div class="wizard-header hidden-xs">
+                                            <h2>Continuously improve your skills and career
                                         <br>
-                                               <small class="hidden-xs">Open the door to over 3000 IT courses <b>customized around your requirements</b></small>
+                                               <small>Open the door to over 3000 IT courses <b>curated around your requirements</b></small>
                                             </h2>
                                         </div>
+                                        <h3 class="text-center visible-xs"> Continuously improve your skills and career</h3> 
                                         <ul class="hidden-xs">
                                             <li><a href="#about" data-toggle="tab">1. About</a></li>
                                             <li><a href="#category" data-toggle="tab">2. Skills</a></li>
@@ -174,7 +175,8 @@
                                         <div class="tab-content">
                                             <div class="tab-pane" id="about">
                                               <div class="row">
-                                                  <h4 class="info-text"> To get started we need to ask a few questions about what you want to work on... </h4>
+                                                  <h4 class="info-text hidden-xs">To get started we need to ask a few questions about what you want to work on... </h4>
+                                                  <h5 class="info-text visible-xs">To get started we need to ask a few questions about what you want to work on... </h5>
                                                   <div class="col-sm-5 col-sm-offset-1">
                                                         <div class="form-group">
                                                             <label>First Name <small>(required)</small></label>
@@ -194,8 +196,8 @@
                                                 <div class="row">
                                                    
                                                     
-                                                    <div class="col-sm-10 col-sm-offset-1">
-                                                        <div class="col-sm-4">
+                                                    
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Design">
                                                                 <div class="icon">
@@ -204,7 +206,7 @@
                                                                 <h5>Web Development</h5>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Code">
                                                                 <div class="icon">
@@ -214,7 +216,7 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Develop">
                                                                 <div class="icon">
@@ -224,7 +226,7 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Design">
                                                                 <div class="icon">
@@ -233,7 +235,7 @@
                                                                 <h5>Cloud + Virtualization</h5>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Code">
                                                                 <div class="icon">
@@ -243,7 +245,7 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
                                                                 <input type="checkbox" name="jobb" value="Develop">
                                                                 <div class="icon">
@@ -253,28 +255,46 @@
                                                             </div>
                                                             
                                                         </div>
-                                                    </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="choice" data-toggle="wizard-checkbox">
+                                                                <input type="checkbox" name="jobb" value="Develop">
+                                                                <div class="icon">
+                                                                    <i class="fa fa-wrench"></i>
+                                                                </div>
+                                                                <h5>Maker</h5>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="choice" data-toggle="wizard-checkbox">
+                                                                <input type="checkbox" name="jobb" value="Develop">
+                                                                <div class="icon">
+                                                                    <i class="fa fa-cog"></i>
+                                                                </div>
+                                                                <h5>DevOps</h5>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    
                                                     
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="language">
                                                 <h4 class="info-text"> Which languages are you familiar with? </h4>
                                                 <div class="row">
-                                                   
-                                                    
-                                                    <div class="col-sm-10 col-sm-offset-1">
-                                                        <div class="col-sm-4">
+
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Design">
+                                                                <input type="checkbox" name="java" value="Design">
                                                                 <div class="icon">
                                                                     <i class="devicon-java-plain"></i>
                                                                 </div>
                                                                 <h5>Java</h5>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Code">
+                                                                <input type="checkbox" name="cplusplus" value="Code">
                                                                 <div class="icon">
                                                                     <i class="devicon-cplusplus-line"></i>
                                                                 </div>
@@ -282,9 +302,9 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Develop">
+                                                                <input type="checkbox" name="python" value="Develop">
                                                                 <div class="icon">
                                                                     <i class="devicon-python-plain"></i>
                                                                 </div>
@@ -292,18 +312,18 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Design">
+                                                                <input type="checkbox" name="csharp" value="Design">
                                                                 <div class="icon">
                                                                     <i class="devicon-csharp-line"></i>
                                                                 </div>
                                                                 <h5>C#</h5>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Code">
+                                                                <input type="checkbox" name="javascript" value="Code">
                                                                 <div class="icon">
                                                                     <i class="devicon-javascript-plain"></i>
                                                                 </div>
@@ -311,9 +331,9 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Develop">
+                                                                <input type="checkbox" name="ruby" value="Develop">
                                                                 <div class="icon">
                                                                     <i class="devicon-ruby-plain"></i>
                                                                 </div>
@@ -321,18 +341,18 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Design">
+                                                                <input type="checkbox" name="php" value="Design">
                                                                 <div class="icon">
-                                                                    <i class="devicon-apple-original"></i>
+                                                                    <i class="devicon-php-plain"></i>
                                                                 </div>
-                                                                <h5>Swift</h5>
+                                                                <h5>PHP</h5>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Code">
+                                                                <input type="checkbox" name="html5" value="Code">
                                                                 <div class="icon">
                                                                     <i class="devicon-html5-plain"></i>
                                                                 </div>
@@ -340,9 +360,9 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="choice" data-toggle="wizard-checkbox">
-                                                                <input type="checkbox" name="jobb" value="Develop">
+                                                                <input type="checkbox" name="dotnet" value="Develop">
                                                                 <div class="icon">
                                                                      <i class="devicon-dot-net-plain"></i>
                                                                 </div>
@@ -350,7 +370,35 @@
                                                             </div>
                                                             
                                                         </div>
-                                                    </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="choice" data-toggle="wizard-checkbox">
+                                                                <input type="checkbox" name="swift" value="Design">
+                                                                <div class="icon">
+                                                                    <i class="devicon-apple-original"></i>
+                                                                </div>
+                                                                <h5>Swift</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="choice" data-toggle="wizard-checkbox">
+                                                                <input type="checkbox" name="coffeescript" value="Code">
+                                                                <div class="icon">
+                                                                    <i class="devicon-coffeescript-original"></i>
+                                                                </div>
+                                                                <h5>CoffeeScript</h5>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="choice" data-toggle="wizard-checkbox">
+                                                                <input type="checkbox" name="go" value="Develop">
+                                                                <div class="icon">
+                                                                     <i class="devicon-go-plain"></i>
+                                                                </div>
+                                                                <h5>Go</h5>
+                                                            </div>
+                                                            
+                                                        </div>
                                                     
                                                 </div>
                                             </div>
