@@ -146,7 +146,17 @@
                                   </div>
                                 <a href="index-nightmode.html" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg  mr5"></i><span class="hidden-xs"> Nightmode</span></a> 
                                 <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg mr5"></i><span class="hidden-xs"> Font Size</span></button>
+                                <!-- AddToAny BEGIN -->
+                                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                                <a class="a2a_button_twitter"></a>
+                                <a class="a2a_button_facebook"></a>
+                                <a class="a2a_button_email"></a>
+                                <a class="a2a_button_print"></a>
+                                </div>
+                                <!-- AddToAny END -->
                             </div>
+
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
                                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating our first view</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Creating our first view</h2></div></div><hr></div><p>Now that <a id="id89" class="indexterm"></a>we have created our URL and interpreted by the routing system, we must ensure that a view (which is a controller in the MVC pattern) meets the customer's demand.</p><p>This is the function of the second parameter of the URLs present in <code class="literal">urls.py</code>. This parameter will define the method that will play the role of a view. Take, for example, our first URL: </p><div class="informalexample"><pre class="programlisting  language-markup">url (r'^$', 'TasksManager.views.index.page'), </pre></div><p>Firstly, as we have seen when studying regular expressions, this URL will be valid only if we browse the <code class="literal">http://localhost:8000</code> URL. The second parameter in the URL means that in the <code class="literal">index.py</code> file, there is a method called <code class="literal">page</code> that will process the request. The <code class="literal">index.py</code> file is located in the <code class="literal">views</code> package at the root of the <code class="literal">TasksManager</code> application.</p><p>When we <a id="id90" class="indexterm"></a>want a folder to be recognized as a package by Python, we need to create a folder that contains the <code class="literal">__init__.py</code> file that we can leave blank.</p><p>You can choose another structure to store your views. You must choose the structure that best fits your project. Have a long-term vision of your project in order to define quality architecture from the first line of code.</p><p>In our <code class="literal">index.py</code> file, we will create a method called <code class="literal">page()</code>. This method will return an HTML page<a id="id91" class="indexterm"></a> to the client. The page is being returned by the HTTP protocol, so we will use the <code class="literal">HttpResponse()</code> function and its importation. The argument of this <code class="literal">HttpResponse()</code> function returns the HTML content that we will return<a id="id92" class="indexterm"></a> to the browser. To simplify reading this example, we do not use a proper HTML structure, because we just return <code class="literal">Hello world!</code> to the client, as shown in the following code:</p><div class="informalexample"><pre class="programlisting  language-markup"># - * - Coding: utf -8 - * -
@@ -186,6 +196,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
+    <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
 
 </body>
 
