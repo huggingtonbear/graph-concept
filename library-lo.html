@@ -50,23 +50,16 @@
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog login-modal" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Please Sign In</h4>
-                  </div>
                   <div class="modal-body">
-                    <form>
-                      <div class="form-group">
+                    <h2 class="text-center" id="myModalLabel">Sign In</h2>
+                    <form class="form-signin">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <div class="form-group">
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
                       <div class="form-group">
-                        <a class="help-block">Forgotten Password?</a>
+                        <a href="#" class="small">Forgotten Password?</a>
                       </div>
                       
-                      <a href="library.html" type="submit" class="btn btn-primary btn-block">Submit</a>
+                      <a href="library.html" type="submit" class="btn btn-primary btn-block btn-lg">Submit</a>
                     </form>
                   </div>
                   <div class="modal-footer">
@@ -87,11 +80,12 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="library.html"><img class="brand-logo" src="images/white-packt.png"/></a>
+                  <button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-info navbar-btn pull-right mr15 visible-xs">Sign in</button>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="https://www.packtpub.com">Store</a></li>
-                        <li><button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-info navbar-btn mr5">Sign in</button></li>
+                        <li class="hidden-xs"><button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-info navbar-btn mr5">Sign in</button></li>
                     </ul>
                     <form class="navbar-form navbar-right search-nav-collapse">
                         <div class="form-group pull-right" style="display:inline;">
@@ -149,21 +143,24 @@
             <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope">               
                 <div class="">
                     <div class="container">
-                    
-                        
-                            <!--      Wizard container        -->   
-                            <div class="wizard-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8"> 
+
+                            <div class="col-sm-offset-4 col-sm-4 col-xl-offset-5 col-xl-2 mt80">
+                            <img src="images/packtlib.png" class="img-responsive"/>
+                            </div>
+                            <div class="row">
+                            <!--      Wizard container        -->
+                            <div class="wizard-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
+
                                 
-                                <div class="mt70 jumbotron card wizard-card ct-wizard-orange" id="wizardProfile">
+                                <div class="mt30 jumbotron card wizard-card ct-wizard-orange" id="wizardProfile">
                                     <form action="" method="">
                                 <!--        You can switch "ct-wizard-orange"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
                                 
-                                        <div class="wizard-header hidden-xs">
-                                            <h2>Continuously improve your skills and career
-                                        <br>
-                                               <small>Open the door to over 3000 IT courses <b>curated around your requirements</b></small>
-                                            </h2>
-                                        </div>
+
+                                        
+                                        <div class="col-sm-12 text-center mb20 hidden-xs">
+                                            <h2 class="mt0">Continuously improve your skills and career</h2>
+                                        </div>   
                                         <h3 class="text-center visible-xs"> Continuously improve your skills and career</h3> 
                                         <ul class="hidden-xs">
                                             <li><a href="#about" data-toggle="tab">1. About</a></li>
@@ -175,8 +172,8 @@
                                         <div class="tab-content">
                                             <div class="tab-pane" id="about">
                                               <div class="row">
-                                                  <h4 class="info-text hidden-xs">To get started we need to ask a few questions about what you want to work on... </h4>
-                                                  <h5 class="info-text visible-xs">To get started we need to ask a few questions about what you want to work on... </h5>
+                                                  <h4 class="info-text hidden-xs">To get started we need to ask a few questions about you... </h4>
+                                                  <h5 class="info-text visible-xs">To get started we need to ask a few questions about you... </h5>
                                                   <div class="col-sm-5 col-sm-offset-1">
                                                         <div class="form-group">
                                                             
@@ -448,6 +445,7 @@
                                     </form>
                                 </div>
                             </div> <!-- wizard container -->
+                        </div>
                              
                     </div>      
                 </div>
