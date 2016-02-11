@@ -128,19 +128,8 @@
                 <div class="col-sm-12">
                     <div class="row">
                         <h2>JavaScript</h2>
-                        <h5>It's one of the cornerstones of the internet and we rely on it every day. Isn't it time you took full advantage of what JavaScript offers?</h5>
+                        <h5 class="hidden-xs">It's one of the cornerstones of the internet and we rely on it every day. Isn't it time you took full advantage of what JavaScript offers?</h5>
                         <hr>
-                        <ul id="myTabs" class="nav nav-pills text-center nav-stacked visible-xs" role="tablist">
-                            <li class="active">
-                                <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured</a>
-                            </li>
-                            <li>
-                                <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn">Video Courses</a>
-                            </li>
-                            <li>
-                                <a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail">Playlists (2)</a>
-                            </li>
-                        </ul>
                         <ul id="myTabs" class="nav nav-tabs hidden-xs" role="tablist">
                             <li class="active">
                                 <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured</a>
@@ -153,7 +142,7 @@
                             </li>
                         </ul>
                         <div id="myTabContent" class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in active pt30" id="dashboard" aria-labelledby="dashboard-tab">
+                            <div role="tabpanel" class="tab-pane fade in active pt20" id="dashboard" aria-labelledby="dashboard-tab">
                                     <div class="panel panel-default mt15">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Latest JavaScript Courses</h3>
@@ -315,7 +304,16 @@
             </div>
         </div>
     </div>
->
+     <div id="footer" class="visible-xs">
+      <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+      <div class="row" id="bottomNav" role="tablist">
+        <div class="col-xs-4 text-center"><a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true"><i class="fa fa-star mobile-nav-icon fa-2x"></i></a></div>
+        <div class="col-xs-4 text-center"><a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn"><i class="fa fa-play-circle mobile-nav-icon fa-2x"></i></a></div>
+        <div class="col-xs-4 text-center"><a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail"><i class="fa fa-list-ul mobile-nav-icon fa-2x"></i></a></div>
+      </div>
+      </div>
+    </div
+>>
     <!-- /#wrapper -->
 
     <!-- JAVASCRIPT BLOCKS -->
