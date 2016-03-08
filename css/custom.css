@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn {
 	border-radius: 0;
 }
+.cover-image-thumb {
+	float: left;
+    margin-right: 10px;
+    height: 55px;
+}
 .reader-container .dropdown-menu > li > a {
     font-family: Roboto, Helvetica, sans-serif;
 }
