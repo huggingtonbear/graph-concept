@@ -13,14 +13,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
 
     <!-- Prism -->
     <link rel="stylesheet" href="css/prism.css">
@@ -44,39 +43,31 @@
 
     <div id="wrapper">
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+         <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog login-modal" role="document">
                 <div class="modal-content">
-                  <div class="modal-body login_form">
-                    <h2 class="text-center" id="myModalLabel">Sign In</h2>
-                    <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
-                    
-                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                        <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Please Sign In</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
                       <div class="form-group">
-                        <a href="/account/password" target="_self" class="small">Forgotten Password?</a>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                       </div>
-                      <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
-                        Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <a class="help-block">Forgotten Password?</a>
                       </div>
                       
-                      <input type="submit" class="btn btn-primary btn-block btn-lg" value="Submit">
-                      <hr>
-                      <a class="btn btn-block btn-social btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
-                        <span class="fa fa-facebook"></span> Sign in with Facebook
-                    </a>
-                    <a class="btn btn-block btn-social btn-google" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google']);">
-                        <span class="fa fa-google"></span> Sign in with Google  
-                    </a>
-                    <a class="btn btn-block btn-social btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-github']);">
-                        <span class="fa fa-github"></span> Sign in with GitHub
-                    </a>
-                    
+                      <a href="index.html" type="submit" class="btn btn-primary btn-block">Submit</a>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <a href="/packtlib/login" target="_self">Create a New Account</a>
+                    <a href="library-lo.html"> Create a New Account</a>
                   </div>
                 </div>
               </div>
@@ -180,7 +171,7 @@
                                     </div><div class="fade_out"></div>                                                          </div>
                                     <div class="panel panel-default">
                                         <div class="panel-body text-center">
-                                            <h4>Want to read more? <span class="ml5"><a href="#" data-toggle="modal" data-target="#myModal"><b>Sign-up</b></a> to keep reading</span>
+                                            <h4><i class="fa fa-lock" style="margin-right:10px;"></i> You must <a href="/packtlib/login">Buy</a> this course or  <span ng-bind-html="suborlogin | to_trusted" class="ng-binding"><a href="/packtlib/login">Subscribe</a> to view this section</span>
                                             </h4>
                                         </div>
                                     </div>
