@@ -17,8 +17,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-top: -8px;
 	border: 2px solid #FFF;
 }
+].progress {
+	border: 1px solid #fff;
+}
+.product-card {
+	background-color: rgba(255,255,255,0.8);
+}
+.product-card a {
+	background-color: transparent;
+}
 .navbar-avatar-link {
 	padding-bottom:7px !important;
+}
+.custom-devicon {
+	font-size: 48px;
+	float: right;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.list-group-item.active h4 {
+	color: white;
 }
 .btn {
 	border-radius: 0;
@@ -33,7 +52,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 17px;
 }
 .brand-logo {
-	height: 18px;
+	height: 24px;
 }
 .badge {
 	width: 65px;
@@ -102,9 +121,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 22px;
     margin-left: -10px;
 }
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-    margin-top: 11px;
-}
+
 .course-listing {
 	margin-bottom: 0px;
 }

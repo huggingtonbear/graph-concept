@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -137,27 +138,27 @@
                     <div class="row">
                         <h2> Welcome Oli</h2>
                         <hr>
-                    	<div class="panel panel-default" style="border-radius:0;">
-	                        <ul id="myTabs" class="nav nav-pills nav-justified" role="tablist">
-	                            <li class="active" >
-	                                <a href="#dashboard" id="dashboard-tab" style="border-radius:0;" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true"><i class="fa fa-refresh mr10"></i> In Progress</a>
-	                            </li>
-	                            <li>
-	                                <a href="#learn" role="tab" id="learn-tab" style="border-radius:0;" data-toggle="tab" aria-controls="learn"><i class="fa fa-user mr10"></i> My Learning Plan</a>
-	                            </li>
-	                            <li>
-	                                <a href="#detail" role="tab" id="detail-tab" style="border-radius:0;" data-toggle="tab" aria-controls="detail"><i class="fa fa-graduation-cap mr10"></i> My Skill Cards</a>
-	                            </li>
-	                        </ul>
+                        <div class="panel panel-default" style="border-radius:0;">
+                            <ul id="myTabs" class="nav nav-pills nav-justified" role="tablist">
+                                <li class="active" >
+                                    <a href="#dashboard" id="dashboard-tab" style="border-radius:0;" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true"><i class="fa fa-refresh mr10"></i> In Progress</a>
+                                </li>
+                                <li>
+                                    <a href="#learn" role="tab" id="learn-tab" style="border-radius:0;" data-toggle="tab" aria-controls="learn"><i class="fa fa-user mr10"></i> My Learning Plan</a>
+                                </li>
+                                <li>
+                                    <a href="#detail" role="tab" id="detail-tab" style="border-radius:0;" data-toggle="tab" aria-controls="detail"><i class="fa fa-graduation-cap mr10"></i> My Skill Cards</a>
+                                </li>
+                            </ul>
                         </div>
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active mb30" id="dashboard" aria-labelledby="dashboard-tab">
-                            	<div class="col-sm-6">
+                                <div class="col-sm-6">
                                     <div class="panel panel-default">
                                         <div class="panel-heading text-center"><h4>My Skill Track</h4></div>
                                         <ul class="list-group">
-                                            <a href="library.html" class="list-group-item list-name active">
-                                                <i class="devicon-android-plain custom-devicon"></i>
+                                            <a href="library.html" class="list-group-item list-name ">
+                                                <i class="devicon-android-plain colored custom-devicon"></i>
                                                 <h4>Android Development Fundamentals</h4>
 
                                                 <div class="progress mt20 mb10">
@@ -178,8 +179,8 @@
                                                 <div class="clearfix">
                                                 </div>
                                             </a>
-                                            <a href="library-git.html" class="list-group-item list-name">
-                                                <i class="devicon-git-plain colored custom-devicon"></i>
+                                            <a href="library-git.html" class="list-group-item list-name active">
+                                                <i class="devicon-git-plain custom-devicon"></i>
                                                 <h4>Git Up to Speed</h4>
 
                                                 <div class="progress mt20 mb10">
@@ -209,8 +210,8 @@
                                         <ul class="list-group">
                                             <li class="list-group-item active">
                                                 <div class="col-sm-12 mt10">
-                                                    <i class="devicon-android-plain custom-devicon"></i>
-                                                    <h4>Android Development Fundamentals</h4>
+                                                    <i class="devicon-git-plain custom-devicon"></i>
+                                                    <h4>Git Up to Speed</h4>
                                                     <hr>
                                                     <h4 class="mt25">Continue:</h4>
                                                     <div class="panel panel-default product-card">
@@ -226,20 +227,14 @@
                                                     <div class="form-group">
                                                         <div class="checkbox">
                                                               <label>
+                                                                <input type="checkbox" value="">
+                                                                Understand the Git Workflow
+                                                              </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                              <label>
                                                                 <input type="checkbox" checked>
-                                                                Install Android Studio and Java
-                                                              </label>
-                                                        </div>
-                                                        <div class="checkbox">
-                                                              <label>
-                                                                <input type="checkbox" value="">
-                                                                Write your First Android Application
-                                                              </label>
-                                                        </div>
-                                                        <div class="checkbox">
-                                                              <label>
-                                                                <input type="checkbox" value="">
-                                                                Publish your Application to the Google Play Store
+                                                                Managing Git Clients
                                                               </label>
                                                         </div> 
                                                     </div>
@@ -276,10 +271,10 @@
 
                             </div>
                             <div role="tabpanel" class="tab-pane fade pt30 mb50" id="learn" aria-labelledby="learn-tab">
-                            	<div class="visible-xs">
-	                            	<h3 class="mobile-title">My List</h3>
-	                            	<hr>
-	                            </div>
+                                <div class="visible-xs">
+                                    <h3 class="mobile-title">My List</h3>
+                                    <hr>
+                                </div>
                                 <div class="col-sm-offset-6 col-md-offset-8 col-lg-offset-9 col-sm-6 col-md-4 col-lg-3 mb20">
                                     <select class="form-control">
                                       <option>Sort by Most Recent</option>
@@ -443,10 +438,10 @@
                                 </div>
                             </div> 
                             <div role="tabpanel" class="tab-pane fade pt30 mb50" id="detail" aria-labelledby="detail-tab">
-                            	<div class="visible-xs">
-	                            	<h3 class="mobile-title">Owned</h3>
-	                            	<hr>
-	                            </div>
+                                <div class="visible-xs">
+                                    <h3 class="mobile-title">Owned</h3>
+                                    <hr>
+                                </div>
                                 <div class="col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4 col-lg-offset-9 col-lg-3 mb20">
                                     <select class="form-control">
                                       <option>Sort by Most Recent</option>
@@ -515,10 +510,10 @@
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade pt30 mb50" id="author" aria-labelledby="author-tab">
-	                            <div class="visible-xs">
-	                            	<h3 class="mobile-title">Bookmarks</h3>
-	                            	<hr>
-	                            </div>
+                                <div class="visible-xs">
+                                    <h3 class="mobile-title">Bookmarks</h3>
+                                    <hr>
+                                </div>
                                 <div class="panel panel-default">
                                         <ul class="list-group">
                                             <a href="front-page.html" class="list-group-item list-name disabled">
@@ -563,22 +558,22 @@
 
                     </div>
 
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
     <div id="footer" class="visible-xs">
-	  <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
-	  <div class="row" id="bottomNav" role="tablist">
-	    <div class="col-xs-3 text-center"><a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true"><i class="fa fa-home mobile-nav-icon fa-2x"></i></a></div>
-	    <div class="col-xs-3 text-center"><a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn"><i class="fa fa-list mobile-nav-icon fa-2x"></i></a></div>
-	    <div class="col-xs-3 text-center"><a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail"><i class="fa fa-suitcase mobile-nav-icon fa-2x"></i></a></div>
-	    <div class="col-xs-3 text-center"><a href="#author" role="tab" id="author-tab" data-toggle="tab" aria-controls="detail"><i class="fa fa-bookmark mobile-nav-icon fa-2x"></i></a></div>
-	  </div>
-	  </div>
-	</div>
+      <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+      <div class="row" id="bottomNav" role="tablist">
+        <div class="col-xs-3 text-center"><a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true"><i class="fa fa-home mobile-nav-icon fa-2x"></i></a></div>
+        <div class="col-xs-3 text-center"><a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn"><i class="fa fa-list mobile-nav-icon fa-2x"></i></a></div>
+        <div class="col-xs-3 text-center"><a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail"><i class="fa fa-suitcase mobile-nav-icon fa-2x"></i></a></div>
+        <div class="col-xs-3 text-center"><a href="#author" role="tab" id="author-tab" data-toggle="tab" aria-controls="detail"><i class="fa fa-bookmark mobile-nav-icon fa-2x"></i></a></div>
+      </div>
+      </div>
+    </div>
     <!-- /#wrapper -->
 
     <!-- JAVASCRIPT BLOCKS -->
