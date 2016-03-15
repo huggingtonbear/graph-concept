@@ -164,21 +164,7 @@
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
                                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Downloading and Installing Linux</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Downloading and Installing Linux</h2></div></div><hr></div>
                                     <div id="myElement"></div>
-                                    <script type="text/javascript">
-                                        // jwplayer("myElement").setup({
-                                        //     file: "videos/video1_1.mp4",
-                                        //     tracks: [{
-                                        //         file: "videos/video1_1.mp3.srt",
-                                        //     }],
-                                        //     width: "100%",
-                                        //     displaytitle: "Downloading and Installing Linux",
-                                        //     aspectratio: "16:9",
-                                        //     title: "Downloading and Installing Linux",
-                                        //     displaytitle: true,
-                                        //     skin: "glow",
-                                        //     sharing: {}
-                                        // });
-                                    </script>
+                                    
                                     <script type="text/javascript">
                                         var chapters = [];
                                         var captions = [];
@@ -194,7 +180,7 @@
 
 
                                         // Setup JW Player
-                                        jwplayer("container").setup({
+                                        jwplayer("myElement").setup({
                                             file: 'videos/video1_1.mp4',
                                             tracks: [
                                               { file: "chapters.vtt", kind: "chapters" },
@@ -204,7 +190,6 @@
                                             displaytitle: false,
                                             width: 576,
                                             height: 324,
-                                            androidhls: true
                                         });
 
                                         // Load chapters / captions
