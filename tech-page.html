@@ -133,26 +133,29 @@
                         <h2>JavaScript</h2>
                         <h5 class="hidden-xs">It's one of the cornerstones of the internet and we rely on it every day. Isn't it time you took full advantage of what JavaScript offers?</h5>
                         <hr>
-                        <ul id="myTabs" class="nav nav-tabs hidden-xs" role="tablist">
-                            <li class="active">
-                                <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured Courses</a>
-                            </li>
-                            <li>
-                                <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn">Video Courses</a>
-                            </li>
-                            <li>
-                                <a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail">Learning Plans (2)</a>
-                            </li>
-                        </ul>
+                        <div class="panel panel-default panel-dashboard-nav hidden-xs">
+                           <ul id="myTabs" class="nav nav-pills nav-justified dashboard-nav" role="tablist">
+                                <li class="active">
+                                    <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">Featured Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn">Video Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#detail" role="tab" id="detail-tab" data-toggle="tab" aria-controls="detail">Learning Plans (2)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
                         <div id="myTabContent" class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in active pt20" id="dashboard" aria-labelledby="dashboard-tab">
+                            <div role="tabpanel" class="tab-pane fade in active" id="dashboard" aria-labelledby="dashboard-tab">
                                     <div class="panel panel-default mt15">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Latest JavaScript Courses</h3>
                                         </div>
                                         <ul class="list-group">
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Building a Lightsaber with Raspberry Pi and a Stick</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Luke Skywalker</small>
                                                         <br/>
@@ -161,7 +164,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Death Star Development with Civil 3D</strong><span class="badge-master badge hidden-xs">Master</span><br/>
                                                         <small class="pull-left">By Sarah Connors</small>
                                                         <br/>
@@ -170,7 +173,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Beginning Pod Racing</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Jon Snow</small>
                                                         <br/>
@@ -179,7 +182,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Mastering the Dark Side</strong><span class="badge-build badge hidden-xs pull-right">Build</span><br/>
                                                         <small class="pull-left">By Han Solo + Leia Organa</small>
                                                         <br/>
@@ -188,7 +191,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Freezing people in Carbonite for Beginners [Video]</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Obi Wan Kenobi</small>
                                                         <br/>
@@ -204,7 +207,7 @@
                                         </div>
                                         <ul class="list-group">
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Building a Lightsaber with Raspberry Pi and a Stick</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Luke Skywalker</small>
                                                         <br/>
@@ -213,7 +216,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Death Star Development with Civil 3D</strong><span class="badge-master badge hidden-xs">Master</span><br/>
                                                         <small class="pull-left">By Sarah Connors</small>
                                                         <br/>
@@ -222,7 +225,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Beginning Pod Racing</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Jon Snow</small>
                                                         <br/>
@@ -231,7 +234,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Mastering the Dark Side</strong><span class="badge-build badge hidden-xs pull-right">Build</span><br/>
                                                         <small class="pull-left">By Han Solo + Leia Organa</small>
                                                         <br/>
@@ -240,7 +243,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Freezing people in Carbonite for Beginners [Video]</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Obi Wan Kenobi</small>
                                                         <br/>
@@ -251,7 +254,7 @@
                                                 </ul>
                                     </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade pt30" id="learn" aria-labelledby="learn-tab">
+                            <div role="tabpanel" class="tab-pane fade" id="learn" aria-labelledby="learn-tab">
                                 
                                     <div class="panel panel-default mt15">
                                         <div class="panel-heading">
@@ -259,7 +262,7 @@
                                         </div>
                                         <ul class="list-group">
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Building a Lightsaber with Raspberry Pi and a Stick</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Luke Skywalker</small>
                                                         <br/>
@@ -268,7 +271,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Death Star Development with Civil 3D</strong><span class="badge-master badge hidden-xs">Master</span><br/>
                                                         <small class="pull-left">By Sarah Connors</small>
                                                         <br/>
@@ -277,7 +280,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Beginning Pod Racing</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Jon Snow</small>
                                                         <br/>
@@ -286,7 +289,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Mastering the Dark Side</strong><span class="badge-build badge hidden-xs pull-right">Build</span><br/>
                                                         <small class="pull-left">By Han Solo + Leia Organa</small>
                                                         <br/>
@@ -295,7 +298,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Freezing people in Carbonite for Beginners [Video]</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Obi Wan Kenobi</small>
                                                         <br/>
@@ -307,14 +310,14 @@
                                     </div>
                                 
                             </div>
-                            <div role="tabpanel" class="tab-pane fade pt30" id="detail" aria-labelledby="detail-tab">
+                            <div role="tabpanel" class="tab-pane fade" id="detail" aria-labelledby="detail-tab">
                                 <div class="panel panel-default mt15">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Learn the Pillars of JavaScript</h3>
                                         </div>
                                         <ul class="list-group">
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Building a Lightsaber with Raspberry Pi and a Stick</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Luke Skywalker</small>
                                                         <br/>
@@ -323,7 +326,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Death Star Development with Civil 3D</strong><span class="badge-master badge hidden-xs">Master</span><br/>
                                                         <small class="pull-left">By Sarah Connors</small>
                                                         <br/>
@@ -332,7 +335,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Beginning Pod Racing</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Jon Snow</small>
                                                         <br/>
@@ -341,7 +344,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Mastering the Dark Side</strong><span class="badge-build badge hidden-xs pull-right">Build</span><br/>
                                                         <small class="pull-left">By Han Solo + Leia Organa</small>
                                                         <br/>
@@ -350,7 +353,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Freezing people in Carbonite for Beginners [Video]</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Obi Wan Kenobi</small>
                                                         <br/>
@@ -366,7 +369,7 @@
                                         </div>
                                         <ul class="list-group">
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3145OS_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Building a Lightsaber with Raspberry Pi and a Stick</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Luke Skywalker</small>
                                                         <br/>
@@ -375,7 +378,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/3602OS_0.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Death Star Development with Civil 3D</strong><span class="badge-master badge hidden-xs">Master</span><br/>
                                                         <small class="pull-left">By Sarah Connors</small>
                                                         <br/>
@@ -384,7 +387,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/2209OS_jQuery%20UI%201.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Beginning Pod Racing</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Jon Snow</small>
                                                         <br/>
@@ -393,7 +396,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/0896OS_jQuery%202.0%20Developer.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Mastering the Dark Side</strong><span class="badge-build badge hidden-xs pull-right">Build</span><br/>
                                                         <small class="pull-left">By Han Solo + Leia Organa</small>
                                                         <br/>
@@ -402,7 +405,7 @@
                                                         </div>
                                                     </a>
                                                     <a href="front-page.html" class="list-group-item list-name">
-                                                        <img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>
+                                                        <!--<img src="https://www.packtpub.com/sites/default/files/imagecache/ppv4_main_book_cover/6709_jQuery%20for%20Designers_cov.jpg" class="cover-image-thumb"/>-->
                                                         <strong>Freezing people in Carbonite for Beginners [Video]</strong><span class="badge-learn badge hidden-xs pull-right">Learn</span><br/>
                                                         <small class="pull-left">By Obi Wan Kenobi</small>
                                                         <br/>
