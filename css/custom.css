@@ -372,6 +372,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-size: 28px;
 	display: inline-block;
 	margin-bottom: 10px;
+	background: #456F9E;
 }
 .tip h3:before {
 	font-family: FontAwesome;
@@ -388,10 +389,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 300;
 	font-size: 1em !important;
 	line-height: 1.5em !important;
+	background: #456F9E;
 }
 .tip p a {
 	color: #fff;
 	text-decoration: underline;
+	background: #456F9E;
 }
 code.literal {
 	padding-left: 10px;
@@ -415,6 +418,8 @@ code.literal {
 	font-size: 28px;
 	display: inline-block;
 	margin-bottom: 15px;
+	background: #459E6D;
+
 }
 .note h3:before {
 	font-family: FontAwesome;
@@ -431,6 +436,8 @@ code.literal {
 	font-weight: 300;
 	font-size: 1em !important;
 	line-height: 1.5em !important;
+	background: #459E6D;
+
 }
 
 .note p a {
@@ -446,6 +453,7 @@ blockquote {
     border-left: 15px solid #3C8C7C;
 }
 blockquote p {
+	background: #51A796;
 	color: white;
     font-weight: 300 !important;
     font-style: italic;

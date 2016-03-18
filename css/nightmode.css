@@ -2,6 +2,32 @@ body,h1,h2,h3,h4,h5,p {
 	background:#1B1C1E;
 	color:#fff;
 }
+.reader-container h3.title {
+	color: #fff;
+}
+.orderedlist {
+	background: #333;
+	border-left: 15px solid #555;
+}
+.informaltable table thead tr p{
+    background: #456F9E;
+}
+.informaltable table tbody tr{
+	background: #1B1C1E;
+}
+.informaltable table tbody td {
+    border: 1px solid #3E3E3E;
+}
+.itemizedlist {
+	background: #333;
+	border-left: solid 15px #456F9E;
+}
+.itemizedlist p, .itemizedlist a {
+	background: #333;
+}
+.orderedlist p,.orderedlist a {
+	background: #333;
+}
 
 .navbar-default {
 	background-color: #1B1C1E;
@@ -39,7 +65,12 @@ body,h1,h2,h3,h4,h5,p {
    background: #1B1C1E ;
 }
 
-.nightmode .reader-container code { background-color: #1B1C1E ;} 
+.nightmode .reader-container code {
+    background-color: #333333;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .nightmode .reader-container code[class*="language-"],
 .nightmode .reader-container pre[class*="language-"] {
