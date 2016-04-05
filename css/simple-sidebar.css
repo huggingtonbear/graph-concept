@@ -6,7 +6,7 @@
 
 /* Toggle Styles */
 
-#wrapper {
+/*#wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -16,12 +16,13 @@
 
 #wrapper.toggled {
     padding-left: 250px;
-}
+}*/
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     left: 250px;
+    top: 50px;
     width: 0;
     height: 100%;
     margin-left: -250px;
@@ -32,10 +33,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    box-shadow: inset -3px 1px 9px -4px #ABABAB;
-    -webkit-box-shadow: inset -3px 1px 9px -4px #ABABAB;
-    -moz-box-shadow: inset -3px 1px 9px -4px #ABABAB;
-    -o-box-shadow: inset -3px 1px 9px -4px #ABABAB;
+    border-right: 1px solid rgba(0,0,0,0.1);
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -44,15 +42,15 @@
 
 #page-content-wrapper {
     width: 100%;
-    top: 50px;
     position: absolute;
     padding: 15px;
+    top: 50px;
 }
-
+/*
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
-}
+}*/
 
 /* Sidebar Styles */
 .sub-nav a {
@@ -63,7 +61,6 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 50px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -120,22 +117,22 @@
 }
 
 @media(min-width:992px) {
-    #wrapper {
+/*    #wrapper {
         padding-left: 250px;
     }
 
     #wrapper.toggled {
         padding-left: 0;
-    }
+    }*/
 
-    #sidebar-wrapper {
+    #wrapper.toggled #sidebar-wrapper {
         width: 250px;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
+    #sidebar-wrapper {
         width: 0;
     }
-
+/*
     #page-content-wrapper {
         padding: 20px;
         position: relative;
@@ -144,35 +141,34 @@
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
-    }
+    }*/
 }
 
 @media(min-width:1400px) {
-    #wrapper {
+    /*#wrapper {
         padding-left: 350px;
-    }
+    }*/
 
-    #sidebar-wrapper{
+    #wrapper.toggled #sidebar-wrapper{
         width: 350px;
     }
-    #wrapper.toggled #sidebar-wrapper {
+    #sidebar-wrapper {
         left: 350px;
         margin-left: -350px;
-        top: 0px;
-    }
+    }/*
 
     #wrapper.toggled #page-content-wrapper {
         margin-left: -350px;
     }
-
+*/
     .sidebar-nav {
         width: 350px;
     }
-
+/*
     #wrapper.toggled #page-content-wrapper {
         position: absolute;
         margin-left: 0px;
-    }
+    }*/
 }
 
 
