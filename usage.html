@@ -33,6 +33,7 @@
     <!-- Prism -->
     <link rel="stylesheet" href="css/prism.css">
 
+   
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
 
@@ -150,7 +151,18 @@
                             <div class="col-sm-12 col-lg-offset-1 col-lg-10">
 
                               <div class="mt30">
-                                <h4 class="text-center mt30 mb30">You have completed <a href="dashboard-profile.html">6 Skill Cards</a></h4>
+                                    <div class="col-sm-12 mb30">
+                                            <h5 class="pull-left">Select a Role:</h5>
+                                            <select class="form-control pull-right">
+                                              <option>Android Developer</option>
+                                              <option>Sort by Most Popular</option>
+                                              <option>Sort by Oldest</option>
+                                              <option>Sort A-Z</option>
+                                              <option>Sort Z-A</option>
+                                            </select>
+                                    </div>
+                                <h5 class="mb20 text-center">Click below to see how your skills map to the role</h5>
+                                <div id="skillmap" style="min-width: 310px; height: 400px; margin: 0 auto" class="mb50"></div>
                                 <div class="panel panel-default ng-scope">
                                    <div class="panel-heading">
                                         <h3 class="panel-title">Monthly Progress Tracker:</h3>
@@ -205,6 +217,163 @@
                 });
              });
     });
+    </script>
+     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Create the chart
+            $('#skillmap').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Total Score'
+                    }
+
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        borderWidth: 0,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y:.1f}%'
+                        }
+                    }
+                },
+
+                tooltip: {
+                    headerFormat: '<span style="font-size:14px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+                },
+
+                series: [{
+                    name: 'Technology',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Python',
+                        y: 56.33,
+                        drilldown: 'Python'
+                    }, {
+                        name: 'Java',
+                        y: 24.03,
+                        drilldown: 'Java'
+                    }, {
+                        name: 'CSS',
+                        y: 10.38,
+                        drilldown: 'CSS'
+                    }, {
+                        name: 'HTML',
+                        y: 4.77,
+                        drilldown: 'HTML'
+                    }, {
+                        name: 'JavaScript',
+                        y: 0.91,
+                        drilldown: 'JavaScript'
+                    }]
+                }],
+                drilldown: {
+                    series: [{
+                        name: 'Python',
+                        id: 'Python',
+                        data: [
+                            [
+                                'Python Fundamentals',
+                                45
+                            ],
+                            [
+                                'Python High Performance',
+                                27
+                            ],
+                            [
+                                'Python Data Science',
+                                90
+                            ],
+                            [
+                                'Advanced Python',
+                                0
+                            ]
+                        ]
+                    }, {
+                        name: 'Java',
+                        id: 'Java',
+                        data: [
+                            [
+                                'Java Fundamentals',
+                                5
+                            ],
+                            [
+                                'High Performance Java',
+                                4.32
+                            ],
+                            [
+                                'Java Testing',
+                                67
+                            ]
+                        ]
+                    }, {
+                        name: 'CSS',
+                        id: 'CSS',
+                        data: [
+                            [
+                                'CSS Basics',
+                                5
+                            ],
+                            [
+                                'Advanced CSS',
+                                6
+                            ]
+                        ]
+                    }, {
+                        name: 'HTML',
+                        id: 'HTML',
+                        data: [
+                            [
+                                'HTML Basics',
+                                4.8
+                            ],
+                            [
+                                'Advanced HTML',
+                                0
+                            ]
+                            
+                        ]
+                    }, {
+                        name: 'JavaScript',
+                        id: 'JavaScript',
+                        data: [
+                            [
+                                'JavaScript Fundamentals',
+                                0.9
+                            ],
+                            [
+                                'High Performance JavaScript',
+                                0
+                            ],
+                            [
+                                'JavaScript Testing',
+                                0
+                            ],
+                            [
+                                'JavaScript Master',
+                                0
+                            ]
+                        ]
+                    }]
+                }
+            });
+        });
     </script>
 </body>
 
