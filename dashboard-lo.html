@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <title>Mapt - Developer Skills Delivered</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+
+ 
+  <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog login-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                        <h4 class="text-center" id="myModalLabel">Sign In</h4>
+                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="form-group">
+                                <a href="/account/password" target="_self" class="small">Forgotten Password?</a>
+                            </div>
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                             <a href="dashboard.html" type="submit" class="btn btn-primary btn-block btn-lg">Submit</a>
+                        </form>
+                        
+                  </div>
+                    <div class="modal-footer">
+                        <a role="button" href="#"  data-toggle="modal" data-target="#accountModal">Create a New Account</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog account-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                        <h4 class="text-center" id="myModalLabel">Create Account</h4>
+                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="name" type="name" class="form-control mb20" id="firstName" placeholder="First Name">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
+                            <div class="form-group">
+                                <div class="checkbox ml10">
+                                    <label class="pl10">
+                                        <input type="checkbox" value="" checked>
+                                    </label><small>Untick this box if you don't want to receive news and promotions</small>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6Lc9ZRITAAAAAB3_JIdLV2juRqjDxoN9PZMsTq52"></div>
+                                <p class="mt15"><small>By clicking 'Create Account', you are agreeing to our <a href="books/info/packt/privacy">Policy</a> and <a href="books/info/packt/terms-and-conditions">Terms &amp; Conditions</a></small></p> 
+                            </div>
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Create Account">
+                        </form>
+                        
+                  </div>
+                    <div class="modal-footer">
+                        <a role="button" href="#"  data-toggle="modal" data-target="#myModal">Back to Login</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    <div id="wrapper">
+
+        <!-- Top Nav Bar -->
+        <nav class="navbar navbar-inverse landing navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="brand-logo" href="dashboard.html"><img src="images/logo.png"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="library-lo.html">Library</a></li>
+                        <li><button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-warning navbar-btn mr15 ml15">Sign in</button></li>
+                        
+                    
+                    </ul>
+                    <form class="navbar-form navbar-right search-nav-collapse">
+                        <div class="form-group pull-right" style="display:inline;">
+                              <input class="form-control" type="text" placeholder="Search the library...">
+                        </div>
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div id="page-content-wrapper" class="">
+            <div class="jumbotron landingheading">
+                <div class="container">
+                  <div class="col-sm-12 text-center">
+                    <h1 class="mt90"><span>Developer</span> Skills <span>Delivered</span></h1>
+                    <h3 class="mb40">Learn the most in-demand skills in software.</h3>
+                    <div class="text-center mb70">
+                    <a href="#" data-toggle="modal" data-target="#accountModal" class="btn btn-info  btn-lg pl70 pr70 mb10">Create a FREE Account</a>
+                    <br>or <a href="#" style="color:#FF9800;" data-toggle="modal" data-target="#myModal" class="mt20">sign in</a> with your Packt Account
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-10">
+                      <img src="images/screen.png" class="img-responsive"/>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container mt40">
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-sm-6 mb50">
+                      <h4 >Learn the most <b class="landing">in-demand skills</b></h4>
+                      <h5>New and emerging tech that defines software today</h5>
+                      <br>
+                      <p>Whether you’re a data scientist or web developer, pentester or designer, Mapt has everything you need to stay relevant in your field – and will continue to do so as long as software continues to eat the world. Frameworks, languages, and methodologies – everything you need to stay sharp and in demand.</p>
+                  </div>
+                  <div class="col-sm-6 mb50">
+                      <img src="images/webdevcompanies.jpg" class="img-responsive mt40"/>
+                  </div>
+                  <div class="clearfix"></div>
+                  <hr>
+                  <div class="col-sm-6 mt40 mb40">
+                    <img src="images/role-cards.png" class="img-responsive"/>
+                  </div>
+                  <div class="col-sm-6 text-right mt40 mb40">
+                    <h4 class="mt50">The direct route to <b class="landing">what's important</b></h4>
+                    <h5>The most relevant content for smarter development</h5>
+                    <br>
+                    <p>To remain ahead of the curve you need to understand the shape of the software world. Based on research into the industry, we curate and deliver only the most relevant content to you, built around your experience and your needs. Don’t get lost in complexity – let us simplify your development journey.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <hr>
+                  <div class="col-sm-6 mt40 mb40">
+                      <h4>Over <b class="landing">3,500 books</b> and <b>video courses</b></h4>
+                      <h5>A growing library of constantly updated content.</h5>
+                      <br>
+                      <p>Content by devs for devs, World class reader, Niche content (technologies) but also breadth and depth of content coverage, Industry leading authors, by developers working hard and solving solving problems, actionable content, 10 years experience supporting developer learning for over a decade</p>
+
+                  </div>
+                  <div class="col-sm-6 mt40 mb40">
+                      <img src="images/products.png" class="img-responsive "/>
+                  </div>
+                  <div class="clearfix"></div>
+                  <hr>
+                  <h2 class="text-center mt50"><b>Subscription Plans</b></h2>
+                  <h4 class="text-center mb50">Select the subscription package that works best for you</h4>
+                  <div class="col-md-4">
+                    <div class="panel panel-default">
+                     <div class="panel-heading"><h3 class="text-center mt10">Monthly</h3></div>
+                     <div class="panel-body text-center pricing-body">
+                       <p class="lead mb0" style="font-size:24px"><strong>£9.99/<small>month</small></strong></p>
+                     </div>
+                     <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
+                     </ul>
+                     </ul>
+                     <div class="panel-footer">
+                      <div class="col-sm-offset-2 col-sm-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div><!--/panel-footer-->
+                    </div><!--/panel-->
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-warning">
+                     <div class="panel-heading"><h3 class="text-center mt10">Annual</h3></div>
+                     <div class="panel-body text-center pricing-body-featured">
+                       <p class="lead mb0" style="font-size:24px"><strong>£99.99</strong></p>
+                     </div>
+                     <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
+                     </ul>
+                     <div class="panel-footer">
+                      <div class="col-sm-offset-2 col-sm-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div><!--/panel-footer-->
+                    </div><!--/panel-->
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-default">
+                     <div class="panel-heading"><h3 class="text-center mt10">18 Month</h3></div>
+                     <div class="panel-body text-center pricing-body">
+                       <p class="lead mb0" style="font-size:24px"><strong>£140.00</strong></p>
+                     </div>
+                     <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
+                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
+                     </ul>
+                     </ul>
+                     <div class="panel-footer">
+                      <div class="col-sm-offset-2 col-sm-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div><!--/panel-footer-->
+                    </div><!--/panel-->
+                  </div>
+                </div>
+
+                <hr>
+
+                <footer>
+                  <p>© Mapt by Packt Publishing Limited</p>
+                </footer>
+              </div>
+        </div><!-- /#page-content-wrapper -->
+    </div><!-- /#wrapper -->
+    
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
