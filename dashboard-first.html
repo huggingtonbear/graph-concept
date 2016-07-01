@@ -65,6 +65,25 @@
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="FirstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header pb0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4>Welcome to your Skill Plan</h4>
+        <hr>
+      </div>
+      <div class="modal-body pt0">
+              <p>This Skill Plan lists all the key skills you need to excel in your chosen role, and is the screen in which you manage your learning.</p>
+              <p>The Skill Cards are ordered by how advanced each skill is. If you already know how to do everything listed on a Card then click 'I know all of this'. It will be removed from your plan and added to your Completed Skills.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   
 
     <div id="wrapper">
@@ -150,9 +169,9 @@
                             <div class="col-sm-12 col-lg-offset-1 col-lg-10">
 
                                     <div class="mt30">
-                                      <h5><b>Python Developer:</b> 6/9  Skill Cards Completed</h5>
+                                      <h5><b>Python Developer:</b> 0/9  Skill Cards Completed</h5>
                                       <div class="progress mt5 mb25">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                                           <span class="sr-only">40% Complete</span>
                                         </div>
                                       </div>
@@ -185,22 +204,11 @@
                                                         <li>Write Python scripts to automate daily tasks, and other software</li>
                                                         <li>Use unit tests to write better code, faster</li>
                                                     </ul>
-                                                    <div class="ml15 mb30 mt20">
-                                                      <h5 class="mb15">Your current Skill Level</h5>
-                                                      <p class="mb5"><b>Advanced (61%)</b></p>
-                                                      <div class="progress mb10">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                                          <span class="sr-only">60% Complete</span>
-                                                        </div>
-                                                      </div>
-                                                      <div class="text-center">
-                                                        <div class="btn-group btn-group-justified">
-                                                        <a href="https://report.devskiller.com/candidate-report.html?cd066d47-d5bb-4f7d-8fc9-404b36f9012f/3d0e5476-b2ba-4f2c-8e09-e1d776cd6a41" target="_blank" class="btn btn-info"><i class="fa fa-download mr10" aria-hidden="true"></i>Get Report</a>
-                                                        <a href="https://candidate.devskiller.com/exam.html?PREVIEW-E1748-U930-1467282193555#/" target="_blank" class="btn btn-default"><i class="fa fa-refresh mr10" aria-hidden="true"></i>Reassess</a>
-                                                        </div>
-                                                        <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block mt20 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
-                                                      </div>
-                                                    </div>
+
+                                                    <div class="text-center">
+                                                    <a href="https://candidate.devskiller.com/exam.html?PREVIEW-E1748-U930-1467282193555#/" target="_blank" class="btn btn-default btn-block mt0 mb15"><i class="fa fa-pencil mr10" aria-hidden="true"></i>Assess your Skill Level</a>
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block mt10 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
+                                                  </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -266,23 +274,11 @@
                                                         <li>Master code optimization techniques, and learn about all 16 classic design patterns</li>
                                                         <li>Deploy decorators, design patters, and various optimization techniques to use Python 3.5 effectively</li>
                                                     </ul>
-                                                    <div class="ml15 mb30 mt20">
-                                                      <h5 class="mb15">Your current Skill Level</h5>
-                                                      <p class="mb5"><b>Novice (33%)</b></p>
-                                                      <div class="progress mb10">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-                                                          <span class="sr-only">60% Complete</span>
-                                                        </div>
-                                                      </div>
-                                                      <div class="text-center">
-                                                        <div class="btn-group btn-group-justified">
-                                                        <a href="https://report.devskiller.com/candidate-report.html?cd066d47-d5bb-4f7d-8fc9-404b36f9012f/3d0e5476-b2ba-4f2c-8e09-e1d776cd6a41" target="_blank" class="btn btn-info"><i class="fa fa-download mr10" aria-hidden="true"></i>Get Report</a>
-                                                        <a href="https://candidate.devskiller.com/exam.html?PREVIEW-E1748-U930-1467282193555#/" target="_blank" class="btn btn-default"><i class="fa fa-refresh mr10" aria-hidden="true"></i>Reassess</a>
-                                                        </div>
-                                                        <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block mt20 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
-                                                      </div>
-                                                    </div>
                                                     
+                                                    <div class="text-center">
+                                                    <a href="https://candidate.devskiller.com/exam.html?PREVIEW-E1748-U930-1467282193555#/" target="_blank" class="btn btn-default btn-block mt0 mb15"><i class="fa fa-pencil mr10" aria-hidden="true"></i>Assess your Skill Level</a>
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block mt10 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
+                                                  </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -442,6 +438,9 @@
                 });
              });
     });
+    </script>
+    <script type="text/javascript">
+        $('#FirstModal').modal('show');
     </script>
 </body>
 
