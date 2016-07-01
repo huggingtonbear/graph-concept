@@ -94,6 +94,9 @@ li.sub-nav {
     font-size: 14px;
     padding: 8px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .sidebar-nav li a .section-name {
     width: 200px;
