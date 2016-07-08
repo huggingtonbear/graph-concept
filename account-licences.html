@@ -118,9 +118,9 @@
                     <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Map</span><span class="pull-right mr5"><i class="fa fa-caret-right fa-lg"></i></span></a>    </li>
                     <li class=""><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Courses</span><span class="pull-right mr5"><i class="fa fa-caret-right fa-lg"></i></span></a>    </li>
                     <li class="active"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Account</span><span class="pull-right mr5"><i class="fa fa-caret-down fa-lg"></i></span></a>    </li>
-                    <li class="sub-nav active"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details </span></a>    </li>
+                    <li class="sub-nav"><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details </span></a>    </li>
                     <li class="sub-nav"><a href="account-subscription.html" class="sidenav-menu-holder"><span class="sidenav-menu">Subscriptions </span></a>    </li>
-                    <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licences </span></a>    </li>
+                    <li class="sub-nav active"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licences </span></a>    </li>
                     <li class=""><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">Help</span><span class="pull-right mr5"><i class="fa fa-caret-down fa-lg"></i></span></a>    </li>
                     
                     
@@ -133,7 +133,7 @@
             <div class="jumbotron heading mb0">
                 <div class="container-fluid">
                   <div class="col-sm-12">
-                    <h1 >Account Details</h1>
+                    <h1 >Licences</h1>
 
                     <ol class="breadcrumb row mt0">
                       <li class="mt5">Manage your account and update your details as and when you need to</li>
@@ -148,113 +148,25 @@
             </div>
             <div id="book-wrapper" class="container-fluid">               
                 <div class="row">
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-5 mt30">
-                    <h4>Your Details</h4>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt30">
+                    <h4>Licences remaining <b>(1/3)</b></h4>
+                    <hr>
+                    <table class="table"><thead> <tr> <th>Email Address</th> <th>Status</th> <th>Revoke</th> <th>Invite</th> </tr> </thead> <tbody> <tr> <th scope="row">richardb@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr> <th scope="row">nickf@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr></tbody> </table>
+                    <h4 class="mt30">Add a new user</h4>
                     <hr>
                     <form class="form-horizontal">
                       <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">Email *</label>
-                        <div class="col-sm-8">
-                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="oliverh@packtpub.com">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">First Name *</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="First Name" value="Oli">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">Last Name *</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="Last Name" value="Huggins">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-                        <div class="col-sm-8">
-                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-4 control-label">Confirm Password</label>
-                        <div class="col-sm-8">
-                          <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm Password">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-4 col-sm-8">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Untick this box if you don't want to receive news and promotions
-                            </label>
-                          </div>
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-info"><i class="fa fa-user-plus fa-lg mr10"></i> Add new user</button>
                         </div>
                       </div>
                     </form>
-                </div>
-                <div class="col-sm-12 col-lg-5 mt30">
-                    <h4>Billing Address</h4>
-                    <hr>
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">Company</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="Company Name" value="Packt Publishing">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">Address</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="First Line">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="Second Line">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">City</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="City">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-4 control-label">Postcode</label>
-                        <div class="col-sm-8">
-                          <input type="name" class="form-control" id="inputEmail3" placeholder="Postcode">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-4 control-label">Country</label>
-                        <div class="col-sm-8">
-                            <select class="form-control">
-                              <option>United Kingdom</option>
-                              <option>United States</option>
-                              <option>Germany</option>
-                              <option>France</option>
-                              <option>Belgium</option>
-                            </select>
-                        </div>
-                      </div>
-                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-4 control-label">State/Province</label>
-                        <div class="col-sm-8">
-                            <select class="form-control">
-                              <option>West Midlands</option>
-                              <option>East Midlands</option>
-                              <option>Avon</option>
-                              <option>Gloucestershire</option>
-                              <option>Northumbria</option>
-                            </select>
-                        </div>
-                      </div>
-                      
-                      <div class="form-group">
-                        <div class="col-sm-offset-4 col-sm-8">
-                          <button type="submit" class="btn btn-primary pull-right pr25 pl25">Save Changes</button>
-                        </div>
-                      </div>
-                    </form>
-
-
 
                   </div>
                           
