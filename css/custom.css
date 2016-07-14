@@ -34,6 +34,18 @@ span.input-group-btn button.btn {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.dashboard-back-btn {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+.dashboard-back-btn.lg {
+  width: 175px;
+}
+@media(min-width:1400px) {
+  .dashboard-back-btn.lg {
+    width: 220px;
+  }
+}
 /*Boostrap Overwritten Rules END*/
 
 /* Course Search Styles */
