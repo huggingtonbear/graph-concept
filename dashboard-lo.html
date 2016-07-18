@@ -45,7 +45,18 @@
 </head>
 
 <body class="language-markup">
-
+<!-- Modal -->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rljqYnpuQyg?rel=0"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
  
   <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -147,7 +158,7 @@
                     <br>or <a href="#" style="color:#FF9800;" data-toggle="modal" data-target="#myModal" class="mt20">sign in</a> with your Packt Account
                     </div>
                     <div class="col-sm-offset-1 col-sm-10">
-                      <a class="youtube" href="https://www.youtube.com/watch?v=rljqYnpuQyg"><img src="images/screen.png" class="img-responsive"/></a>                    </div>
+                      <a href="#" data-toggle="modal" data-target="#videoModal"><img src="images/screen.png" class="img-responsive"/></a>                    </div>
                   </div>
                 </div>
             </div>
@@ -268,12 +279,6 @@
 
     <!-- jQuery Script-->
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.youtubepopup.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $("a.youtube").YouTubeModal({autoplay:0, title:''});
-      });
-    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
