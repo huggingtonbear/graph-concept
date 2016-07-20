@@ -47,6 +47,24 @@
 </head>
 
 <body class="language-markup">
+  <!-- Modal -->
+<div class="modal fade" id="completeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4>Add to Completed Skill Cards</h4>
+      </div>
+      <div class="modal-body">
+              <p>Are you sure you want to mark this Skill Card as complete</p>
+      </div>
+      <div class="modal-footer">
+        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -227,7 +245,7 @@
                                                   <div class="ml15 mb30 mt20">
                                                       
                                                       <div class="text-center">
-                                                        <a href="#" target="_blank" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
+                                                        <a href="#" data-toggle="modal" data-target="#completeModal" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
                                                         <a data-toggle="modal" data-target="#myModal" class="btn btn-info pull-right mb5 pl25 pr25 disabled"><i class="fa fa-refresh mr10"></i>In Skill Plan</a>
                                                       </div>
                                                     </div>
@@ -262,7 +280,7 @@
                                                   <div class="ml15 mb30 mt20">
                                                      
                                                        <div class="text-center">
-                                                        <a href="#" target="_blank" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
+                                                        <a href="#" data-toggle="modal" data-target="#completeModal" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
                                                         <a data-toggle="modal" data-target="#myModal" class="btn btn-info pull-right mb5 pl25 pr25 disabled"><i class="fa fa-refresh mr10"></i>In Skill Plan</a>
                                                       </div>
                                                     </div>
@@ -293,7 +311,7 @@
                                                       <li>Integrate unit testing into the overall software delivery process</li>
                                                   </ul>
                                                        <div class="text-center">
-                                                       <a href="#" target="_blank" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
+                                                      <a href="#" data-toggle="modal" data-target="#completeModal" class="btn btn-primary pull-left">I know all of this<i class="fa fa-check ml10"></i></a>
                                                         <a data-toggle="modal" data-target="#myModal" class="btn btn-info pull-right mb5 pl25 pr25 disabled"><i class="fa fa-refresh mr10"></i>In Skill Plan</a>
                                                       </div>
                                                   <div class="clearfix"></div>
