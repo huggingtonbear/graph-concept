@@ -19,6 +19,12 @@ h1, .h1 {
 .btn {
   min-height: 36px;
 }
+input.form-control {
+    font-family: FontAwesome, "Lato", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
 span.input-group-btn button.btn {
     height: 34px;
     padding-top: 8px;
