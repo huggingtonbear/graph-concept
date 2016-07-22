@@ -51,6 +51,9 @@ span.input-group-btn button.btn {
   .dashboard-back-btn.lg {
     width: 220px;
   }
+  .jumbotron.landingheading h1 {
+  font-size: 48px !important;
+  }
 }
 /*Boostrap Overwritten Rules END*/
 
@@ -144,7 +147,7 @@ span.input-group-btn button.btn {
 }
 .jumbotron.landingheading h1 {
   font-weight: 100;
-  font-size: 48px;
+  font-size: 38px;
   color: white;
 }
 .jumbotron.landingheading h1 span{
