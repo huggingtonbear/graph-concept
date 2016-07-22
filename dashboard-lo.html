@@ -152,7 +152,7 @@
             </div>
         </nav>
         <div id="page-content-wrapper" class="">
-            <div class="jumbotron landingheading">
+            <div class="jumbotron landingheading mb0">
                 <div class="container">
                   <div class="col-sm-6 text-center">
                     <h1 class="mt80 mb20"><span>Developer</span> Skills <span>Delivered</span></h1>
@@ -163,20 +163,32 @@
                     </div>
                   </div>
                   <div class="col-sm-6 mt20 mb10">
-                      <div id="myElement"></div>
-                      <script type="text/javascript">
-                          jwplayer("myElement").setup({
-                              file: "videos/mapt.mp4",
-                              image: "videos/mapt.jpg",
-                              width: "100%",
-                              displaytitle: "",
-                              aspectratio: "16:9",
-                              title: "Mapt - Developer Skils Delivered",
-                              displaytitle: false,
-                              skin: "glow",
-                          });
-                      </script>
-                    </div>
+                      <div class="video-outline">
+                        <div id="myElement"></div>
+                        <script type="text/javascript">
+                            jwplayer("myElement").setup({
+                                file: "videos/mapt.mp4",
+                                image: "videos/mapt.jpg",
+                                width: "100%",
+                                displaytitle: "",
+                                aspectratio: "16:9",
+                                title: "Mapt - Developer Skils Delivered",
+                                displaytitle: false,
+                                skin: "glow",
+                                stretching: "uniform",
+                            });
+                        </script>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="jumbotron" style="background:#222;">
+                <div class="container">
+                  <h5 class="text-center mt0" style="color: #fff;">“It is really outstanding; in my opinion it is the best service that exists.”</h5>
+                  <p class="text-center mb0" style="color: #ffab39;">Christian B. - <strong>Systems Architect at Municipal of Vienna </strong></p>
+                  <div class="">
+               
+                  </div>
                 </div>
             </div>
             <div class="container mt40">
@@ -215,71 +227,168 @@
                       <img src="images/products.png" class="img-responsive "/>
                   </div>
                   <div class="clearfix"></div>
-                  <hr>
+                </div>
+              </div>
+              <div class="jumbotron" style="background:#222;">
+                <div class="container">
+                  <h5 class="text-center mt0" style="color: #fff;">"I’m very impressed with the coverage of topics and the speed with which they’re updated."</h5>
+                  <p class="text-center mb0" style="color: #ffab39;">David Reidy - <strong>Chief Developer at uTeach</strong></p>
+                  <div class="">
+               
+                  </div>
+                </div>
+              </div>
+              <div>
+              <div class="container">
+                <div class="row">
                   <h2 class="text-center mt50"><b>Subscription Plans</b></h2>
                   <h4 class="text-center mb50">Select the subscription package that works best for you</h4>
                   <div class="col-md-4">
-                    <div class="panel panel-default">
-                     <div class="panel-heading"><h3 class="text-center mt10">Monthly</h3></div>
-                     <div class="panel-body text-center pricing-body">
-                       <p class="lead mb0" style="font-size:24px"><strong>£9.99/<small>month</small></strong></p>
-                     </div>
-                     <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
-                     </ul>
+                    <div class="panel panel-default panel-pricing">
+                     <div class="panel-heading"><h3 class="text-center mt10">Basic</h3></div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
+                            <div style="visibility:hidden">
+                            <hr>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> 1 FREE eBook or Video</b> a month</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
+                          </div>
+                        </li>
                      </ul>
                      <div class="panel-footer">
-                      <div class="col-sm-offset-2 col-sm-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      <div class="col-xl-offset-2 col-xl-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#basic" aria-controls="basic" role="tab" data-toggle="tab"> $16.66 a month</a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
                     </div><!--/panel-->
                   </div>
                   <div class="col-md-4">
-                    <div class="panel panel-warning">
-                     <div class="panel-heading"><h3 class="text-center mt10">Annual</h3></div>
-                     <div class="panel-body text-center pricing-body-featured">
-                       <p class="lead mb0" style="font-size:24px"><strong>£99.99</strong></p>
-                     </div>
-                     <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
+                    <div class="panel panel-default panel-pricing-featured">
+                     <div class="panel-heading"><h3 class="text-center mt10">Pro</h3></div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
+                            <hr>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> 1 FREE eBook or Video</b> a month</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
+                        </li>
                      </ul>
                      <div class="panel-footer">
-                      <div class="col-sm-offset-2 col-sm-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      <div class="col-xl-offset-2 col-xl-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#pro" aria-controls="pro" role="tab" data-toggle="tab"> $24.99 a month<span></span></a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
                     </div><!--/panel-->
                   </div>
                   <div class="col-md-4">
-                    <div class="panel panel-default">
-                     <div class="panel-heading"><h3 class="text-center mt10">18 Month</h3></div>
-                     <div class="panel-body text-center pricing-body">
-                       <p class="lead mb0" style="font-size:24px"><strong>£140.00</strong></p>
-                     </div>
-                     <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> eBook access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Unlimited</b> video access</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">Code file</b> downloads</li>
-                        <li class="list-group-item"><i class="icon-ok text-danger"></i> <b class="landing">1 Free</b> eBook or video a month</li>
-                     </ul>
+                    <div class="panel panel-default panel-pricing">
+                     <div class="panel-heading"><h3 class="text-center mt10">Team</h3></div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
+                            <hr>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Licence</b> management</p>
+                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
+                        </li>
                      </ul>
                      <div class="panel-footer">
-                      <div class="col-sm-offset-2 col-sm-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Subscribe</a>
+                      <div class="col-xl-offset-2 col-xl-8">
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#team" aria-controls="team" role="tab" data-toggle="tab">Learn More</a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
                     </div><!--/panel-->
                   </div>
+                  <div class="col-sm-12">
+                    <div class="panel panel-deafult">
+                      <div class="panel-body">
+                         
+                          
+                      <div class="col-sm-12">
+                         <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="pro">
+                          <h5>Pro Payment Options</h5>
+                          <hr>
+                          <form class="">
+                            <div class="form-group">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+                                  <b>Monthly Plan</b> - $29.99/month (billed monthly)
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                  <b>Annual Plan</b> - $24.99/month ($299 billed annually)
+                                </label>
+                              </div>
+                               <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                  <b>18m Plan</b> - $23.32/month ($412 billed every 18 months)
+                                </label>
+                              </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15">Subscribe</a>
+                          </form>
+                          <div class="clearfix"></div>
+                          <hr>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="basic">
+                          <h5>Basic Payment Options</h5>
+                          <hr>
+                          <form class="">
+                            <div class="form-group">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+                                  <b>Monthly Plan</b> - $19.99/month (billed monthly)
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                  <b>Annual Plan</b> - $16.66/month ($199 billed annually)
+                                </label>
+                              </div>
+                               <div class="radio">
+                                <label>
+                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                  <b>18m Plan</b> - $15.50/month ($279 billed every 18 months)
+                                </label>
+                              </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15">Subscribe</a>
+                          </form>
+                          <div class="clearfix"></div>
+                          <hr>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
                 </div>
 
                 <hr>

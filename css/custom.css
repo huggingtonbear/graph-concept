@@ -19,6 +19,9 @@ h1, .h1 {
 .btn {
   min-height: 36px;
 }
+.video-outline {
+  border:2px solid #252525 !important;
+}
 input.form-control {
     font-family: FontAwesome, "Lato", Helvetica, sans-serif;
     font-style: normal;
@@ -210,19 +213,38 @@ span.input-group-btn button.btn {
 /* Jumbotron Header Styles END */
 
 /* Landing Page Custom Styles */
-.pricing-body {
-  background-color: #8C8C8C;
+.pricing-features {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+.panel-pricing-featured {
+  border: 5px solid #ffab39;
+  border-radius: 4px;
+}
+.panel-pricing-featured .panel-heading {
+  background-color: #ffab39;
+  border-radius: 0;
+}
+.panel-pricing-featured .panel-heading h3 {
   color: white;
 }
-.pricing-body-featured {
-  background-color: #444;
+.panel-pricing {
+  border: 5px solid #333;
+  border-radius: 4px;
+}
+.panel-pricing .panel-heading {
+  background-color: #333;
+  border-radius: 0;
+}
+.panel-pricing .panel-heading h3 {
   color: white;
 }
 .navbar-inverse.landing {
     background-color: rgba(0,0,0,0.8);
 }
 b.landing {
-  color: #FF8F00;
+  color: #eb711e;
 }
 /* Landing Page Custom Styles END */
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
