@@ -50,13 +50,37 @@
 
 <body class="language-markup">
 <!-- Modal -->
-            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rljqYnpuQyg?rel=0"></iframe>
-                    </div>
+                    <h5>Pro Payment Options</h5>
+                        <hr>
+                        <form class="">
+                          <div class="form-group">
+                            <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+                                <b>Monthly Plan</b> - $29.99/month (billed monthly)
+                              </label>
+                            </div>
+                            <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                <b>Annual Plan</b> - $24.99/month ($299 billed annually)
+                              </label>
+                            </div>
+                             <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                <b>18m Plan</b> - $23.32/month ($412 billed every 18 months)
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15 mr5">Subscribe</a>
                   </div>
                 </div>
               </div>
@@ -238,7 +262,6 @@
                   </div>
                 </div>
               </div>
-              <div>
               <div class="container">
                 <div class="row">
                   <h2 class="text-center mt50"><b>Subscription Plans</b></h2>
@@ -263,7 +286,7 @@
                      </ul>
                      <div class="panel-footer">
                       <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#basic" aria-controls="basic" role="tab" data-toggle="tab"> $16.66 a month</a>
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#"> $16.66 a month</a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
@@ -287,7 +310,7 @@
                      </ul>
                      <div class="panel-footer">
                       <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#pro" aria-controls="pro" role="tab" data-toggle="tab"> $24.99 a month<span></span></a>
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#" data-toggle="modal" data-target="#pricingModal" type="button" > $24.99 a month<span></span></a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
@@ -311,84 +334,12 @@
                      </ul>
                      <div class="panel-footer">
                       <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#team" aria-controls="team" role="tab" data-toggle="tab">Learn More</a>
+                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Learn more</a>
                       </div>
                       <div class="clearfix"></div>
                     </div><!--/panel-footer-->
                     </div><!--/panel-->
                   </div>
-                  <div class="col-sm-12">
-                    <div class="panel panel-deafult">
-                      <div class="panel-body">
-                         
-                          
-                      <div class="col-sm-12">
-                         <!-- Tab panes -->
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="pro">
-                          <h5>Pro Payment Options</h5>
-                          <hr>
-                          <form class="">
-                            <div class="form-group">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
-                                  <b>Monthly Plan</b> - $29.99/month (billed monthly)
-                                </label>
-                              </div>
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-                                  <b>Annual Plan</b> - $24.99/month ($299 billed annually)
-                                </label>
-                              </div>
-                               <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                  <b>18m Plan</b> - $23.32/month ($412 billed every 18 months)
-                                </label>
-                              </div>
-                            </div>
-                            <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15">Subscribe</a>
-                          </form>
-                          <div class="clearfix"></div>
-                          <hr>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="basic">
-                          <h5>Basic Payment Options</h5>
-                          <hr>
-                          <form class="">
-                            <div class="form-group">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
-                                  <b>Monthly Plan</b> - $19.99/month (billed monthly)
-                                </label>
-                              </div>
-                              <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-                                  <b>Annual Plan</b> - $16.66/month ($199 billed annually)
-                                </label>
-                              </div>
-                               <div class="radio">
-                                <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                  <b>18m Plan</b> - $15.50/month ($279 billed every 18 months)
-                                </label>
-                              </div>
-                            </div>
-                            <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15">Subscribe</a>
-                          </form>
-                          <div class="clearfix"></div>
-                          <hr>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
                 </div>
 
                 <hr>
