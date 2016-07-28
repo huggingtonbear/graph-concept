@@ -19,6 +19,9 @@ h1, .h1 {
 .btn {
   min-height: 36px;
 }
+.pricing-list {
+  min-height:310px;
+}
 input.form-control {
     font-family: FontAwesome, "Lato", Helvetica, sans-serif;
     font-style: normal;
