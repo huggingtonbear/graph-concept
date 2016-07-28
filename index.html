@@ -219,7 +219,7 @@
                     
                     <div class="">
                             
-                        <div style="position:relative;" class="book-content" ng-non-bindable="">
+                        <div style="position:relative;" class="book-content" id="content" ng-non-bindable="">
                                 <div class="packtlib-version v2">
                                   <div class="titlepage"><div><div></div></div></div>
 <p>
@@ -559,8 +559,10 @@ Elapsed time: <span class="token tag"><span class="token tag"><span class="token
     <!-- Annotator Script -->
     <script src="js/annotator.min.js"></script>
     <script type="text/javascript">
-    var app = new annotator.App();
-    app.start();
+    jQuery(function ($) {
+    $('#content').annotator()
+                 .annotator('setupPlugins');
+    });
     </script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
