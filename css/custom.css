@@ -19,9 +19,6 @@ h1, .h1 {
 .btn {
   min-height: 36px;
 }
-.video-outline {
-  border:2px solid #252525 !important;
-}
 input.form-control {
     font-family: FontAwesome, "Lato", Helvetica, sans-serif;
     font-style: normal;
