@@ -28,6 +28,9 @@ input.form-control {
     font-weight: normal;
     text-decoration: inherit;
 }
+.mail-label {
+  font-size: 12px;
+}
 span.input-group-btn button.btn {
     height: 34px;
     padding-top: 8px;
