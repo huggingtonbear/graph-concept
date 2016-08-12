@@ -65,6 +65,25 @@
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4>Introducing Assessments</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/assessment.png" class="img-responsive mb30 pl35 pr35">
+              <p> Skill Assessments to help you understand and improve your proficiency on the key skills you need to stay relevant. 
+Made up of real-world coding tasks, multiple-choice questions, and code completion challenges, we’ve designed them to give you the best understanding possible of your current skill set - and where you need to work to develop it.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary pl25 pr25 disabled" data-dismiss="modal"><i class="fa fa-refresh mr5 fa-spin"></i> Loading Assessment</button>
+      </div>
+    </div>
+  </div>
+</div>
   
 
     <div id="wrapper">
@@ -172,7 +191,7 @@
                                                 <div class="col-sm-12"> 
                                                   <div class="btn-group pull-right mt20 pl30">
                                                     <a href="https://report.devskiller.com/candidate-report.html?cd066d47-d5bb-4f7d-8fc9-404b36f9012f/3d0e5476-b2ba-4f2c-8e09-e1d776cd6a41" target="_blank" class="btn btn-default"><i class="fa fa-download mr10" aria-hidden="true"></i>Get Report</a>
-                                                    <a href="https://candidate.devskiller.com/exam.html?PREVIEW-E1615-U930-7YHG-EAQR-YW4#/" target="_blank" class="btn btn-primary"><i class="fa fa-refresh mr10" aria-hidden="true"></i>Reassess</a>
+                                                    <a data-toggle="modal" data-target="#myModal1" class="btn btn-primary mb5 pl25 pr25"><i class="fa fa-refresh mr10" aria-hidden="true"></i>Reassess</a>
                                                   </div>
                                                   <h5 class="mb15">Your current Skill Level: Advanced (61%)</h5>
 
