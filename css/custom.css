@@ -546,6 +546,8 @@ b.landing {
   padding-left: 25px;
   margin-bottom: 40px;
   border-radius: 4px;
+  margin-right: 0px !important;
+  margin-left: 0px !important; 
 }
 .tip h3.title{
   color: white!important;
@@ -592,6 +594,8 @@ code.literal {
   padding-left: 25px;
   margin-bottom: 40px;
   border-radius: 4px;
+  margin-right: 0px !important;
+  margin-left: 0px !important; 
 }
 .note h3.title {
   color: white;
@@ -629,6 +633,10 @@ code.literal {
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 30px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 blockquote {
     background: #51A796;
