@@ -116,8 +116,11 @@ a.known-skill:before {
 }
 a.known-skill .img-thumbnail {
   background: #4caf50;
+}
+.panel a.known-skill .img-thumbnail {
   opacity: 0.5;
 }
+
 a.learning-skill:before {
     content: "\f021 ";
     font-family: fontawesome;
