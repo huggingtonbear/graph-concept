@@ -228,9 +228,6 @@ a.filter-heading.list-group-item {
 a.filter-heading:hover, a.filter-heading:active, a.filter-heading:focus {
   text-decoration: none;
 }
-.video-outline {
-  border:2px solid #252525 !important;
-}
 input.form-control {
     font-family: FontAwesome, "Lato", Helvetica, sans-serif;
     font-style: normal;
