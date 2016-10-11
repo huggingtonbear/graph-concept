@@ -348,7 +348,7 @@ span.input-group-btn button.btn {
     padding-bottom: 15px;
     padding-top: 79px;
     background: #424242;
-    background-image: url('images/bg.png');
+    background-image: url('images/bgc.jpg');
     background-size: cover;
     color: white;
 }
@@ -364,7 +364,13 @@ span.input-group-btn button.btn {
 }
 .jumbotron.landingheading h1 {
   font-weight: 100;
-  font-size: 38px;
+  font-size: 48px;
+  color: white;
+}
+.jumbotron.landingheading h5 {
+  font-weight: 100;
+  font-size: 22px;
+  font-family: "Lato", Helvetica, sans-serif;
   color: white;
 }
 .jumbotron.landingheading h1 span{
