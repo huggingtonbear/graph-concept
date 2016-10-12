@@ -347,6 +347,7 @@ span.input-group-btn button.btn {
     background: #424242;
     background-image: url('images/bgc.jpg');
     background-size: cover;
+    height: 100%;
     color: white;
 }
 .jumbotron.landingheading img {
