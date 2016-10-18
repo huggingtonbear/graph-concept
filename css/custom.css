@@ -16,6 +16,24 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.8em;
     margin-bottom: 30px
 }
+.list-group li.dashboard-panel {
+  min-height: 248px;
+}
+ a.dashboard-kpi:hover {
+  text-decoration: none !important;
+}
+ a.dashboard-kpi:hover li {
+  border: 1px solid #f76d35;
+  color: #f76d35 !important;
+}
+ a.dashboard-kpi:hover h2,  a.dashboard-kpi:hover h1 {
+  color: #f76d35 !important;
+}
+.last-viewed-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
 .alert-warning {
     background-color: #eb711e;
 }
@@ -1078,6 +1096,11 @@ blockquote p {
   float: left;
   height: 170px;
   margin-right: 15px;
+}
+@media(max-width: 1199px) {
+  .list-group li.dashboard-panel {
+  min-height: 0;
+}
 }
 @media(max-width:768px) {
   .img-product-list {
