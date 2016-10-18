@@ -30,6 +30,12 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+ a.dashboard-kpi:hover li {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
  a.dashboard-kpi:hover h2,  a.dashboard-kpi:hover h1 {
   color: #f76d35 !important;
     -moz-transition: all .2s ease-in;
