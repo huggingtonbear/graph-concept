@@ -19,15 +19,23 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
 .list-group li.dashboard-panel {
   min-height: 248px;
 }
- a.dashboard-kpi:hover {
+ a.dashboard-kpi:hover, a.dashboard-kpi:focus, a.dashboard-kpi:active {
   text-decoration: none !important;
 }
  a.dashboard-kpi:hover li {
   border: 1px solid #f76d35;
   color: #f76d35 !important;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
  a.dashboard-kpi:hover h2,  a.dashboard-kpi:hover h1 {
   color: #f76d35 !important;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .last-viewed-btn {
   position: absolute;
