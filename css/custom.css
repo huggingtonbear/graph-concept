@@ -43,6 +43,12 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+ a.dashboard-kpi h2,  a.dashboard-kpi h1 {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
 .last-viewed-btn {
   position: absolute;
   right: 25px;
