@@ -3,17 +3,17 @@ $(document).ready(function() {
     // Cache selectors outside callback for performance. 
     var $window = $(window),
         $containerEl = $('#sidebar-wrapper'),
-        $sidebarEL = document.getElementById('sidebar-nav'),
         $stickyEl = $('#search'),
+        $stickyDOM = document.getElementById('search'),
+        $stickySpacer = document.getElementById('search_spacer'),
         $stickySpacerEl = $('#search_spacer'),
-        elTop = $stickyEl.offset().top,
-        elWidth = $stickyEl.width();
+        elTop = $stickyEl.offset().top
     
     $containerEl.scroll(function() {
-        if ($sidebarEL.getBoundingClientRect().top * -1 > elTop) {
+        if ($stickyDOM.getBoundingClientRect().top <= 0 && $stickySpacer.getBoundingClientRect().top <= 0) {
             $stickyEl.addClass('sticky');
             $stickySpacerEl.removeClass('hidden');
-            $stickyEl.width(elWidth);
+            $stickyEl.width($stickySpacerEl.width());
         }
         else {
             $stickyEl.removeClass('sticky');
