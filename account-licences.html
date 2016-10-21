@@ -57,7 +57,7 @@
       </div>
       <div class="modal-body">
               <p>Please make sure that when saving the CSV for uploads, Save As -> Windows Comma Seperated CSV. The format for the CSV is as follows:</p>
-              <p>email address | first name | last name</p>
+              <p>email address , first name , last name</p>
               <form>
                 <div class="form-group">
                   <label for="exampleInputFile">Upload file:</label>
@@ -173,8 +173,12 @@
                                                 </li>
                                                 <!-- ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
                                                         <a href="#" class="ng-binding">1</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
+                                                        <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
                                                         <a href="#" class="ng-binding">2</a>
+                                                        <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
+                                                        <a href="#" class="ng-binding">...</a>
+                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
+                                                        <a href="#" class="ng-binding">30</a>
                                                 </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
                                                 <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class=""> 
                                                     <a href="#" aria-label="Next">
