@@ -53,14 +53,26 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Add to Completed Skills</h4>
+        <h4>Upload .CSV</h4>
       </div>
       <div class="modal-body">
-              <p>Are you sure you want to mark this Skill as complete and remove it from your Plan</p>
+              <p>Please make sure that when saving the CSV for uploads, Save As -> Windows Comma Seperated CSV. The format for the CSV is as follows:</p>
+              <p>email address | first name | last name</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputFile">Upload file:</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Notify Users via Email
+                  </label>
+                </div>
+              </form>
       </div>
+
       <div class="modal-footer">
-        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button ref="#" type="button" class="btn btn-primary">Upload .CSV</button>
       </div>
     </div>
   </div>
@@ -120,14 +132,20 @@
                     </div>
                     <hr>
                           
-                    <h4 class="mt30">Add users</h4>
+                    <h4 class="mt30">Add Users</h4>
                     <hr>
+                    <div class="alert alert-info"><i class="fa fa-info-circle mr5"></i> To allocate Licences you can either manually type the email addresses of users or upload in batch using a .CSV file.</div>
                       <form class="form-horizontal">
                       <div class="form-group">
-                        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle mr5"></i> Inviting users to join your team account is easy, simply copy the link below and send it to the users you want to invite. Clicking the link will then create them an account and provide them with access. </div>
-                        <label for="inputEmail3" class="col-sm-2 control-label">Invite users</label>
-                        <div class="col-sm-10">
-                          <input type="name" class="form-control" value="https://www.packtpub.com/mapt/inviteusers/sjbgjb295Kkk" readonly>
+                        <label for="inputEmail3" class="col-sm-3 control-label">Enter Email Address:</label>
+                        <div class="col-sm-5">
+                          <input type="email" class="form-control" value="" placeholder="Email Address">
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="#" class="btn btn-primary"><i class="fa fa-plus mr5"></i> Add new User</a>
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info"><i class="fa fa-upload mr5"></i> Upload .CSV</a>
                         </div>
                       </div>
                     
