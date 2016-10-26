@@ -8,17 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-    <link rel="apple-touch-icon" sizes="57x57" href="/packtlib-nv/images/apple-icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/packtlib-nv/images/apple-icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/packtlib-nv/images/apple-icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/packtlib-nv/images/apple-icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/packtlib-nv/images/apple-icons/apple-icon-180x180.png">
 
-    <title>Mapt - Developer Skills Delivered</title>
+    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
 
     <!-- Bootstrap Core CSS -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -26,13 +19,11 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
-    <link href="css/skillcard.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
-    
-
 
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
     <!-- Prism -->
     <link rel="stylesheet" href="css/prism.css">
@@ -55,16 +46,32 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Add to Completed Skill Cards</h4>
+      <div class="modal-header python">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <img class="tech-icon img-thumbnail" src="images/tech/python.png"> 
+                                    <h1 class="card-heading">Python Fundamentals </h1>
       </div>
-      <div class="modal-body">
-              <p>Are you sure you want to mark this Skill Card as complete and remove it from your Plan</p>
+      <div class="modal-body python">
+        <div class="panel-body">
+            <div class="col-sm-12">
+              <p>Python is one of the easiest languages to get started with. It has a human readable syntax, and fully featured (“batteries included”) standard library to help you get things done right away. It is your portal in to a new world of productive development.</p>
+              <hr>
+            </div>
+
+            <div class="col-sm-12 left-skillcard mb20">
+                  <ul class="learning-points">
+                    <li>Install and set up Python on Mac, Windows or Linux</li>
+                    <li>Write elegant, reusable, and efficient Python code to use in your future projects</li>
+                    <li>Use Git to manage your Python code</li>
+                    <li>Write Python scripts to automate daily tasks, and other software</li>
+                    <li>Use unit tests to write better code, faster</li>
+                  </ul>
+              <a href="dashboard2.html" class="btn btn-success ml55 mb20">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
+            </div>
+          </div>
       </div>
-      <div class="modal-footer">
-        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+      <div class="modal-footer python">
+        <a href="dashboard.html" class="btn btn-primary">Add to In Progress<i class="fa fa-refresh ml10"></i></a>
       </div>
     </div>
   </div>
@@ -72,7 +79,7 @@
   
 
     <div id="wrapper">
-        
+
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
@@ -91,7 +98,7 @@
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <li class="sub-nav "><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
                 <li class="sub-nav"><a href="my-library.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Library</span></a>    </li>
                 <li class="sub-nav"><a href="history.html" class="sidenav-menu-holder"><span class="sidenav-menu">History</span></a>    </li>
                 <li class="sub-nav"><a href="trending.html" class="sidenav-menu-holder"><span class="sidenav-menu">Trending</span></a>    </li>
@@ -115,17 +122,30 @@
         <!-- /#sidebar-wrapper -->
 
         <div id="page-content-wrapper" class="">
-          <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
-             <div id="book-wrapper" class="container-fluid">               
+        <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+            <div id="book-wrapper" class="container-fluid">               
                 <div class="row">
-                          <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
-                              <div class="page-title"> 
-                                <h3>Skill Cards</h3>
-                                <h6 class="mt5">Keep track of the skills you have learned and discover new ones</h6>
-                              </div>
-                              <hr> 
-                          </div>
-                          <div class="col-sm-3 col-lg-offset-1 col-lg-3 col-xl-2">
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                    <div class="page-title"> 
+                      <h3>Skill Cards</h3>
+                      <h6 class="mt5">Keep track of the skills you have learned and discover new ones</h6>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12 mb5">
+                      <div class="row">
+                         <form class="mb25">
+                              <div class="input-group input-group-lg">
+                                <input type="text" class="form-control home-search" placeholder="&#xf002;  Search for a Skill you want to learn...">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-primary" type="button">Search</button>
+                                </span>
+                              </div><!-- /input-group -->
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                  
+                      <div class="col-sm-3 col-lg-offset-1 col-lg-3 col-xl-2">
                         <div class="panel-group" id="filters" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <!-- Default panel contents -->
@@ -136,11 +156,32 @@
                             </a>
                             <div id="course-type" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="release-date">
                               <li class="list-group-item checkbox">
-                                  <label><input type="checkbox"></label> Skills I know (3)
+                                  <label><input type="checkbox"></label> Completed Skills (3)
                               </li>
+                              
+                            </div>
+                            <a role="tab" data-toggle="collapse" data-parent="#filters" href="#category" aria-expanded="true" aria-controls="category" class="filter-heading list-group-item collapsed">
+                                  <h6>Topic</h6>
+                            </a>
+                            <div id="category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="category">
                               <li class="list-group-item checkbox">
-                                  <label><input type="checkbox"></label> Actively learning (4)
-                              </li>
+                                <label><input type="checkbox"></label> AngularJS (45)
+                            </li> 
+                            <li class="list-group-item checkbox">
+                                <label><input type="checkbox"></label> Python (3)
+                            </li> 
+                            <li class="list-group-item checkbox">
+                                <label><input type="checkbox"></label> Django (4)
+                            </li> 
+                            <li class="list-group-item checkbox">
+                                <label><input type="checkbox"></label> Java (25)
+                            </li>
+                            <li class="list-group-item checkbox">
+                                <label><input type="checkbox"></label> Data Science (1)
+                            </li>
+                            <li class="list-group-item checkbox">
+                                <label><input type="checkbox"></label> TypeScript (1)
+                            </li>
                             </div>
                             <a role="tab" data-toggle="collapse" data-parent="#filters" href="#release-date" aria-expanded="true" aria-controls="release-date" class="filter-heading list-group-item collapsed">
                                   <h6>My Proficiency</h6>
@@ -174,29 +215,7 @@
                               </li>
                             </div>
                             
-                            <a role="tab" data-toggle="collapse" data-parent="#filters" href="#category" aria-expanded="true" aria-controls="category" class="filter-heading list-group-item collapsed">
-                                  <h6>Topic</h6>
-                            </a>
-                            <div id="category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="category">
-                              <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> AngularJS (45)
-                            </li> 
-                            <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> Python (3)
-                            </li> 
-                            <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> Django (4)
-                            </li> 
-                            <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> Java (25)
-                            </li>
-                            <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> Data Science (1)
-                            </li>
-                            <li class="list-group-item checkbox">
-                                <label><input type="checkbox"></label> TypeScript (1)
-                            </li>
-                            </div>
+                            
                             <a role="tab" data-toggle="collapse" data-parent="#filters" href="#skill-plan" aria-expanded="true" aria-controls="skill-plan" class="filter-heading list-group-item collapsed">
                                   <h6>Skill Plan</h6>
                             </a>
@@ -222,109 +241,232 @@
                         </div>
                         </div>
                       </div>
-                          <div class="col-sm-9 col-lg-7 col-xl-8">
-                            <form class="mb25">
-                              <input type="text" class="form-control" placeholder="  Search for a Skill Card...">
-                            </form>
-                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card-known.html" class=" known-skill"><img src="images/skillcards/python-data-science.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-default btn-block"><i class="fa fa-remove mr10"></i> Remove from Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card.html" class=""><img src="images/skillcards/python-high-performance-programming.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card.html" class=""><img src="images/skillcards/git-fundamentals.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                  <a href="card.html" class="learning-skill"><img src="images/skillcards/python-fundamentals.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Fundamentals</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                  <img src="images/skillcards/production-ready-django.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Python Testing</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                    <img src="images/skillcards/ux-design-basics.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Python High Performance Programming</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                    <img src="images/skillcards/android-studio-fundamentals.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Object-orientated Python Programming</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>  
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card-known.html" class=" known-skill"><img src="images/skillcards/unity.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-default btn-block"><i class="fa fa-remove mr10"></i> Remove from Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card-known.html" class=" known-skill"><img src="images/skillcards/python-data-science.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-default btn-block"><i class="fa fa-remove mr10"></i> Remove from Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card.html" class=""><img src="images/skillcards/python-high-performance-programming.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card.html" class=""><img src="images/skillcards/git-fundamentals.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                  <a href="card.html" class="learning-skill"><img src="images/skillcards/python-fundamentals.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Fundamentals</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                  <img src="images/skillcards/production-ready-django.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Python Testing</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                    <img src="images/skillcards/ux-design-basics.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Python High Performance Programming</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>
-                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20" data-category="python">
-                                    <img src="images/skillcards/android-studio-fundamentals.png" class="img-responsive mb10 img-thumbnail">
-                                    <span class="name hidden">Object-orientated Python Programming</span>
-                                    <a class="btn btn-success btn-block"><i class="fa fa-plus mr10"></i> Add to My Skills</a>
-                                    
-                                </div>  
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xl-3 mb20">
-                                  <a href="card-known.html" class=" known-skill"><img src="images/skillcards/unity.png" class="img-responsive mb10 img-thumbnail"></a>
-                                    <span class="name hidden">Python Data Science</span>
-                                    <a class="btn btn-default btn-block"><i class="fa fa-remove mr10"></i> Remove from Skills</a>
-                                    
-                                </div>
-                                <div class="clearfix"></div>
-                                <nav>
-                                            <ul class="pagination pull-right">
+                      <div class="col-sm-9 col-lg-7 col-xl-8">
+                        
+                        <div class="clearfix"></div>
+                                    <div class="panel panel-default">
+                                      <ul class="list-group">
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/python-data-science.png" class="img-card-list"></a>
+                                              <h1>Python Data Science 
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Python</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/python-high-performance-programming.png" class="img-card-list"></a>
+                                              <h1>Python High Performance Programming
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Python</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Performance bottlenecks can break otherwise great applications and it’s important that you know how to avoid them. High performance techniques can help your applications scale and perform consistently, no matter how much data you’re crunching or how many users you’re serving.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/unity.png" class="img-card-list"></a>
+                                              <h1>C# Programming with Unity
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Unity</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Performance bottlenecks can break otherwise great applications and it’s important that you know how to avoid them. High performance techniques can help your applications scale and perform consistently, no matter how much data you’re crunching or how many users you’re serving.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/python-fundamentals.png" class="img-card-list"></a>
+                                              <h1>Python Fundamentals
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Python</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/git-fundamentals.png" class="img-card-list"></a>
+                                              <h1>Git Fundamentals
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Git</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/android-studio-fundamentals.png" class="img-card-list"></a>
+                                              <h1>Android Studio Fundamentals
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Android</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/production-ready-django.png" class="img-card-list"></a>
+                                              <h1>Production Ready Django
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Django</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                                              <a href="card.html" class=""><img src="images/skillcards/ux-design-basics.png" class="img-card-list"></a>
+                                              <h1>UX Design Basics
+                                                <span class="skill-item skill-card hidden-xs">Skill Card</span>
+                                              </h1>
+                                              <small class="title-duration mr10">Related Topic: <a href="#">Web Design</a></small>
+                                              <!-- <small class="title-duration mr10">Jan 2016</small>
+                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
+                                              <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
+                                              <!-- Desktop Buttons START -->
+                                              <div class="btn-group pull-right mt5 hidden-xs">
+                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
+                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
+                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Desktop Buttons END -->
+                                              <!-- Mobile Buttons START -->
+                                              <div class="clearfix"></div>
+                                              <div class="btn-group btn-group-justified visible-xs mt15">
+                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
+                                                   </a>
+                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                                              </div>
+                                              <!-- Mobile Buttons END -->
+                                          </li>
+
+                                            </ul>
+                                            <div class="panel-footer text-right" ng-show="myList.pagination > 1">
+                                        <nav>
+                                            <ul class="pagination">
                                                 <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
                                                     <a href="#" aria-label="Previous">
                                                         <span aria-hidden="true">«</span>
@@ -335,12 +477,6 @@
                                                 </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
                                                         <a href="#" class="ng-binding">2</a>
                                                 </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
-                                                <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
-                                                        <a href="#" class="ng-binding">3</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
-                                                <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
-                                                        <a href="#" class="ng-binding">4</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
                                                 <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class=""> 
                                                     <a href="#" aria-label="Next">
                                                         <span aria-hidden="true">»</span>
@@ -350,9 +486,15 @@
                                             </ul>
                                             
                                             </nav>
-                                
-                          </div>
-                  </div><!-- row -->
+                                        </div>
+                                        </div>
+                                      </div>
+                                  
+
+                      </div>
+                    </div>
+                </div><!-- row -->
+      </div>
       </div><!-- /#book-wrapper -->
     </div><!-- /#page-content-wrapper -->
   </div><!-- /#wrapper -->
@@ -369,17 +511,14 @@
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
-
+    <script src="js/sticky-filter.js"></script>
 
     <script type="text/javascript">
-    $("#myButton").click(function() {
-         $("#myDiv").fadeTo("slow", 0.01, function(){ //fade
-             $(this).slideUp("slow", function() { //slide up
-                 $(this).remove(); //then remove from the DOM
-                });
-             });
+      $('#filters a').click(function(){
+        $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
     });
     </script>
+
 </body>
 
 </html>
