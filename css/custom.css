@@ -16,6 +16,22 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.8em;
     margin-bottom: 30px
 }
+h1 span.skill-item {
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    font-size: x-small;
+    padding: 5px;
+    margin-left: 5px;
+    
+}
+
+.skill-card {
+    background-color: #eb711e;
+}
+.skill-plan {
+    background-color: dodgerblue;
+}
 .list-group li.dashboard-panel {
   min-height: 248px;
 }
@@ -1117,6 +1133,11 @@ blockquote p {
   height: 170px;
   margin-right: 15px;
 }
+.img-card-list {
+  float: left;
+  height: 200px;
+  margin-right: 15px;
+}
 @media(max-width: 1199px) {
   .list-group li.dashboard-panel {
   min-height: 0;
@@ -1124,6 +1145,12 @@ blockquote p {
 }
 @media(max-width:768px) {
   .img-product-list {
+    float: left;
+    height: 120px;
+    margin-right: 15px;
+
+  }
+  .img-card-list {
     float: left;
     height: 120px;
     margin-right: 15px;
