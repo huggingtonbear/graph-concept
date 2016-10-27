@@ -25,6 +25,21 @@ h1 span.skill-item {
     margin-left: 5px;
     
 }
+.history-ph {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 5;
+}
+.history-title {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+}
+.history-kpi {
+  margin-left: 200px;
+}
 .badge.badge-progress {
   background: #f9b89e;
 }
@@ -247,6 +262,7 @@ a.early-access:after {
 }
 .product-desc {
   line-height: 20px;
+  display: -webkit-box;
 }
 .filter-heading {
   position: relative;

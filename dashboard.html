@@ -136,8 +136,8 @@
                               </div><!-- /input-group -->
                           </form>
                     </div>
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
-                    <h5>Last viewed:<a href="history.html" class="see-more-link"><h6>See more</h6></a></h5>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-7">
+                    <h5>Last viewed:</h5>
                     <div class="clearfix"></div>
                     <ul class="list-group">
                       <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="dashboard-panel list-group-item list-name ng-scope">
@@ -152,6 +152,29 @@
                           <!-- Desktop Buttons START -->
                           
                             <a href="index.html" class="btn btn-info pull-right hidden-xs last-viewed-btn">Resume Course<i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                          <!-- Desktop Buttons END -->
+                          <!-- Mobile Buttons START -->
+                          <div class="clearfix"></div>
+                          <a href="index.html" class="btn btn-info btn-block mt10 visible-xs">Resume Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                          <!-- Mobile Buttons END -->
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <h5>My History:</h5>
+                    <div class="clearfix"></div>
+                    <ul class="list-group">
+                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="dashboard-panel list-group-item list-name ng-scope">
+                          <a href="index.html"><img src="images/book5.jpg" class="img-product-list history-title"></a>
+                          <a href="index.html"><img src="images/history-ph.png" class="img-product-list history-ph"></a>
+                          <div class="history-kpi">
+                            <h1 >5 eBooks</h1>
+                            <h1 >9 Videos</h1>
+                          </div>  
+
+                          <!-- Desktop Buttons START -->
+                          
+                            <a href="index.html" class="btn btn-info pull-right hidden-xs last-viewed-btn">View History<i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
                           <!-- Desktop Buttons END -->
                           <!-- Mobile Buttons START -->
                           <div class="clearfix"></div>
