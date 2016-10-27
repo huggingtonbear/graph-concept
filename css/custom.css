@@ -25,7 +25,12 @@ h1 span.skill-item {
     margin-left: 5px;
     
 }
-
+.badge.badge-progress {
+  background: #f9b89e;
+}
+.badge.badge-complete {
+  background: #8dc38f;
+}
 .skill-card {
     background-color: #eb711e;
 }
