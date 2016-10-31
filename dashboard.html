@@ -136,54 +136,29 @@
                               </div><!-- /input-group -->
                           </form>
                     </div>
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-6">
-                    <h5>Last viewed:</h5>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                    <h5>Recent History:</h5>
                     <div class="clearfix"></div>
-                    <ul class="list-group">
-                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="dashboard-panel list-group-item list-name ng-scope">
-                          <a href="index.html"><img src="images/cover.png" class="img-product-list"></a>
-                          <h1>AngularJS by Example</h1>
-                          <p class="mb0">By Sunila Gollapudi</p>
-                          <small class="title-duration mr10">Jan 2016</small>
-                          <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
-                          <p class="product-desc hidden-xs"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                          <p class="product-desc hidden-xs"><small><b>Last section:</b> Chapter 1. Getting Started</small></p>
-                          
-                          <!-- Desktop Buttons START -->
-                          
-                            <a href="index.html" class="btn btn-info pull-right hidden-xs last-viewed-btn">Resume Course<i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                          <!-- Desktop Buttons END -->
-                          <!-- Mobile Buttons START -->
-                          <div class="clearfix"></div>
-                          <a href="index.html" class="btn btn-info btn-block mt10 visible-xs">Resume Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                          <!-- Mobile Buttons END -->
-                      </li>
-                    </ul>
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="responsive col-sm-12 mt20 mb20">
+                          <div><a href="index.html"><img src="images/book1.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book2.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book4.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book5.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book6.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book7.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book3.jpg" class="pl10 pr10 img-responsive"></a></div>
+                          <div><a href="index.html"><img src="images/book8.jpg" class="pl10 pr10 img-responsive"></a></div>
+                        </div>
+                        <a href="history.html" class="btn btn-info pull-right mr20">View All History</a>
+                      <div class="clearfix"></div>
+                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-4">
-                    <h5>My History:</h5>
-                    <div class="clearfix"></div>
-                    <ul class="list-group">
-                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="dashboard-panel list-group-item list-name ng-scope">
-                          <a href="index.html"><img src="images/book5.jpg" class="img-product-list history-title"></a>
-                          <a href="index.html"><img src="images/history-ph.png" class="img-product-list history-ph"></a>
-                          <div class="history-kpi">
-                            <h1 >5 eBooks</h1>
-                            <h1 >9 Videos</h1>
-                          </div>  
-
-                          <!-- Desktop Buttons START -->
-                          
-                            <a href="index.html" class="btn btn-info pull-right hidden-xs last-viewed-btn">View History<i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                          <!-- Desktop Buttons END -->
-                          <!-- Mobile Buttons START -->
-                          <div class="clearfix"></div>
-                          <a href="index.html" class="btn btn-info btn-block mt10 visible-xs">Resume Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                          <!-- Mobile Buttons END -->
-                      </li>
-                    </ul>
+                    
                   </div>
                   
+
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <div class="row">
                       <div class="col-sm-12 col-lg-3">
@@ -437,6 +412,69 @@
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  arrows: false,
+  speed: 300,
+  centerPadding: '60px',
+  slidesToShow: 7,
+  slidesToScroll: 7,
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+      });
+    </script>
 
 
 
