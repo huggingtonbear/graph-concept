@@ -749,6 +749,15 @@ b.landing {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.book-content .title-bookmark {
+    position: absolute;
+    font-size: 18px;
+    left: -25px;
+    color: #eee;
+}
+.book-content .title-bookmark:hover {
+    color: #444;
+}
 .modal-footer {
     text-align: center;
 }
