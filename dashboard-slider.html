@@ -70,27 +70,6 @@
     </div>
   </div>
 </div>
-
-<!-- Modal -->
-<div class="modal fade" id="FirstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header pb0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Introducing your Skill Plan</h4>
-        <hr>
-      </div>
-      <div class="modal-body pt0">
-        <a href="roles.html"><img src="images/role-cards.png" class="img-responsive"/></a>
-              <p>Your Skill Plan lists all the key skills you need to excel in your chosen role and will help you identify what to learn next.</p>
-              <p>If you think you already know a Skill Card then click <b>'Add to Completed Skills'</b> and it will be added to your profile. You'll quickly see how transferable some Skills Cards are as you begin to increase your proficiency across a range of job roles. </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary mb20 btn-block" data-dismiss="modal">Get Started</button>
-      </div>
-    </div>
-  </div>
-</div>
   
 
     <div id="wrapper">
@@ -158,7 +137,7 @@
                           </form>
                       
                     </div>
-                  <!-- <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <h5>Recent History:</h5>
                     <div class="clearfix"></div>
                     <div class="panel panel-default">
@@ -178,52 +157,8 @@
                     </div>
                   </div>
                     
-                  </div> -->
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-10" ng-show="skillsController.lastViewed">
-            <h5>Last viewed: <a href="history.html" class="see-more-link" style="font-size:12px"><h6> View History</h6></a></h5>
-            <div class="clearfix"></div>
-            <ul class="list-group">
-                <li class="list-group-item list-name ng-scope" ng-repeat="(key, product) in skillsController.lastViewed">
-                    <product value="product" base-url="baseURL" last-viewed="true">
-
-                      <img ng-if="!available" ng-src="/sites/default/files/imagecache/ppv4_reader_book_cover/9781782164180.jpg" class="img-product-list ng-scope" src="images/book1.jpg">
-
-                      <h1 ng-bind-html="productLineViewCtrl.title" class="ng-binding">Practical Data Science Cookbook</h1>
-
-                      <p class="mb0 ng-binding ng-scope" ng-if="productLineViewCtrl.author">By Mario Andrés Pagella</p>
-
-                      <small ng-if="productLineViewCtrl.publicationDate" class="title-duration mr10 ng-binding ng-scope">Jul 2013</small>
-
-                      <small class="title-duration hidden-xs ng-binding">
-                         <i ng-if="productLineViewCtrl.length" class="fa fa-clock-o mr5 ng-scope"></i>2 hours 22 minutes and 37 seconds
-                      </small>
-
-                      <p class="product-desc hidden-xs"><small class="ng-binding">Learn how to develop incredible animations and transitions with HTML5</small></p>
-
-                      <div class="btn-group pull-right hidden-xs mt5">
-                         <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info hidden-xs ng-scope">
-                              <div ng-if="productLineViewCtrl.lastReadUrl" class="ng-scope">
-                                  Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i>
-                              </div>
-                          </a>
-                      </div>
-
-                      <div class="clearfix"></div>
-
-                      <div class="btn-group btn-group-justified visible-xs mt15">
-                          <a class="btn btn-default ng-scope" ng-click="productLineViewCtrl.toggleCollection();" ng-if="!productLineViewCtrl.skill &amp;&amp; productLineViewCtrl.inCollection != undefined">
-                              <i class="fa fa-folder fa-lg fa-folder-open-o" ng-class="{'fa-folder': productLineViewCtrl.inCollection, 'fa-folder-open-o': productLineViewCtrl.inCollection === false}">
-                              </i>
-                          </a><
-
-                         <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info ng-scope">
-                              <i class="fa fa-chevron-right ml5" aria-hidden="true"></i>
-                          </a><
-                      </div>
-                      </product>
-                                      </li>
-                                  </ul>
-                              </div>
+                  </div>
+                  
                   
 
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
@@ -503,8 +438,8 @@
       breakpoint: 1400,
       settings: {
         infinite: false,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         dots: true
       }
     },
@@ -552,9 +487,6 @@
                 });
              });
     });
-    </script>
-        <script type="text/javascript">
-        $('#FirstModal').modal('show');
     </script>
 </body>
 
