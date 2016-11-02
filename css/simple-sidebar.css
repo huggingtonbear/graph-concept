@@ -13,6 +13,17 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.footer {
+    position: fixed;
+    width: 240px;
+    bottom: 0;
+    height: 60px;
+    padding: 15px;
+}
+.footer p {
+  text-transform: none;
+}
 .search_results_show a {
     color: white;
     text-transform: none;
@@ -39,9 +50,9 @@ span.search-result-title {
 #book-wrapper {
     padding-bottom: 50px;
 }
-a.non-subscriber-notice:hover, a.non-subscriber-notice:active, a.non-subscriber-notice:focus {
-    color: #fff;
-    text-decoration: none;
+.packt-logo {
+  height: 20px;
+  margin-left: 5px;
 }
 #wrapper.toggled {
     padding-left: 250px;
@@ -285,7 +296,14 @@ a#bookmark-tab, a#contents-tab {
         margin-left: 0px;
     }
 }
-
+.packt-logo {
+  height: 18px;
+  margin-left: 5px;
+}
+.logo-text {
+    text-transform: none;
+    font-size: 12px;
+}
 @media(min-width:1400px) {
     #wrapper {
         padding-left: 300px;
@@ -305,8 +323,7 @@ a#bookmark-tab, a#contents-tab {
 
     .sidebar-nav {
 /*        width: 300px;
-*/    }
-
+*/    }  
     #wrapper.toggled #page-content-wrapper {
         position: absolute;
         margin-left: 0px;
