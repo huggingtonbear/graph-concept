@@ -135,16 +135,7 @@
                                 </span>
                               </div><!-- /input-group -->
                           </form>
-                          <div class="panel panel-default skill-plan-dashboard">
-                            <div class="panel-body">
-                              <h5><b>Python Developer</b> - 33% <a href="#skillplan" class="see-more-link" style="font-size:14px;"> View Plan</a></h5>
-                              <div class="progress mt5 mb15">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-                                    <span class="sr-only">30% Complete</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                      
                     </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <h5>Recent History:</h5>
@@ -224,12 +215,20 @@
                   </div>
                   
                   <div id="skillplan" class="col-sm-12 col-lg-offset-1 col-lg-10">
-                    <h5>My Skill Plan:<a href="roles.html" class="see-more-link"><h6> Change Plan</h6></a></h5>
-                    <hr>
-                    <div class="alert alert-info">
-                                      <p><i class="fa fa-info-circle mr5"></i><small> Listed below are the Skills that make up your current Skill Plan to stay relevant as a Python Developer. If you already know a skill then select <b>'Add to Completed Skills'</b>, but if you don't then click the skill and find the exact learning you need to skill up. </small></p>
-                                    </div>
+                    <h5>My Skill Plan:</h5>
                     <div class="panel panel-default skill-plan-dashboard">
+                            <div class="panel-body">
+                              <h5><b>Python Developer</b> - 33%<a href="roles.html" class="see-more-link" style="font-size:12px"><h6> Change Plan</h6></a></h5>
+                              <div class="progress mt5 mb15">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+                                    <span class="sr-only">30% Complete</span>
+                                  </div>
+                                </div>
+
+                    <div class="alert alert-info alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <i class="fa fa-info-circle mr5"></i><small> Listed below are the Skills that make up your current Skill Plan to stay relevant as a Python Developer. If you already know a skill then select <b>'Add to Completed Skills'</b>, but if you don't then click the skill and find the exact learning you need to skill up. </small>
+                    </div></div>
                                   <ul class="list-group">
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/python-data-science.png" class="img-card-list"></a>
@@ -438,8 +437,8 @@
       breakpoint: 1400,
       settings: {
         infinite: false,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         dots: true
       }
     },
