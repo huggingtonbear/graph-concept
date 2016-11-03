@@ -93,3 +93,6 @@ body, html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.forgot-password {
+    font-size: 12px;
+}

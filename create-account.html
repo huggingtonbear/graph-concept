@@ -51,23 +51,23 @@
           <div class="card card-container mt50">
               <img id="profile-img" class="profile-img-card" src="images/avatar.png" />
               <p id="profile-name" class="profile-name-card"></p>
-              <form class="form-signin">
-                  <span id="reauth-email" class="reauth-email"></span>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <div id="remember" class="checkbox">
-                      <label>
-                          <input type="checkbox" value="remember-me"> Remember me
-                      </label>
-                  </div>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-              </form><!-- /form -->
-              <a href="#" class="forgot-password">
-                 Forgot the password?
-              </a>
+              <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="name" type="name" class="form-control mb30" id="firstName" placeholder="First Name">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Lc9ZRITAAAAAB3_JIdLV2juRqjDxoN9PZMsTq52"></div>
+                                <p class="mt15"><small>By clicking 'Create Account', you are agreeing to our <a href="books/info/packt/privacy">Policy</a> and <a href="books/info/packt/terms-and-conditions">Terms &amp; Conditions</a></small></p> 
+                            </div>
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Create Account">
+                        </form>
+
               <hr>
               <div class="text-center">
-                <a href="create-account.html">Create account</a>
+                <a href="login.html">Sign In</a>
               </div>
           </div><!-- /card-container -->
         </div>
