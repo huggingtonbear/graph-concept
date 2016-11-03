@@ -37,11 +37,26 @@ h1 span.skill-item {
 .skill-plan {
     background-color: #333;
 }
+.skill-section {
+    background-color: crimson;
+}
+.skill-paragraph {
+    background-color: blueviolet;
+}
+.skill-video-stamp {
+    background-color: darkolivegreen;
+}
 .list-group li.dashboard-panel {
   min-height: 248px;
 }
  a.dashboard-kpi:hover, a.dashboard-kpi:focus, a.dashboard-kpi:active {
   text-decoration: none !important;
+}
+.bookmark-content {
+    font-style: italic;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: small;
 }
  a.dashboard-kpi:hover li {
   border: 1px solid #f76d35;

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+
+  
+
+    <div id="wrapper">
+ 
+         <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <!-- <form class="col-sm-12 mb15 pl25 pr25">
+                <input type="text" class="form-control" placeholder="&#xf002;  Search for a course...">
+              </form> -->
+              <div class="clearfix"></div>
+              <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <li class="sub-nav"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
+                <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
+                <div id="collapseNavigation1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseNavigation1" aria-expanded="true" ng-class="{'in': (item.showChildren )}">
+                    <!-- ngRepeat: (key, child) in item.childrenList --><!-- ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><li ng-class="{'active': child.active }" ng-repeat="(key, child) in item.childrenList" class="sub-nav ng-scope" ng-if="!child.hide &amp;&amp; (login_status || (!login_status &amp;&amp; child.loggedOut))">
+                        <a href="library.html" class="sidenav-menu-holder" ng-click="sidebarController.deactivateCurrentCategory(index);">
+                            <span class="sidenav-menu ng-binding">Browse</span>
+                            <span class="pull-left mr5 ng-binding"></span>
+                        </a>
+                    </li><!-- end ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><!-- end ngRepeat: (key, child) in item.childrenList --><!-- ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><li ng-class="{'active': child.active }" ng-repeat="(key, child) in item.childrenList" class="sub-nav ng-scope active" ng-if="!child.hide &amp;&amp; (login_status || (!login_status &amp;&amp; child.loggedOut))">
+                        <a href="dashboard-bookmarks-v2.html" class="sidenav-menu-holder" ng-click="sidebarController.deactivateCurrentCategory(index);">
+                            <span class="sidenav-menu ng-binding">Bookmarks</span>
+                            <span class="pull-left mr5 ng-binding">4</span>
+                        </a>
+                    </li><!-- end ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><!-- end ngRepeat: (key, child) in item.childrenList --><!-- ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><li ng-class="{'active': child.active }" ng-repeat="(key, child) in item.childrenList" class="sub-nav ng-scope" ng-if="!child.hide &amp;&amp; (login_status || (!login_status &amp;&amp; child.loggedOut))">
+                        <a href="dashboard-collection.html" class="sidenav-menu-holder" ng-click="sidebarController.deactivateCurrentCategory(index);">
+                            <span class="sidenav-menu ng-binding">Saved</span>
+                            <span class="pull-left mr5 ng-binding">16</span>
+                        </a>
+                    </li><!-- end ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><!-- end ngRepeat: (key, child) in item.childrenList --><!-- ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><li ng-class="{'active': child.active }" ng-repeat="(key, child) in item.childrenList" class="sub-nav ng-scope" ng-if="!child.hide &amp;&amp; (login_status || (!login_status &amp;&amp; child.loggedOut))">
+                        <a href="purchases" class="sidenav-menu-holder" ng-click="sidebarController.deactivateCurrentCategory(index);">
+                            <span class="sidenav-menu ng-binding">Purchased</span>
+                            <span class="pull-left mr5 ng-binding">9</span>
+                        </a>
+                    </li><!-- end ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><!-- end ngRepeat: (key, child) in item.childrenList --><!-- ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><li ng-class="{'active': child.active }" ng-repeat="(key, child) in item.childrenList" class="sub-nav ng-scope" ng-if="!child.hide &amp;&amp; (login_status || (!login_status &amp;&amp; child.loggedOut))">
+                        <a href="search.html" class="sidenav-menu-holder" ng-click="sidebarController.deactivateCurrentCategory(index);">
+                            <span class="sidenav-menu ng-binding">Search</span>
+                            <span class="pull-left mr5 ng-binding">0</span>
+                        </a>
+                    </li><!-- end ngIf: !child.hide && (login_status || (!login_status && child.loggedOut)) --><!-- end ngRepeat: (key, child) in item.childrenList -->
+                </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"><span class="sidenav-menu">Help</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">FAQs</span><span class="pull-left mr5"></span></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav "><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav "><a href="account-subscription.html" class="sidenav-menu-holder"><span class="sidenav-menu">Subscriptions</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licences </span></a>    </li>
+                <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
+
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        
+        <div id="page-content-wrapper">
+        <menu-toggle><a href="#" id="menu-toggle" class="toggle-nav"><i class="fa fa-bars fa-2x mr5"></i></a></menu-toggle>
+        <jumbotron title="My Bookmarks" description="Return to the sections you have bookmarked"><div class="jumbotron heading mb0">
+    <div class="container-fluid">
+        <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+            <div class="row">
+                <div class="page-title">
+                    <h3 class="ng-binding">My Bookmarks</h3>
+                    <h6>
+                        <ol class="breadcrumb row mt0">
+                            <li class="active mt5 ng-binding">Return to the sections you have bookmarked</li>
+                        </ol>
+                    </h6>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div></jumbotron>
+        <div id="book-wrapper" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">Filter by tag: <a href="" class="mr10">#python</a> <a href="" class="mr10">#quickref</a> <a href="" class="mr10">#dave</a> <a href="" class="mr10">#bob</a></div>
+                <div ng-show="libraryController.getSidebarServiceBookmarkCount() > 0">
+                    <!-- ngRepeat: (bookKey, bookValue) in libraryController.myBookmarks track by $index --><span ng-repeat="(bookKey, bookValue) in libraryController.myBookmarks track by $index" class="ng-scope"> <!-- book loop -->
+                        <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                            <div class="tab-content mt15">
+                                <div role="tabpanel" class="tab-pane fade active in" id="popular" aria-labelledby="popular-tab">
+                                    <div class="tabbed-content">
+                                        <ul class="list-group">
+                                            <a class="list-group-item disabled list-name ng-scope">
+                                                <h1 class="ng-binding">Object-Oriented JavaScript - Second Edition</h1>
+                                            </a>
+                                            <!-- ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index --><span ng-repeat="(bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index" class="ng-scope">
+                                                <li class="list-group-item list-name ng-scope">
+                                                    <h1>Chapter 6: Inheritance  <span class="skill-item skill-paragraph hidden-xs">Paragraph</span></h1>
+                                                    <span class="bookmark-content">"Now, let's focus on the inheritance part. This is one of the most interesting features, as it allows you to reuse existing code, thus promoting laziness, which is likely to be what brought human species to computer programming in the first place."</span><br />
+                                                    <span>This is where I've stored my own note</span> <br />
+                                                    <span>Tags: <a href="">#python</a> <a href="">#quickref</a></span>
+                                                    <div class="btn-group pull-right">
+                                                        <a href="#" class="btn btn-primary" ng-click="libraryController.removeBookmark(bookValue, bookmarkValue)"><i class="fa fa-minus-circle fa-fa mr5"></i>Remove</a>
+                                                        <a ng-href="/mapt/book/test/9781849693127/6" class="btn btn-info" href="/mapt/book/test/9781849693127/6"> Resume <i class="fa fa-chevron-right fa-fa m15"></i></a>
+                                                    </div>
+                                                </li>
+                                            </span><!-- end ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span><!-- end ngRepeat: (bookKey, bookValue) in libraryController.myBookmarks track by $index --><span ng-repeat="(bookKey, bookValue) in libraryController.myBookmarks track by $index" class="ng-scope"> <!-- book loop -->
+                        <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                            <div class="tab-content mt15">
+                                <div role="tabpanel" class="tab-pane fade active in" id="popular" aria-labelledby="popular-tab">
+                                    <div class="tabbed-content">
+                                        <ul class="list-group">
+                                            <a class="list-group-item disabled list-name ng-scope">
+                                                <h1 class="ng-binding">AngularJS by Example</h1>
+                                            </a>
+                                            <!-- ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index --><span ng-repeat="(bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index" class="ng-scope">
+                                                <li class="list-group-item list-name ng-scope">
+                                                    <h1>Resources  <span class="skill-item skill-section hidden-xs">Section</span></h1>
+                                                    <span>This is my really long note to remind me that I need to use this in my upcoming project.  It's like what Dave does, buch much better and I should show him this to see if he can improve his code.  If he doesn't maybe Bob can explain it better. </span> <br />
+                                                    <span>Tags: <a href="">#python</a> <a href="">#dave</a> <a href="">#bob</a></span>
+                                                    <div class="btn-group pull-right">
+                                                        <a href="#" class="btn btn-primary" ng-click="libraryController.removeBookmark(bookValue, bookmarkValue)"><i class="fa fa-minus-circle fa-fa mr5"></i>Remove</a>
+                                                        <a ng-href="/mapt/book/test/9781783553815/1/ch01lvl1sec19/Resources" class="btn btn-info" href="/mapt/book/test/9781783553815/1/ch01lvl1sec19/Resources"> Resume <i class="fa fa-chevron-right fa-fa m15"></i></a>
+                                                    </div>
+                                                </li>
+                                            </span><!-- end ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span><!-- end ngRepeat: (bookKey, bookValue) in libraryController.myBookmarks track by $index --><span ng-repeat="(bookKey, bookValue) in libraryController.myBookmarks track by $index" class="ng-scope"> <!-- book loop -->
+                        <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                            <div class="tab-content mt15">
+                                <div role="tabpanel" class="tab-pane fade active in" id="popular" aria-labelledby="popular-tab">
+                                    <div class="tabbed-content">
+                                        <ul class="list-group">
+                                            <a class="list-group-item disabled list-name ng-scope">
+                                                <h1 class="ng-binding">Mastering CSS [Video]</h1>
+                                            </a>
+                                            <!-- ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                            <span ng-repeat="(bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index" class="ng-scope">
+                                                <li class="list-group-item list-name ng-scope">
+                                                    <h1>Creating a Multicolumn Layout  <span class="skill-item skill-video-stamp hidden-xs">Timestamp</span> 1:42</h1>
+                                                    <span>This is where I've stored my own note</span> <br />
+                                                    <span>Tags: <a href="">#python</a> <a href="">#quickref</a></span>
+                                                    <div class="btn-group pull-right">
+                                                        <a href="#" class="btn btn-primary" ng-click="libraryController.removeBookmark(bookValue, bookmarkValue)"><i class="fa fa-minus-circle fa-fa mr5"></i>Remove</a>
+                                                        <a ng-href="/mapt/video/test/9781784391874/5340/5342/Creating+a+Multicolumn+Layout" class="btn btn-info" href="/mapt/video/test/9781784391874/5340/5342/Creating+a+Multicolumn+Layout"> Resume <i class="fa fa-chevron-right fa-fa m15"></i></a>
+                                                    </div>
+                                                </li>
+                                            </span><!-- end ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                            <span ng-repeat="(bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index" class="ng-scope">
+                                                <li class="list-group-item list-name ng-scope">
+                                                    <h1>Creating a Multicolumn Layout  <span class="skill-item skill-video-stamp hidden-xs">Timestamp</span> 3:07</h1>
+                                                    <span>This is where he does something awesome!!</span> <br />
+                                                    <span>Tags: <a href="">#python</a> <a href="">#quickref</a></span>
+                                                    <div class="btn-group pull-right">
+                                                        <a href="#" class="btn btn-primary" ng-click="libraryController.removeBookmark(bookValue, bookmarkValue)"><i class="fa fa-minus-circle fa-fa mr5"></i>Remove</a>
+                                                        <a ng-href="/mapt/video/test/9781784391874/5340/5342/Creating+a+Multicolumn+Layout" class="btn btn-info" href="/mapt/video/test/9781784391874/5340/5342/Creating+a+Multicolumn+Layout"> Resume <i class="fa fa-chevron-right fa-fa m15"></i></a>
+                                                    </div>
+                                                </li>
+                                            </span><!-- end ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                            <span ng-repeat="(bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index" class="ng-scope">
+                                                <li class="list-group-item list-name ng-scope">
+                                                    <h1>Floats Introduction – Flowing Text around Images  <span class="skill-item skill-section hidden-xs">Section</span></h1>
+                                                    <span>This is where I've stored my own note</span> <br />
+                                                    <span>Tags: <a href="">#python</a> <a href="">#quickref</a></span>
+                                                    <div class="btn-group pull-right">
+                                                        <a href="#" class="btn btn-primary" ng-click="libraryController.removeBookmark(bookValue, bookmarkValue)"><i class="fa fa-minus-circle fa-fa mr5"></i>Remove</a>
+                                                        <a ng-href="/mapt/video/test/9781784391874/5340/5341/Floats+Introduction+–+Flowing+Text+around+Images+" class="btn btn-info" href="/mapt/video/test/9781784391874/5340/5341/Floats+Introduction+–+Flowing+Text+around+Images+"> Resume <i class="fa fa-chevron-right fa-fa m15"></i></a>
+                                                    </div>
+                                                </li>
+                                            </span><!-- end ngRepeat: (bookmarkKey, bookmarkValue) in bookValue.bookmarks track by $index -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span><!-- end ngRepeat: (bookKey, bookValue) in libraryController.myBookmarks track by $index -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+        
+        
+	</div><!-- /#wrapper -->
+    
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <!-- Syntax Highlighting Script -->
+    <script src="js/prism.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+    <script src="js/sidenav-accordion.js"></script>
+
+</body>
+
+</html>
