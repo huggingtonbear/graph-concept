@@ -107,15 +107,11 @@
                 <li class="sub-nav "><a href="account-subscription.html" class="sidenav-menu-holder"><span class="sidenav-menu">Subscriptions</span><span class="pull-left mr5"></span></a>    </li>
                 <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licences </span></a>    </li>
                 <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
-              </div>
-              <li class="">
-                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-logo.svg" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
-            </div>
-           
-          </ul>
 
+              </div>
+            </div>
+          </ul>
         </div>
-        
 
         <!-- /#sidebar-wrapper -->
 
@@ -141,7 +137,7 @@
                           </form>
                       
                     </div>
-                  <!-- <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <h5>Recent History:</h5>
                     <div class="clearfix"></div>
                     <div class="panel panel-default">
@@ -161,52 +157,8 @@
                     </div>
                   </div>
                     
-                  </div> -->
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-10" ng-show="skillsController.lastViewed">
-            <h5>Last viewed: <a href="history.html" class="see-more-link" style="font-size:12px"><h6> View History</h6></a></h5>
-            <div class="clearfix"></div>
-            <ul class="list-group">
-                <li class="list-group-item list-name ng-scope" ng-repeat="(key, product) in skillsController.lastViewed">
-                    <product value="product" base-url="baseURL" last-viewed="true">
-
-                      <img ng-if="!available" ng-src="/sites/default/files/imagecache/ppv4_reader_book_cover/9781782164180.jpg" class="img-product-list ng-scope" src="images/book1.jpg">
-
-                      <h1 ng-bind-html="productLineViewCtrl.title" class="ng-binding">Practical Data Science Cookbook</h1>
-
-                      <p class="mb0 ng-binding ng-scope" ng-if="productLineViewCtrl.author">By Mario Andrés Pagella</p>
-
-                      <small ng-if="productLineViewCtrl.publicationDate" class="title-duration mr10 ng-binding ng-scope">Jul 2013</small>
-
-                      <small class="title-duration hidden-xs ng-binding">
-                         <i ng-if="productLineViewCtrl.length" class="fa fa-clock-o mr5 ng-scope"></i>2 hours 22 minutes and 37 seconds
-                      </small>
-
-                      <p class="product-desc hidden-xs"><small class="ng-binding">Learn how to develop incredible animations and transitions with HTML5</small></p>
-
-                      <div class="btn-group pull-right hidden-xs mt5">
-                         <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info hidden-xs ng-scope">
-                              <div ng-if="productLineViewCtrl.lastReadUrl" class="ng-scope">
-                                  Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i>
-                              </div>
-                          </a>
-                      </div>
-
-                      <div class="clearfix"></div>
-
-                      <div class="btn-group btn-group-justified visible-xs mt15">
-                          <a class="btn btn-default ng-scope" ng-click="productLineViewCtrl.toggleCollection();" ng-if="!productLineViewCtrl.skill &amp;&amp; productLineViewCtrl.inCollection != undefined">
-                              <i class="fa fa-folder fa-lg fa-folder-open-o" ng-class="{'fa-folder': productLineViewCtrl.inCollection, 'fa-folder-open-o': productLineViewCtrl.inCollection === false}">
-                              </i>
-                          </a><
-
-                         <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info ng-scope">
-                              <i class="fa fa-chevron-right ml5" aria-hidden="true"></i>
-                          </a><
-                      </div>
-                      </product>
-                                      </li>
-                                  </ul>
-                              </div>
+                  </div>
+                  
                   
 
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
@@ -445,15 +397,9 @@
                                 </div>
                   </div>
                 </div><!-- row -->
-
       </div><!-- /#book-wrapper -->
-
     </div><!-- /#page-content-wrapper -->
-
-
-
   </div><!-- /#wrapper -->
-
     
 
     <!-- JAVASCRIPT BLOCKS -->
