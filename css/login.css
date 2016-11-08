@@ -5,20 +5,11 @@
  * General styles
  */
 body, html {
-    
-}
-
-div.bg {
     height: 100%;
-    display: table-cell;
     background: url('images/bgc.jpg');
     background-size: cover;
 }
 
-div.container * {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
