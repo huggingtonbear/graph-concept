@@ -9,24 +9,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="apple-touch-icon" sizes="57x57" href="/packtlib-nv/images/apple-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/packtlib-nv/images/apple-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/packtlib-nv/images/apple-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" hegetbrf="/packtlib-nv/images/apple-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/packtlib-nv/images/apple-icons/apple-icon-180x180.png">
 
     <title>Mapt - Developer Skills Delivered</title>
 
     <!-- Bootstrap Core CSS -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet"/>
+    <link href="css/slick-theme.css" rel="stylesheet"/>
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">      
-
-    <!-- JW PLayer -->
-    <script src="http://jwpsrv.com/library/wtlhcMn8EeK6QxIxOQulpA.js"></script>
-    <script>jwplayer.key="7X7gEquLPDCl3Fb0QHfeLw6uigKrZOv2vYmh0xeIwlM=";</script>  
-
+    
 
 
     <!-- Devicons -->
@@ -50,314 +53,190 @@
 
 <body class="language-markup">
 <!-- Modal -->
-            <div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <h5>Pro Payment Options</h5>
-                        <hr>
-                        <form class="">
-                          <div class="form-group">
-                            <div class="radio ml15">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
-                                <b>Monthly Plan</b> - $29.99/month (billed monthly)
-                              </label>
-                            </div>
-                            <div class="radio ml15">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-                                <b>Annual Plan</b> - $24.99/month ($299 billed annually)
-                              </label>
-                            </div>
-                             <div class="radio ml15">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <b>18m Plan</b> - $23.32/month ($412 billed every 18 months)
-                              </label>
-                            </div>
-                          </div>
-                        </form>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15 mr5">Subscribe</a>
-                  </div>
-                </div>
-              </div>
-            </div>
- 
-  <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog login-modal" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-
-                        <h4 class="text-center" id="myModalLabel">Sign In</h4>
-                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
-                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            <div class="form-group">
-                                <a href="/account/password" target="_self" class="small">Forgotten Password?</a>
-                            </div>
-                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
-                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
-                            </div>
-                             <a href="dashboard.html" type="submit" class="btn btn-primary btn-block btn-lg">Submit</a>
-                        </form>
-                        
-                  </div>
-                    <div class="modal-footer">
-                        <a role="button" href="#"  data-toggle="modal" data-target="#accountModal">Create a New Account</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog account-modal" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-
-                        <h4 class="text-center" id="myModalLabel">Create Account</h4>
-                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
-                            <input name="name" type="name" class="form-control mb20" id="firstName" placeholder="First Name">
-                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
-                            <div class="form-group">
-                                <div class="checkbox ml10">
-                                    <label class="pl10">
-                                        <input type="checkbox" value="" checked>
-                                    </label><small>Untick this box if you don't want to receive news and promotions</small>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="6Lc9ZRITAAAAAB3_JIdLV2juRqjDxoN9PZMsTq52"></div>
-                                <p class="mt15"><small>By clicking 'Create Account', you are agreeing to our <a href="books/info/packt/privacy">Policy</a> and <a href="books/info/packt/terms-and-conditions">Terms &amp; Conditions</a></small></p> 
-                            </div>
-                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
-                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
-                            </div>
-                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Create Account">
-                        </form>
-                        
-                  </div>
-                    <div class="modal-footer">
-                        <a role="button" href="#"  data-toggle="modal" data-target="#myModal">Back to Login</a>
-                    </div>
-                </div>
-              </div>
-            </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4>Add to Completed Skill Cards</h4>
+      </div>
+      <div class="modal-body">
+              <p>Are you sure you want to mark this Skill Card as complete</p>
+      </div>
+      <div class="modal-footer">
+        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
 
     <div id="wrapper">
-
-        <!-- Top Nav Bar -->
-        <nav class="navbar navbar-inverse landing navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="brand-logo" href="dashboard.html"><img src="images/logo.png"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="library-lo.html">Library</a></li>
-                        <li><button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-warning navbar-btn mr15 ml15">Sign in</button></li>
-                        
-                    
-                    </ul>
-                    <form class="navbar-form navbar-right search-nav-collapse">
-                        <div class="form-group pull-right" style="display:inline;">
-                              <input class="form-control" type="text" placeholder="&#xf002;  Search the library...">
-                        </div>
-                    </form>
-                </div><!--/.nav-collapse -->
+        
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <form class="col-sm-12 mb15 pl25 pr35">
+                <input type="text" class="form-control mb10" placeholder="&#xf002;  Search all courses...">
+              </form>
+              <div class="clearfix"></div>
+              <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <li class="sub-nav"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
+                <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <li class="sub-nav "><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="my-library.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Library</span></a>    </li>
+                <li class="sub-nav"><a href="history.html" class="sidenav-menu-holder"><span class="sidenav-menu">History</span></a>    </li>
+                <li class="sub-nav"><a href="trending.html" class="sidenav-menu-holder"><span class="sidenav-menu">Trending</span></a>    </li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"><span class="sidenav-menu">Help</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">FAQs</span><span class="pull-left mr5"></span></a></li>
+              </div>
+              <li class="">
+                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-logo.svg" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
             </div>
-        </nav>
+           
+          </ul>
+
+        </div>
+        
+
+        <!-- /#sidebar-wrapper -->
+
         <div id="page-content-wrapper" class="">
-            <div class="jumbotron landingheading mb0 pb0">
-                <div class="container">
-                  <div class="col-sm-6">
-                    <h1 class="mt90 mb10">Stay Relevant.</h1>
-                    <h5 style="color:white;" class="">Access 3,500 eBooks and Videos for $29.99 a month.</h5>
-                    <h5 style="color:white;" class="mb30">Cancel anytime.</h5>
-                    <a href="#" data-toggle="modal" data-target="#accountModal" class="btn btn-primary  btn-lg mb10">Join FREE for a month</a> 
-
-                  </div>
-                  <div class="col-sm-6 mt40 mb40">
-                      <div class="video-outline">
-                        <div id="myElement"></div>
-                        <script type="text/javascript">
-                            jwplayer("myElement").setup({
-                                file: "videos/mapt.mp4",
-                                image: "videos/mapt.jpg",
-                                width: "100%",
-                                displaytitle: "",
-                                aspectratio: "16:9",
-                                title: "Mapt - Developer Skils Delivered",
-                                displaytitle: false,
-                                skin: "glow",
-                                stretching: "uniform",
-                            });
-                        </script>
-                        </div>
-                      </div>
-                </div>
-                <div class="jumbotron mb0" style="background:rgba(0,0,0,0.75);">
-                  <div class="container">
-                    <h5 class="text-center mt0" style="color: #fff;">“It is really outstanding; in my opinion it is the best service that exists.”</h5>
-                    <p class="text-center mb0" style="color: #ffab39;">Christian B. - <strong>Systems Architect at Municipal of Vienna </strong></p>
-                  </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="container mt40">
-                <!-- Example row of columns -->
+          <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+             <div id="book-wrapper" class="container-fluid">               
                 <div class="row">
-                  <div class="col-sm-6 mb50">
-                      <h4 >Learn the most <b class="landing">in-demand skills</b></h4>
-                      <h5>New and emerging tech that defines software today</h5>
-                      <br>
-                      <p>Whether you’re a data scientist or web developer, pentester or designer, Mapt has everything you need to stay relevant in your field – and will continue to do so as long as software continues to eat the world. Frameworks, languages, and methodologies – everything you need to stay sharp and in demand.</p>
-                  </div>
-                  <div class="col-sm-6 mb50">
-                      <img src="images/webdevcompanies.png" class="img-responsive mt40"/>
-                  </div>
-                  <div class="clearfix"></div>
-                  <hr>
-                  <div class="col-sm-6 mt40 mb40">
-                    <img src="images/role-cards.png" class="img-responsive"/>
-                  </div>
-                  <div class="col-sm-6 text-right mt40 mb40">
-                    <h4 class="mt50">The direct route to <b class="landing">what's important</b></h4>
-                    <h5>The most relevant content for smarter development</h5>
-                    <br>
-                    <p>To remain ahead of the curve you need to understand the shape of the software world. Based on research into the industry, we curate and deliver only the most relevant content to you, built around your experience and your needs. Don’t get lost in complexity – let us simplify your development journey.</p>
-                  </div>
-                  <div class="clearfix"></div>
-                  <hr>
-                  <div class="col-sm-6 mt40 mb40">
-                      <h4>Over <b class="landing">3,500 books</b> and <b>video courses</b></h4>
-                      <h5>A growing library of constantly updated content.</h5>
-                      <br>
-                      <p>Content by devs for devs, World class reader, Niche content (technologies) but also breadth and depth of content coverage, Industry leading authors, by developers working hard and solving solving problems, actionable content, 10 years experience supporting developer learning for over a decade</p>
-
-                  </div>
-                  <div class="col-sm-6 mt40 mb40">
-                      <img src="images/products.png" class="img-responsive "/>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-              <div class="jumbotron" style="background:#222;">
-                <div class="container">
-                  <h5 class="text-center mt0" style="color: #fff;">"I’m very impressed with the coverage of topics and the speed with which they’re updated."</h5>
-                  <p class="text-center mb0" style="color: #ffab39;">David Reidy - <strong>Chief Developer at uTeach</strong></p>
-                  <div class="">
-               
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <div class="row">
-                  <h2 class="text-center mt50"><b>Subscription Plans</b></h2>
-                  <h4 class="text-center mb50">Select the subscription package that works best for you</h4>
-                  <div class="col-md-4">
-                    <div class="panel panel-default panel-pricing">
-                     <div class="panel-heading"><h3 class="text-center mt10">Basic</h3></div>
-                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
-                            <div style="visibility:hidden">
-                            <hr>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> 1 FREE eBook or Video</b> a month</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
-                          </div>
-                        </li>
-                     </ul>
-                     <div class="panel-footer">
-                      <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#"> $16.66 a month</a>
+                            <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                              <div class="page-title"> 
+                                <h3>Welcome to Mapt</h3>
+                                <h6 class="mt5">See how you stack up in tech or explore our extensive library of courses to learn what’s important</h6>
+                                <div class="alert alert-warning mt15" role="alert">
+                        <i class="fa fa-exclamation-circle fa-lg mr5"></i> You're currently using Mapt logged out. If you already have a Packt account, you can <a href="#" data-toggle="modal" data-target="#myModal" type="button"  class="alert-link">click here to sign in </a> or <a href="#" data-toggle="modal" data-target="#accountModal">click here to create an account</a>
                       </div>
-                      <div class="clearfix"></div>
-                    </div><!--/panel-footer-->
-                    </div><!--/panel-->
-                  </div>
-                  <div class="col-md-4">
-                    <div class="panel panel-default panel-pricing-featured">
-                     <div class="panel-heading"><h3 class="text-center mt10">Pro</h3></div>
-                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
+                              </div>
                             <hr>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> 1 FREE eBook or Video</b> a month</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
-                        </li>
-                     </ul>
-                     <div class="panel-footer">
-                      <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#" data-toggle="modal" data-target="#pricingModal" type="button" > $24.99 a month<span></span></a>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div><!--/panel-footer-->
-                    </div><!--/panel-->
                   </div>
-                  <div class="col-md-4">
-                    <div class="panel panel-default panel-pricing">
-                     <div class="panel-heading"><h3 class="text-center mt10">Team</h3></div>
-                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> eBook access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Unlimited</b> video access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Skill Mapping</b> access</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-chevron-circle-right mr10"></i> Code File</b> downloads</p>
-                            <hr>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Skill Assessments</b></p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Early access</b> to courses</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Licence</b> management</p>
-                            <p class="pricing-features"><b class="landing"><i class="fa fa-plus-circle mr10"></i> Learning progress</b> tracker</p>
-                        </li>
-                     </ul>
-                     <div class="panel-footer">
-                      <div class="col-xl-offset-2 col-xl-8">
-                       <a class="btn btn-lg btn-block btn-info mt10 mb10" href="#">Learn more</a>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div><!--/panel-footer-->
-                    </div><!--/panel-->
+                  <div class="col-md-6 col-lg-offset-1 col-lg-5"> 
+                    <h4>See how your stack up!</h4>
+                    <p>Ever wondered how you compare against a developer at <b>Google</b> or <b>Netflix</b>? Informed by data from more than 20,000 developers working for industry leaders including <b>LinkedIn</b> and <b>Amazon</b>, we've identified the skills you need to get that dream job. We've created Skill Cards and Plans to help you keep track of what you know and help you measure your relevance in the world of changing technology.</p>
+                    <a href="roles-lo.html" class="btn btn-info btn-lg mt10">Get Started <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>     
                   </div>
-                </div>
-
-                <hr>
-
-                <footer>
-                  <p>© Mapt by Packt Publishing Limited</p>
-                </footer>
-              </div>
-        </div><!-- /#page-content-wrapper -->
-    </div><!-- /#wrapper -->
+                  <div class="col-md-6 col-lg-5">
+                    <a href="roles.html"><img src="images/role-cards.png" class="img-responsive"/></a>     
+                  </div>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                    <hr>
+                  </div>
+                  <div class="col-md-6 col-lg-offset-1 col-lg-5"> 
+                    <h4>Explore our Course Library</h4>
+                    <p>Covering everything from game development to data science, security to web development, we can help you learn the skills you need. Dive into our library and discover our most popular and trending courses to begin developing and extending the software skills your future needs.</p>
+                    <a href="library-lo.html" class="btn btn-info btn-lg mt10">Explore Library <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>     
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <a href="library.html"><img src="images/products.png" class="img-responsive"/></a>     
+                  </div>
+                </div><!-- row -->
+      </div><!-- /#book-wrapper -->
+    </div><!-- /#page-content-wrapper -->
+  </div><!-- /#wrapper -->
     
 
     <!-- JAVASCRIPT BLOCKS -->
 
     <!-- jQuery Script-->
     <script src="js/jquery.js"></script>
-
+    <!-- Syntax Highlighting Script -->
+    <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+    <script src="js/sidenav-accordion.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  arrows: false,
+  speed: 300,
+  centerPadding: '60px',
+  slidesToShow: 7,
+  slidesToScroll: 7,
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+      });
+    </script>
 
 
+
+    <script type="text/javascript">
+    $("#myButton").click(function() {
+         $("#myDiv").fadeTo("slow", 0.01, function(){ //fade
+             $(this).slideUp("slow", function() { //slide up
+                 $(this).remove(); //then remove from the DOM
+                });
+             });
+    });
+    </script>
 </body>
 
 </html>
