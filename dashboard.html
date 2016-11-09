@@ -162,7 +162,39 @@
                   </div>
                     
                   </div> -->
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-7" ng-show="skillsController.lastViewed">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-3">
+                                <h5>Current Plan:</h5>
+                                <div class="clearfix"></div>
+                                <ul class="list-group">
+                                  <li class="list-group-item list-name ng-scope" ng-repeat="(key, product) in skillsController.lastViewed">
+                                    <h1>Python Developer</h1>
+                                    <p class="mb0 ng-binding ng-scope" ng-if="productLineViewCtrl.author">30% Complete</p>
+                                    <div class="progress mt10 mb10">
+                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+                                        <span class="sr-only">30% Complete</span>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <small class="title-duration hidden-xs">6 Skill Cards remaining</small>
+                                      <br/>
+                                      <small class="title-duration hidden-xs">3 Skill Cards completed</small>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="pull-right hidden-xs mt10">
+                                      <a href="#skillplan" class="btn btn-info hidden-xs ng-scope">
+                                        Resume<i class="fa fa-chevron-right ml5" ></i>
+                                      </a>
+                                    </div>
+                                    <div class="visible-xs">
+                                      <a href="#skillplan" class="btn btn-info visible-xs btn-block">
+                                        Resume<i class="fa fa-chevron-right ml5" ></i>
+                                      </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                  </li>
+                                </ul>
+                              </div>
+                  <div class="col-xs-12 col-sm-8 col-lg-7" ng-show="skillsController.lastViewed">
                     <h5>Last viewed: <a href="history.html" class="see-more-link" style="font-size:12px"><h6> View History</h6></a></h5>
                     <div class="clearfix"></div>
                     <ul class="list-group">
@@ -197,56 +229,17 @@
                                   <a class="btn btn-default ng-scope" ng-click="productLineViewCtrl.toggleCollection();" ng-if="!productLineViewCtrl.skill &amp;&amp; productLineViewCtrl.inCollection != undefined">
                                       <i class="fa fa-folder fa-lg fa-folder-open-o" ng-class="{'fa-folder': productLineViewCtrl.inCollection, 'fa-folder-open-o': productLineViewCtrl.inCollection === false}">
                                       </i>
-                                  </a><
+                                  </a>
 
                                  <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info ng-scope">
                                       <i class="fa fa-chevron-right ml5" ></i>
-                                  </a><
+                                  </a>
                               </div>
                               </product>
                                       </li>
                                   </ul>
                               </div>
-                              <div class="col-sm-12 col-lg-3" ng-show="skillsController.lastViewed">
-                              <h5>Skill Plan:</h5>
-                              <div class="clearfix"></div>
-                              <ul class="list-group">
-                                  <li class="list-group-item list-name ng-scope" ng-repeat="(key, product) in skillsController.lastViewed">
-                                  <h1>Python Developer</h1>
-                                        <p class="mb0 ng-binding ng-scope" ng-if="productLineViewCtrl.author">30% Complete</p>
-                                        <div class="progress mt10 mb10">
-                                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-                                            <span class="sr-only">30% Complete</span>
-                                          </div>
-                                        </div>
-                                        <div>
-                                        <small class="title-duration hidden-xs">6 Skill Cards remaining</small>
-                                        <br/>
-                                        <small class="title-duration hidden-xs">3 Skill Cards completed</small>
-                                      </div>
-                                        <div class="clearfix"></div>
-                              <div class="btn-group pull-right hidden-xs mt10">
-                                 <a href="#skillplan" class="btn btn-info hidden-xs ng-scope">
-                                      
-                                          Continue <i class="fa fa-chevron-right ml5" ></i>
-                                  </a>
-                              </div>
-
-                              <div class="clearfix"></div>
-
-                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                  <a class="btn btn-default ng-scope" ng-click="productLineViewCtrl.toggleCollection();" ng-if="!productLineViewCtrl.skill &amp;&amp; productLineViewCtrl.inCollection != undefined">
-                                      <i class="fa fa-folder fa-lg fa-folder-open-o" ng-class="{'fa-folder': productLineViewCtrl.inCollection, 'fa-folder-open-o': productLineViewCtrl.inCollection === false}">
-                                      </i>
-                                  </a><
-
-                                 <a ng-if="productLineViewCtrl.available" href="index.html" class="btn btn-info ng-scope">
-                                      <i class="fa fa-chevron-right ml5" ></i>
-                                  </a><
-                              </div>
-                                      </li>
-                                  </ul>
-                              </div>
+                              
                   
 
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
