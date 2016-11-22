@@ -5,7 +5,7 @@
 	}
 	.page-title h3 {
 		font-size: 20px;
-		margin-top: 18px;
+		margin-top: 17px;
 	}
 	.page-title h6 {
 		display: none;
@@ -14,8 +14,7 @@
 		font-size: 15px;
 	}
 	.see-more-link {
-		font-size: 15px;
-		margin-top: -4px;
+		display: none;
 	}
 	.dashboard-kpi h2 {
 		font-size: 26px;
@@ -26,5 +25,11 @@
 	}
 	.img-card-list {
     	display: none !important;
+	}
+	.reader-container h2.title {
+		font-size: 24px;
+	}
+	.reader-container h3.title {
+		font-size: 18px;
 	}
 }
