@@ -5,7 +5,13 @@
 	}
 	.page-title h3 {
 		font-size: 20px;
-		margin-top: 17px;
+		margin-top: 9px;
+	}
+	.product-desc {
+		overflow: hidden;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
 	}
 	.page-title h6 {
 		display: none;
@@ -24,7 +30,10 @@
 		font-size: 14px;
 	}
 	.img-card-list {
-    	display: none !important;
+    	height: 110px;
+	    width: auto;
+	    border: none;
+	    border-radius: 0;
 	}
 	.reader-container h2.title {
 		font-size: 24px;
