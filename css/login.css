@@ -7,18 +7,38 @@
 body, html {
     height: 100%;
     background: url('images/bgc.jpg');
+    font-family: 'Lato', Helvetica, sans-serif;
     background-size: cover;
+}
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
 }
 
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
 }
+.card-container-lg.card {
+    max-width: 850px;
+    padding: 40px 40px;
+}
 .login-logo {
     height: 45px;
 }
 
-
+.panel-job {
+    min-height: 155px;
+}
+.job-link {
+    color:inherit;
+    text-decoration:none;
+}
+.job-link:hover, .job-link:focus, .job-link:active, .job-link:hover h6, .job-link:focus h6, .job-link:active h6{
+    color:#F76D35;
+    text-decoration:none;
+}
 /*
  * Card component
  */

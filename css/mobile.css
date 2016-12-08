@@ -1,0 +1,44 @@
+@media(max-width:768px) {
+	.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+    height: 41px;
+    font-size: 14px;
+	}
+	.page-title h3 {
+		font-size: 20px;
+		margin-top: 9px;
+	}
+	.product-desc {
+		overflow: hidden;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+	}
+	.page-title h6 {
+		display: none;
+	}
+	#page-content-wrapper h5 {
+		font-size: 15px;
+	}
+	.see-more-link {
+		display: none;
+	}
+	.dashboard-kpi h2 {
+		font-size: 26px;
+		margin-bottom: 5px !important;
+	}
+	.dashboard-kpi h1 {
+		font-size: 14px;
+	}
+	.img-card-list {
+    	height: 110px;
+	    width: auto;
+	    border: none;
+	    border-radius: 0;
+	}
+	.reader-container h2.title {
+		font-size: 24px;
+	}
+	.reader-container h3.title {
+		font-size: 18px;
+	}
+}

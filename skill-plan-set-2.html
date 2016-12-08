@@ -45,33 +45,45 @@
 <body>
       <div class="container">
         <div class="col-sm-12 text-center">
-          <img src="images/logo.png" class="login-logo mt50">
-          <p class="mt15"><a href="http://mapt.io">Find out more</a></p>
+        <img src="images/logo.png" class="login-logo mt50">
+        <h6 class="mt30" style="color:white;">Hi Oli, before you get started tell us a little about yourself...</h6>          
+
         </div>
         <div class="col-sm-12">
-          <div class="card card-container mt20">
-              <img id="profile-img" class="profile-img-card" src="images/avatar.png" />
-              <p id="profile-name" class="profile-name-card"></p>
-              <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
-                            <input name="name" type="name" class="form-control mb10" id="firstName" placeholder="First Name">
-                            <input name="name" type="name" class="form-control mb30" id="firstName" placeholder="Last Name">
-                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
-                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6Lc9ZRITAAAAAB3_JIdLV2juRqjDxoN9PZMsTq52"></div>
-                                <p class="mt15"><small>By clicking 'Create Account', you are agreeing to our <a href="books/info/packt/privacy">Policy</a> and <a href="books/info/packt/terms-and-conditions">Terms &amp; Conditions</a></small></p> 
-                            </div>
-                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
-                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
-                            </div>
-                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Create Account">
-                        </form>
+          <div class="card card-container-lg mt20 text-center">
+            <p class="mt20 pull-left"><a href="skill-plan-set.html"><i class="fa fa-chevron-left mr5"></i> Back to Select a Role</a></p>
+            <div class="clearfix"></div>
+             <h3>Select a Specialism</h3>
+             <p>Select the option that best represents the job you currently have or aspire to have.</p>
 
-              <hr>
-              <div class="text-center">
-                <a href="login.html">Sign in</a>
+             <div class="col-sm-12 mt20">
+              <div class="col-sm-4">
+                <a href="#" class="job-link">
+                  <img src="images/skillcards/angularjs-developer-v2.png" class="img-responsive img-thumbnail"/>
+                </a>
               </div>
+              <div class="col-sm-4">
+                <a href="#" class="job-link">
+                  <img src="images/skillcards/react-developer-v2.png" class="img-responsive img-thumbnail"/>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="#" class="job-link">
+                  <img src="images/skillcards/angular-2-developer-v2.png" class="img-responsive img-thumbnail"/>
+                </a>
+              </div>
+            </div>
+             <div class="clearfix"></div>
+             <p class="mt20"><a href="dashboard-noplan.html">Skip this step</a>
+              <!-- <div class="list-group mt20">
+                <a href="#" class="list-group-item">Front End Web Developer</a>
+                <a href="#" class="list-group-item">Full Stack Web Developer</a>
+                <a href="#" class="list-group-item">Mobile Developer</a>
+                <a href="#" class="list-group-item">Programmer</a>
+                <a href="#" class="list-group-item">Data Scientist</a>
+                <a href="#" class="list-group-item">Game Developer</a>
+                <a href="#" class="list-group-item">System Administrator</a>
+              </div> -->
           </div><!-- /card-container -->
         </div>
     </div><!-- /container -->
