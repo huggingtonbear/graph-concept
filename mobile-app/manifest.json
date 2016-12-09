@@ -1,0 +1,13 @@
+{
+  "short_name": "Mapt Reader",
+  "name": "mapt Reader",
+  "icons": [
+    {
+      "src": "https://www.packtpub.com/mapt/images/apple-icons/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/login.html",
+  "display": "standalone"
+}
