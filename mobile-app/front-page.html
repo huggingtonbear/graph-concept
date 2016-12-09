@@ -335,7 +335,15 @@
     <!-- Sidebar Toggle Script -->
     <script src="../js/simple-sidebar.js"></script>
     <script src="../js/sidenav-accordion.js"></script>
-    <script id="dsq-count-scr" src="//mapt-online.disqus.com/count.js" async></script>
+        <script src="../js/detectswipe.js"></script>
+        
+    <script type="text/javascript">
+    
+        $('#sidebar-wrapper').on('swipeleft', function() {
+            $('#menu-toggle').click();
+        });
+    </script>
+                                
 </body>
 
 </html>

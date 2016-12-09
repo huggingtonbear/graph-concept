@@ -113,3 +113,7 @@ body.nightmode ol .note p
 
 body.nightmode .orderedlist ol
 { border: none; }
+
+body.nightmode #menu-toggle {
+    color: white;
+}
