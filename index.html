@@ -21,6 +21,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/mobile.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
+    <link href="../css/nightmode.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
 
     <!-- Prism -->
@@ -62,12 +63,12 @@
               <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><div class="section-name">1. Getting Started</div></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <li class="sub-nav active"><a href="#"><div class="section-name">Chapter 1. Getting Started</div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">Adding App Modules</div><div class="section-complete"><i class="fa fa-check"></i></div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">The app controller</div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">Adding the next exercise in tandem with everything</div><div class="section-complete"><i class="fa fa-check"></i></div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">Understanding responsive design priciples</div><div class="section-complete"><i class="fa fa-check"></i></div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">Migrating to Angular 2</div><div class="section-complete"><i class="fa fa-check"></i></div></a></li>
-                        <li class="sub-nav"><a href="#"><div class="section-name">Summary</div><div class="section-complete"><i class="fa fa-check"></i></div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check fa-25"></i></div>Adding App Modules</a></li>
+                        <li class="sub-nav"><a href="#">The app controller</a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check fa-25"></i></div>Adding the next exercise in tandem with everything</a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check fa-25"></i></div>Understanding responsive design priciples</a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check fa-25"></i></div>Migrating to Angular 2</a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check fa-25"></i></div>Summary</a></li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><div class="section-name">2. Building our first application</div></a>    </li>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -174,7 +175,7 @@
                                     <ul class="dropdown-menu">
                                         <li class="disabled"><a class="disabled text-center"><b>Nightmode</b></a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="" target="_self">Enable</a></li>
+                                        <li><a href="#" onclick="$(body).toggleClass('nightmode');">Switch</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li class="disabled"><a class="disabled text-center"><b>Font size (rem)</b></a></li>
                                         <li role="separator" class="divider"></li>
