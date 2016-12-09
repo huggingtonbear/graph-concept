@@ -408,7 +408,7 @@
             items.push(item);
             
             item.css('background-color', 'transparent').css('z-index','5');
-            item.parent().append('<div class="progress" style="position: absolute; width: ' + item.data('percent') + '%; height: 100%; background-color: #4caf50; top: 0;"></div>');
+            item.parent().append('<div class="progress" style="position: absolute; width: ' + item.data('percent') + '%; height: 100%; background-color: #4caf50; top: 0; transition: all 0.5s ease;"></div>');
             
             if (ongoing == undefined) {
                 ongoing = setInterval(doDownloads, 500);
