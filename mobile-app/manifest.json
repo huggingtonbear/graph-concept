@@ -8,6 +8,6 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/login.html",
+  "start_url": "https://supachris28.github.io/graph-concept/mobile-app/login.html",
   "display": "standalone"
 }
