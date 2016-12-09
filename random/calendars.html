@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Calendars</title>
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                background-color: #EFE7D4;
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            
+            }
+            .cafl {
+                /* height: 100%; */
+                border: 0;
+                width: 100%;
+            }
+            .cal {
+                width: 32%;
+                margin: 5px;
+                height: 100%;
+                text-align: center;
+                float: left;
+            }
+            .ui-content {
+                background-color: #EFE7D4;
+                
+            }
+        </style>
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <!-- Include the jQuery library -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Include the jQuery Mobile library -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <meta http-equiv="refresh" content="60" />
+    </head>
+    <body>
+        <div data-role="page" id="p1" class="ui-page">
+            <div data-role="header">
+                <h1>Ketelbey</h1>
+            </div>
+            <div data-role="main">
+                <iframe src="https://imap.packtpub.com/home/ketelbey@packtpub.com/Calendar.html?view=day" class="cafl" ></iframe>
+            </div>
+            <div data-role="footer">
+                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
+                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
+            </div>
+        </div>
+        <div data-role="page" id="p2" class="ui-page">
+            <div data-role="header">
+                <h1>Cadbury</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <iframe src="https://imap.packtpub.com/home/cadbury@packtpub.com/Calendar.html?view=day" class="cafl" ></iframe>
+            </div>
+            <div data-role="footer">
+                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
+                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
+            </div>
+        </div>
+        <div data-role="page" id="p3" class="ui-page">
+            <div data-role="header">
+                <h1>Austin Livery</h1>
+            </div>
+            <div data-role="main">
+                <iframe src="https://imap.packtpub.com/home/austinlivery@packtpub.com/Calendar.html?view=day" class="cafl" ></iframe>
+            </div>
+            <div data-role="footer">
+                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
+                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
+            </div>
+        </div>
+        <script>
+            
+            nextpage = function() {
+                if ($.mobile.activePage.next('.ui-page').length !== 0) {
+                   var next = $.mobile.activePage.next('.ui-page');
+                   $.mobile.changePage(next, {
+                       transition: 'slide'
+                   });
+                } else {
+                    //var first = $.mobile.
+                    //$.mobile.changePage(first, {
+                    //   transition: 'slide'
+                    //});
+                }
+            }
+            
+            prevpage = function() {
+              if ($.mobile.activePage.prev('.ui-page').length !== 0) {
+               var prev = $.mobile.activePage.prev('.ui-page');
+               $.mobile.changePage(prev, {
+                   transition: 'slide',
+                   reverse: true
+               });
+              }
+            }
+            
+            $(document).on('click', '#goforward', function () {
+              nextpage();
+            });
+
+            $(document).on('click', '#goback', function () {
+              prevpage();
+            });
+            
+            $(".ui-page").on("swipeleft",function(){
+              nextpage();
+            });
+            
+            $(".ui-page").on("swiperight",function(){
+              prevpage();
+            });
+            
+            
+        </script>
+    </body>
+    
+</html>
