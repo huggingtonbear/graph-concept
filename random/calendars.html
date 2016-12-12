@@ -1,156 +1,162 @@
 <html>
-    <head>
-        <title>Calendars</title>
-        <style>
-            html, body {
-                height: 100%;
-                width: 100%;
-                background-color: #EFE7D4;
-                font-family: Arial, sans-serif;
-                overflow: hidden;
-            
-            }
-            .cafl {
-                /* height: 100%; */
-                border: 0;
-                width: 100%;
-            }
-            .cal {
-                width: 32%;
-                margin: 5px;
-                height: 100%;
-                text-align: center;
-                float: left;
-            }
-            .ui-content {
-                background-color: #EFE7D4;
-                
-            }
-        </style>
-        <!-- Include meta tag to ensure proper rendering and touch zooming -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    
-        <!-- Include jQuery Mobile stylesheets -->
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
-        <!-- Include the jQuery library -->
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-        <!-- Include the jQuery Mobile library -->
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <meta http-equiv="refresh" content="150" />
+<head>
+    <title>Calendars</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #EFE7D4;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
         
-        <!-- app -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="manifest" href="manifest.json">
+        .ui-header h1.ui-title {
+            font-size: 1.8em;
+            margin: 0;
+        }
         
-    </head>
-    <body>
-        <div data-role="page" id="p1" class="ui-page">
-            <div data-role="header">
-                <h1>Ketelbey</h1>
-            </div>
-            <div data-role="content">
-                <iframe src="https://imap.packtpub.com/home/ketelbey@packtpub.com/Calendar.html?view=day" class="cafl" height="100%" ></iframe>
-            </div>
-            <div data-role="footer" class="ui-footer-fixed" style="height: 50px;">&nbsp;
-                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
-                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
-                    <div style="clear: both;"></div>
-                   
-            </div>
+        .ui-footer-fixed .ui-btn {
+            margin: 0.1em 0;
+            font-size: 24px !important;
+        }
+        
+        div.ui-content {
+            padding: 0;
+            margin-top:
+        }
+        
+        .cafl {
+            /* height: 100%; */
+            border: 0;
+            width: 100%;
+        }
+        
+        .cal {
+            width: 32%;
+            margin: 5px;
+            height: 100%;
+            text-align: center;
+            float: left;
+        }
+        
+        .ui-content {
+            background-color: #EFE7D4;
+        }
+        
+        .swipeoverlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta http-equiv="refresh" content="150" />
+    <!-- app -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json"> </head>
+
+<body>
+    <div data-role="page" id="p1" class="ui-page">
+        <div data-role="header" class="ui-header-fixed">
+            <h1>Ketelbey</h1> </div>
+        <div data-role="content">
+            <div class="swipeoverlay"></div>
+            <iframe src="https://imap.packtpub.com/home/ketelbey@packtpub.com/Calendar.html?view=day" class="cafl" height="100%"></iframe>
         </div>
-        <div data-role="page" id="p2" class="ui-page">
-            <div data-role="header">
-                <h1>Cadbury</h1>
-            </div>
-            <div data-role="content" class="ui-content">
-                <iframe src="https://imap.packtpub.com/home/cadbury@packtpub.com/Calendar.html?view=day" class="cafl" height="100%" ></iframe>
-            </div>
-            <div data-role="footer" class="ui-footer-fixed" style="height: 50px;">
-                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
-                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
-            </div>
+        <div data-role="footer" class="ui-footer-fixed" style="height: 60px;">&nbsp; <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a> <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
+            <div style="clear: both;"></div>
         </div>
-        <div data-role="page" id="p3" class="ui-page">
-            <div data-role="header">
-                <h1>Austin Livery</h1>
-            </div>
-            <div data-role="content">
-                <iframe src="https://imap.packtpub.com/home/austinlivery@packtpub.com/Calendar.html?view=day" class="cafl" height="100%" ></iframe>
-            </div>
-            <div data-role="footer" class="ui-footer-fixed" style="height: 50px;">
-                <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a>
-                <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a>
-            </div>
+    </div>
+    <div data-role="page" id="p2" class="ui-page">
+        <div data-role="header" class="ui-header-fixed">
+            <h1>Cadbury</h1> </div>
+        <div data-role="content" class="ui-content">
+            <div class="swipeoverlay">&nbsp;</div>
+            <iframe src="https://imap.packtpub.com/home/cadbury@packtpub.com/Calendar.html?view=day" class="cafl" height="100%"></iframe>
         </div>
-        <script>
-            
-            nextpage = function() {
-                if ($.mobile.activePage.next('.ui-page').length !== 0) {
-                   var next = $.mobile.activePage.next('.ui-page');
-                   $.mobile.changePage(next, {
-                       transition: 'slide'
-                   });
-                } else {
-                    //var first = $.mobile.
-                    //$.mobile.changePage(first, {
-                    //   transition: 'slide'
-                    //});
-                }
+        <div data-role="footer" class="ui-footer-fixed" style="height: 60px;"> <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a> <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a> </div>
+    </div>
+    <div data-role="page" id="p3" class="ui-page">
+        <div data-role="header" class="ui-header-fixed">
+            <h1>Austin Livery</h1> </div>
+        <div data-role="content">
+            <div class="swipeoverlay"></div>
+            <iframe src="https://imap.packtpub.com/home/austinlivery@packtpub.com/Calendar.html?view=day" class="cafl" height="100%"></iframe>
+        </div>
+        <div data-role="footer" class="ui-footer-fixed" style="height: 60px;"> <a href="#prvbutton" id="goback" data-icon="arrow-l" class="ui-btn-left" data-inline="true" data-iconpos="notext" data-direction="reverse">Previous</a> <a href="#nextbutton" id="goforward" data-icon="arrow-r" class="ui-btn-right" data-inline="true" data-iconpos="notext" data-direction="reverse">Next</a> </div>
+    </div>
+    <script>
+        nextpage = function () {
+            if ($.mobile.activePage.next('.ui-page').length !== 0) {
+                var next = $.mobile.activePage.next('.ui-page');
+                $.mobile.changePage(next, {
+                    transition: 'slide'
+                });
             }
-            
-            prevpage = function() {
-              if ($.mobile.activePage.prev('.ui-page').length !== 0) {
-               var prev = $.mobile.activePage.prev('.ui-page');
-               $.mobile.changePage(prev, {
-                   transition: 'slide',
-                   reverse: true
-               });
-              }
+            else {
+                var first = $('#p1');
+                $.mobile.changePage(first, {
+                    transition: 'slide'
+                });
             }
-            
-            $(document).on('click', '#goforward', function () {
-              nextpage();
-                setScreen();
-            });
-
-            $(document).on('click', '#goback', function () {
-              prevpage();
-                setScreen();
-            });
-            
-            $(".ui-page").on("swipeleft",function(){
-              nextpage();
-                setScreen();
-            });
-            
-            $(".ui-page").on("swiperight",function(){
-              prevpage();
-                setScreen();
-            });
-            
-            $(document).ready(function() {
-                setScreen();
-            });
-            
-            function setScreen() {
-                var screen = $.mobile.getScreenHeight();
-
-                var header = $(".ui-header").hasClass("ui-header-fixed") ? $(".ui-header").outerHeight()  - 1 : $(".ui-header").outerHeight();
-
-                var footer = $(".ui-footer").hasClass("ui-footer-fixed") ? $(".ui-footer").outerHeight() - 1 : $(".ui-footer").outerHeight();
-
-                /* content div has padding of 1em = 16px (32px top+bottom). This step
-                   can be skipped by subtracting 32px from content var directly. */
-                var contentCurrent = $(".ui-content").outerHeight() - $(".ui-content").height();
-
-                var content = screen - header - footer - contentCurrent;
-
-                $(".ui-content").height(content);
+        }
+        prevpage = function () {
+            if ($.mobile.activePage.prev('.ui-page').length !== 0) {
+                var prev = $.mobile.activePage.prev('.ui-page');
+                $.mobile.changePage(prev, {
+                    transition: 'slide'
+                    , reverse: 'true'
+                });
             }
-        </script>
-    </body>
-    
+            else {
+                var last = $('#p3');
+                $.mobile.changePage(last, {
+                    transition: 'slide'
+                    , reverse: 'true'
+                });
+            }
+        }
+        $(document).on('click', '#goforward', function () {
+            nextpage();
+            setScreen();
+        });
+        $(document).on('click', '#goback', function () {
+            prevpage();
+            setScreen();
+        });
+        $(".ui-page").on("swipeleft", function () {
+            nextpage();
+            setScreen();
+        });
+        $(".ui-page").on("swiperight", function () {
+            prevpage();
+            setScreen();
+        });
+        $(document).ready(function () {
+            setScreen();
+        });
+
+        function setScreen() {
+            var screen = $.mobile.getScreenHeight();
+            var header = $(".ui-page-active .ui-header").hasClass("ui-header-fixed") ? $(".ui-page-active .ui-header").outerHeight() - 1 : $(".ui-page-active .ui-header").outerHeight();
+            var footer = $(".ui-page-active .ui-footer").hasClass("ui-footer-fixed") ? $(".ui-page-active .ui-footer").outerHeight() - 1 : $(".ui-page-active .ui-footer").outerHeight();
+            /* content div has padding of 1em = 16px (32px top+bottom). This step
+               can be skipped by subtracting 32px from content var directly. */
+            var contentCurrent = $(".ui-page-active .ui-content").outerHeight() - $(".ui-page-active .ui-content").height();
+            var content = screen - header - footer - contentCurrent;
+            $(".ui-page-active .ui-content").height(content).css('margin-top', header + 'px');
+        }
+    </script>
+</body>
+
 </html>
