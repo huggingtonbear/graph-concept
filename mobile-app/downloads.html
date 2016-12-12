@@ -2,213 +2,159 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Mapt Reader - Downloads</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <!-- Custom CSS -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/general.css" rel="stylesheet">
+    <link href="../css/mobile.css" rel="stylesheet">
     <link href="../css/bootstrap-xl.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
     <!-- Prism -->
     <link rel="stylesheet" href="../css/prism.css">
-
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
-
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body class="language-markup">
-
-  
-
     <div id="wrapper">
-
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
-              <li class="nav-logo "><a href="login.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="../images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
-              <!-- <form class="col-sm-12 mb15 pl25 pr25">
+            <ul class="sidebar-nav">
+                <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+                    <li class="nav-logo "><a href="login.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="../images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a> </li>
+                    <!-- <form class="col-sm-12 mb15 pl25 pr25">
                 <input type="text" class="form-control" placeholder="&#xf002;  Search for a course...">
               </form> -->
-              <div class="clearfix"></div>
-              
-              <li class=""><a data-parent="#sidebar-nav" href="history.html"  class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
-              
-              <li class="active"><a data-parent="#sidebar-nav" href=""  class="sidenav-menu-holder"><span class="sidenav-menu">Downloads</span><span class="pull-left mr5"></span></a>    </li>
-              
-              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <li class="sub-nav"><a href="login.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
-
-              </div>
-            </div>
-          </ul>
-        </div>
-
-        <!-- /#sidebar-wrapper -->
-
-        <div id="page-content-wrapper" class="">
-          <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
-
-            <div id="book-wrapper" class="container-fluid">               
-                <div class="row">
-                            <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
-                              <div class="page-title">
-                                <h3>Downloads</h3>
-                                <h6 class="mt5">View the books you have downloaded and continue reading</h6>
-                              </div>
-
-                            <hr>
-
-                  </div>
-                      <div class="col-sm-12 col-lg-offset-1 col-lg-10">
-                                    <div class="panel panel-default">
-
-                                      <ul class="list-group">
-                                          
-                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
-                                              <a href="front-page.html"><img src="../images/book2.jpg" class="img-product-list"></a>
-                                              <h1>UX Design for Web Developers</h1>
-                                              <p class="mb0">By Sunila Gollapudi</p>
-                                              <small class="title-duration mr10">March 2016</small>
-                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
-                                              <p class="product-desc hidden-xs"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                                
-                                                <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a>
-                                                <a href="book.html" class="btn btn-info ">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
-                                                    </a>
-                                                <a href="book.html" class="btn btn-info">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i> </a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
-                                          </li>
-                                          
-                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
-                                              <a href="front-page.html"><img src="../images/book3.jpg" class="img-product-list"></a>
-                                              <h1>Practical Machine Learning</h1>
-                                              <p class="mb0">By Ved Anwas</p>
-                                              <small class="title-duration mr10">Jun 2016</small>
-                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
-                                              <p class="product-desc hidden-xs"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                                
-                                                <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a>
-                                                <a href="book.html" class="btn btn-info ">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
-                                                    </a>
-                                                <a href="book.html" class="btn btn-info">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i> </a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
-                                          </li>
-                                          
-                                          <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
-                                              <a href="front-page.html"><img src="../images/book2.jpg" class="img-product-list"></a>
-                                              <h1>UX Design for Web Developers</h1>
-                                              <p class="mb0">By Sunila Gollapudi</p>
-                                              <small class="title-duration mr10">March 2016</small>
-                                              <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
-                                              <p class="product-desc hidden-xs"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                                
-                                                <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a>
-                                                <a href="book.html" class="btn btn-info ">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
-                                                    </a>
-                                                <a href="book.html" class="btn btn-info">Resume <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
-                                          </li>
-
-                                      </ul>
-                                        
-                                      <div class="list-group-item btn-group btn-group-justified center-block mt15">
-                                        <a href="history.html" class="btn btn-info"><i class="fa fa-plus mr5" aria-hidden="true"></i> Download Titles</a>
-                                        <div class="clearfix"></div>
-                                      </div>
-                                        
-                                      <div class="panel-footer text-right" ng-show="myList.pagination > 1">
-                                        <nav>
-                                            <ul class="pagination">
-                                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
-                                                    <a href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">«</span>
-                                                    </a>
-                                                </li>
-                                                <!-- ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
-                                                        <a href="#" class="ng-binding">1</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
-                                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class="disabled"> 
-                                                    <a href="#" aria-label="Next">
-                                                        <span aria-hidden="true">»</span>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                            
-                                            </nav>
-                                        </div>
-                                      </div>
-                                  
-
-                      </div>
+                    <div class="clearfix"></div>
+                    <li class=""><a data-parent="#sidebar-nav" href="history.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Learning</span><span class="pull-left mr5"></span></a> </li>
+                    <li class="active"><a data-parent="#sidebar-nav" href="" class="sidenav-menu-holder"><span class="sidenav-menu">Downloads</span><span class="pull-left mr5"></span></a> </li>
+                    <li class="">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"> <span class="sidenav-menu">Help</span> <span class="pull-left mr5"></span> </a>
+                    </li>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <li class="sub-nav"><a href="faq.html" class="sidenav-menu-holder"><span class="sidenav-menu">FAQ </span></a> </li>
+                        <li class="sub-nav"><a href="https://portal.prodpad.com/20415" class="sidenav-menu-holder"><span class="sidenav-menu">Feedback </span></a> </li>
                     </div>
+                    <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a> </li>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <li class="sub-nav">
+                            <a href="login.html" class="sidenav-menu-holder"> <span class="sidenav-menu">Logout </span> </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper" class=""> <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+            <div id="book-wrapper" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                        <div class="page-title">
+                            <h3>Downloads</h3>
+                            <h5 class="mt5">View the books you have downloaded and continue reading</h5> </div>
+                        <hr> </div>
+                    <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                        <div class="panel panel-default">
+                            
+                            <ul class="list-group">
+                                <div class="list-group-item btn-group btn-group-justified center-block"> <a href="history.html" class="btn btn-info"><i class="fa fa-plus mr5" aria-hidden="true"></i> Download Titles</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
+                                    <a href="front-page.html"><img src="../images/book2.jpg" class="img-product-list"></a>
+                                    <h1>UX Design for Web Developers</h1>
+                                    <p class="mb0">By Sunila Gollapudi</p> <small class="title-duration mr10">March 2016</small> <small class="title-duration"><i class="fa fa-clock-o mr5"></i>3 hours 44 minutes</small>
+                                    <p class="product-desc"><small>Cut through the complexities of web centered designs and build interactive, mobile friendly websites using UX design best practices</small></p>
+                                    <!-- Desktop Buttons START -->
+                                    <div class="btn-group pull-right mt5 hidden-xs"> <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a> <a href="book.html" class="btn btn-info ">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a> </div>
+                                    <!-- Desktop Buttons END -->
+                                    <!-- Mobile Buttons START -->
+                                    <div class="clearfix"></div>
+                                    <div class="btn-group btn-group-justified visible-xs mt15"> <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
+                                                    </a> <a href="book.html" class="btn btn-info">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i> </a> </div>
+                                    <!-- Mobile Buttons END -->
+                                </li>
+                                <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
+                                    <a href="front-page.html"><img src="../images/book3.jpg" class="img-product-list"></a>
+                                    <h1>Practical Machine Learning</h1>
+                                    <p class="mb0">By Ved Anwas</p> <small class="title-duration mr10">Jun 2016</small> <small class="title-duration "><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
+                                    <p class="product-desc"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
+                                    <!-- Desktop Buttons START -->
+                                    <div class="btn-group pull-right mt5 hidden-xs"> <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a> <a href="book.html" class="btn btn-info ">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a> </div>
+                                    <!-- Desktop Buttons END -->
+                                    <!-- Mobile Buttons START -->
+                                    <div class="clearfix"></div>
+                                    <div class="btn-group btn-group-justified visible-xs mt15"> <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
+                                                    </a> <a href="book.html" class="btn btn-info">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i> </a> </div>
+                                    <!-- Mobile Buttons END -->
+                                </li>
+                                <li ng-repeat="(key, fivePopular) in fivePopular" href="front-page.html" class="list-group-item list-name ng-scope">
+                                    <a href="front-page.html"><img src="../images/book4.jpg" class="img-product-list"></a>
+                                    <h1>Python Data Science Essentials</h1>
+                                    <p class="mb0">By Tony Ojeda, Sean Patrick Murphy, Benjamin Bengfort, Abhijit Dasgupta</p> <small class="title-duration mr10">March 2016</small> <small class="title-duration"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
+                                    <p class="product-desc"><small>Become an efficient data science practitioner by thoroughly understanding the key concepts of Python</small></p>
+                                    <!-- Desktop Buttons START -->
+                                    <div class="btn-group pull-right mt5 hidden-xs"> <a class="btn btn-danger "><i class="fa fa-delete fa-lg"></i>
+                                                  <span class="hidden-xs ml5">Remove downloaded data</span></a> <a href="book.html" class="btn btn-info ">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a> </div>
+                                    <!-- Desktop Buttons END -->
+                                    <!-- Mobile Buttons START -->
+                                    <div class="clearfix"></div>
+                                    <div class="btn-group btn-group-justified visible-xs mt15"> <a class="btn btn-danger">Remove <i class="fa fa-trash-o fa-lg ml5"></i> 
+                                                    </a> <a href="book.html" class="btn btn-info">Read <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a> </div>
+                                    <!-- Mobile Buttons END -->
+                                </li>
+                                <div class="list-group-item btn-group btn-group-justified"> <a href="history.html" class="btn btn-info"><i class="fa fa-plus mr5" aria-hidden="true"></i> Download Titles</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </ul>
+                            <div class="panel-footer text-right" ng-show="myList.pagination > 1">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
+                                            <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a>
+                                        </li>
+                                        <!-- ngRepeat: i in getNumber(myList.pagination) track by $index -->
+                                        <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active"> <a href="#" class="ng-binding">1</a> </li>
+                                        <!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
+                                        <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class="disabled">
+                                            <a href="#" aria-label="Next"> <span aria-hidden="true">»</span> </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
-                  </div><!-- row -->
-			</div><!-- /#book-wrapper -->
-		</div><!-- /#page-content-wrapper -->
-	</div><!-- /#wrapper -->
-    
-
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- /#book-wrapper -->
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
     <!-- JAVASCRIPT BLOCKS -->
-
     <!-- jQuery Script-->
     <script src="../js/jquery.js"></script>
     <!-- Syntax Highlighting Script -->
@@ -219,31 +165,26 @@
     <script src="../js/simple-sidebar.js"></script>
     <script src="../js/sidenav-accordion.js"></script>
     <script src="../js/detectswipe.js"></script>
-        
     <script type="text/javascript">
-    
-        $('#sidebar-wrapper').on('swipeleft', function() {
+        $('#sidebar-wrapper').on('swipeleft', function () {
             $('#menu-toggle').click();
         });
-        
-        $('.btn-danger').click(function() {
-           $(this).parent().parent().fadeOut(); 
+        $('.btn-danger').click(function () {
+            $(this).parent().parent().fadeOut();
         });
-        
-        $(document).ready(function(){
+        $(document).ready(function () {
             if (("standalone" in window.navigator) && window.navigator.standalone) {
-              // For iOS Apps
-              $('a[href!="#"]').on('click', function(e){
-                e.preventDefault();
-                var new_location = $(this).attr('href');
-                if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined){
-                  window.location = new_location;
-                }
-              });
+                // For iOS Apps
+                $('a[href!="#"]').on('click', function (e) {
+                    e.preventDefault();
+                    var new_location = $(this).attr('href');
+                    if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
+                        window.location = new_location;
+                    }
+                });
             }
-          });
+        });
     </script>
-
 </body>
 
 </html>
