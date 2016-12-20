@@ -363,7 +363,7 @@
     <script>
     var chart = AmCharts.makeChart("chartdiv", {
       "type": "serial",
-      "theme": "light",
+      "theme": "none",
       "marginTop": 30,
       "autoMarginOffset": 20,
       "marginRight": 30,
@@ -459,7 +459,7 @@
         "sales": 0,
       }],
       "graphs": [{
-        "title": "Total Views",
+        "title": "Section Views",
         "lineColor": "#eb711e",
         "lineAlpha": 0.7,
         "lineThickness": 2,
@@ -482,11 +482,13 @@
       },
       "valueAxes": [{
         "gridColor": "#eee",
+        "axisColor": "#eee",
         "gridAlpha": 1,
-        "axisAlpha": 0
+        "axisAlpha": 1
       }],
       "chartCursor": {
-        "cursorAlpha": 0,
+        "cursorAlpha": 1,
+        "cursorColor": "#cccccc",
         "categoryBalloonEnabled": true,
         "categoryBalloonColor": "#f2b146",
         "color": "#fff",
