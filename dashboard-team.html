@@ -20,7 +20,7 @@
     <!-- Bootstrap Core CSS -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
@@ -137,37 +137,50 @@
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <div class="row">
-                      <div class="col-sm-12 col-lg-4">
+                      <div class="col-sm-12 col-lg-3">
                                   <div class="clearfix"></div>
                         <ul class="list-group">
                           <a class="dashboard-kpi" href="my-library.html">
                             <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">57</h2><h1 class="mt0"> Users</h1>
+                                <h2 class="mt0 mb0">3</h2><h1 class="mt0"> Licences available</h1>
                             </div>
                             </li>
                           </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-4">
+                      <div class="col-sm-12 col-lg-3">
                                   <div class="clearfix"></div>
                         <ul class="list-group">
                           <a class="dashboard-kpi" href="my-library.html">
                             <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">34</h2><h1 class="mt0"> Active in Last Week</h1>
+                                <h2 class="mt0 mb0">34</h2><h1 class="mt0"> Licences used</h1>
                             </div>
                             </li>
                           </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-4">
+                      <div class="col-sm-12 col-lg-3">
                                   <div class="clearfix"></div>
                         <ul class="list-group">
                           <a class="dashboard-kpi" href="my-library.html">
                             <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">3</h2><h1 class="mt0"> Seats Available</h1>
+                                <h2 class="mt0 mb0">145</h2><h1 class="mt0">Sections viewed</h1>
+                            </div>
+                          
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-sm-12 col-lg-3">
+                                  <div class="clearfix"></div>
+                        <ul class="list-group">
+                          <a class="dashboard-kpi" href="my-library.html">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                              <div class="text-center">
+                                <h2 class="mt0 mb0">10.5</h2><h1 class="mt0">Avg sections / user </h1>
                             </div>
                           
                             </li>
@@ -363,7 +376,7 @@
     <script>
     var chart = AmCharts.makeChart("chartdiv", {
       "type": "serial",
-      "theme": "none",
+      "theme": "light",
       "marginTop": 30,
       "autoMarginOffset": 20,
       "marginRight": 30,
