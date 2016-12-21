@@ -137,6 +137,17 @@
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <div class="row">
+                      <div class="col-sm-12 col-md-4 col-lg-3 mb30">
+                            <a href="account-licences.html" class="btn btn-primary"><i class="fa fa-user-plus mr5"></i> Invite new users</a> 
+                      </div>
+                      <div class="col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-6 col-lg-3 mb30">
+                            <select class="form-control">
+                              <option>Last 30 Days</option>
+                              <option>Last 7 Days</option>
+                              <option>Past 3 Months</option>
+                              <option>Past 12 Months</option>
+                            </select>
+                      </div>
                       <div class="col-sm-12 col-lg-3">
                                   <div class="clearfix"></div>
                         <ul class="list-group">
@@ -190,9 +201,9 @@
                     </div>
                   </div>
                   <div class="col-lg-offset-1 col-lg-10 hidden-xs">
-                    <h5>Section Views - Last 30 Days</h5>
+                    <h5>Section Views</h5>
                     <hr>
-                    <div id="chartdiv" style="height:320px;"></div>
+                    <div id="chartdiv" style="height:250px;"></div>
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-5 mt30">
                     <h5>My Team (Last 14 Days):</h5>
@@ -387,28 +398,28 @@
       "dataProvider": [
       {
         "year": "11/08",
-        "sales": 0,
+        "sales": 87,
       }, {
         "year": "12/08",
-        "sales": 0,
+        "sales": 99,
       }, {
         "year": "13/08",
-        "sales": 0,
+        "sales": 68,
       }, {
         "year": "14/08",
-        "sales": 0,
+        "sales": 13,
       }, {
         "year": "15/08",
-        "sales": 0,
+        "sales": 25,
       }, {
         "year": "02/08",
-        "sales": 0,
+        "sales": 36,
       }, {
         "year": "03/08",
-        "sales": 0,
+        "sales": 46,
       }, {
         "year": "04/08",
-        "sales": 0,
+        "sales": 24,
       }, {
         "year": "05/08",
         "sales": 572,
@@ -417,7 +428,7 @@
         "sales": 257,
       }, {
         "year": "07/08",
-        "sales": 3,
+        "sales": 49,
       }, {
         "year": "08/08",
         "sales": 108,
@@ -430,7 +441,7 @@
       },
       {
         "year": "11/08",
-        "sales": 0,
+        "sales": 44,
       }, {
         "year": "12/08",
         "sales": 390,
@@ -448,10 +459,10 @@
         "sales": 450,
       }, {
         "year": "17/08",
-        "sales": 0,
+        "sales": 45,
       }, {
         "year": "18/08",
-        "sales": 0,
+        "sales": 32,
       }, {
         "year": "19/08",
         "sales": 149,
@@ -469,7 +480,7 @@
         "sales": 294,
       }, {
         "year": "24/08",
-        "sales": 0,
+        "sales": 99,
       }],
       "graphs": [{
         "title": "Section Views",
@@ -480,8 +491,11 @@
         "bullet": "round",
         "bulletBorderThickness": 2,
         "bulletBorderAlpha": 1,
+        "bulletBorderColor": "#eb711e",
+        "fillAlphas": 0.5,
+        "fillColorsField": "lineColor",
         "bulletSize": 10,
-        "bulletColor": "#eb711e",
+        "bulletColor": "#ffffff",
         "useLineColorForBulletBorder": true,
         "valueField": "sales",
         "balloonText": "<span style='font-family: Montserrat;'>[[title]]</span><br /><span style='font-size: 16px;'>[[value]]</span>"
@@ -497,7 +511,7 @@
         "gridColor": "#eee",
         "axisColor": "#eee",
         "gridAlpha": 1,
-        "axisAlpha": 1
+        "axisAlpha": 0
       }],
       "chartCursor": {
         "cursorAlpha": 1,
