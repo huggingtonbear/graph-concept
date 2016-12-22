@@ -64,11 +64,12 @@
               </form>
               <div class="clearfix"></div>
               <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
-              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">Team</span><span class="pull-left mr5"></span></a>    </li>
+              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">Teams</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseEight">
                 <li class="sub-nav active"><a href="dashboard-b2b.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
-                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Users </span></a>    </li>
-                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Seats </span></a>    </li>
+                <li class="sub-nav "><a href="users.html" class="sidenav-menu-holder"><span class="sidenav-menu">User Management </span></a>    </li>
+                <li class="sub-nav "><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Team Management </span></a>    </li>
+                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licenses </span></a>    </li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -111,7 +112,7 @@
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
                     <div class="page-title"> 
                       <h3>Overview</h3>
-                      <h6 class="mt5">Detailed below is information about your team's usage of Mapt</h6>
+                      <h6 class="mt5">Detailed below is information about team usage of Mapt</h6>
                     </div>
                     <hr>
                   </div>
@@ -133,7 +134,7 @@
                         <ul class="list-group">
                             <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h3 class="mt0 mb0">3</h3><h1 class="mt0"> Licences available</h1>
+                                <h3 class="mt0 mb0">3</h3><h1 class="mt0"> Licenses available</h1>
                             </div>
                             </li>
                         </ul>
@@ -142,7 +143,7 @@
                         <ul class="list-group">
                             <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h3 class="mt0 mb0">34</h3><h1 class="mt0"> Licences used</h1>
+                                <h3 class="mt0 mb0">34</h3><h1 class="mt0"> Licenses used</h1>
                             </div>
                             </li>
                         </ul>
@@ -189,8 +190,16 @@
                   <div class="col-lg-5">
                     <ul class="list-group">
                       <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
-                        <h6 class="mt0">Most Active Users</h6>
+                        <h6 class="mt0">Most Active Users<a href="team-users.html" class="pull-right">View All</a></h6>
                         <div id="activeUsers"></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-offset-1 col-lg-10 hidden-xs">
+                     <ul class="list-group">
+                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                        <h6 class="mt0">Team Usage</h6>
+                        <div id="topTeams"></div>
                       </li>
                     </ul>
                   </div>
@@ -345,6 +354,76 @@
           "axisAlpha": 0,
           "gridAlpha": 0,
           "labelRotation": 90,
+          "labelFunction": function(valueText, serialDataItem, categoryAxis) {
+            if (valueText.length > 15)
+              return valueText.substring(0, 15) + '...';
+            else
+              return valueText;
+          }
+        },
+        "export": {
+          "enabled": false
+        }
+
+      });
+    </script>
+    <script>
+      var chart = AmCharts.makeChart("topTeams", {
+        "type": "serial",
+        "theme": "light",
+        "fontFamily" : "Montserrat",
+        "dataProvider": [{
+          "user": "Data Team",
+          "views": 1245,
+          "color": "#e45138"
+        }, {
+          "user": "Platforms",
+          "views": 892,
+          "color": "#eb711e"
+        }, {
+          "user": "Marketing Team",
+          "views": 182,
+          "color": "#ec9720"
+        }, {
+          "user": "Publishing Team",
+          "views": 37,
+          "color": "#f2b146"
+        }, {
+          "user": "BIT Team",
+          "views": 4,
+          "color": "#e45138"
+        }],
+        "valueAxes": [{
+        "gridColor": "#eee",
+        "axisColor": "#eee",
+        "gridAlpha": 1,
+        "axisAlpha": 0,
+        "position": "top",
+        "title": "Sections Viewed",
+        "titleColor": "#cccccc",
+        "titleBold": false,
+        }],
+        "startDuration": 1,
+        "graphs": [{
+          "balloonText": "<b>[[category]]: [[value]]</b>",
+          "fillColorsField": "color",
+          "fillAlphas": 0.9,
+          "lineAlpha": 0.2,
+          "cornerRadiusTop": 4,
+          "type": "column",
+          "valueField": "views"
+        }],
+        "chartCursor": {
+          "categoryBalloonEnabled": false,
+          "cursorAlpha": 0,
+          "zoomable": false
+        },
+        "categoryField": "user",
+        "categoryAxis": {
+          "gridPosition": "start",
+          "axisAlpha": 0,
+          "gridAlpha": 0,
+          "labelRotation": 0,
           "labelFunction": function(valueText, serialDataItem, categoryAxis) {
             if (valueText.length > 15)
               return valueText.substring(0, 15) + '...';
@@ -557,7 +636,7 @@
         "bulletBorderThickness": 2,
         "bulletBorderAlpha": 1,
         "bulletBorderColor": "#eb711e",
-        "fillAlphas": 0.5,
+        "fillAlphas": 0.75,
         "fillColorsField": "lineColor",
         "bulletSize": 10,
         "bulletColor": "#ffffff",

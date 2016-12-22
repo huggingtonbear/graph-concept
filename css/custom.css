@@ -161,6 +161,10 @@ h1, .h1 {
   height: 225px;
   width: 100%;
 }
+#topTeams { 
+  height: 325px;
+  width: 100%;
+}
 #popularCourses { 
   height: 325px;
   width: 100%;
