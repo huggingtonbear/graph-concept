@@ -85,39 +85,51 @@
         <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
             <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
-              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
-              <!-- <form class="col-sm-12 mb15 pl25 pr25">
-                <input type="text" class="form-control" placeholder="&#xf002;  Search for a course...">
-              </form> -->
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/logo.png" height="30px" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <form class="col-sm-12 mb15 pl25 pr35">
+                <input type="text" class="form-control mb10" placeholder="&#xf002;  Search all courses...">
+              </form>
               <div class="clearfix"></div>
               <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
+              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">Teams</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseEight">
+                <li class="sub-nav"><a href="dashboard-team.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
+                <li class="sub-nav "><a href="users.html" class="sidenav-menu-holder"><span class="sidenav-menu">User Management </span></a>    </li>
+                <li class="sub-nav "><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Team Management </span></a>    </li>
+                <li class="sub-nav active"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licenses </span></a>    </li>
+              </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
                 <li class="sub-nav"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
                 <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
-                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+                
               </div>
-              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Courses</span><span class="pull-left mr5"></span></a>    </li>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <li class="sub-nav"><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav "><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
                 <li class="sub-nav"><a href="my-library.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Library</span></a>    </li>
+                <li class="sub-nav"><a href="history.html" class="sidenav-menu-holder"><span class="sidenav-menu">History</span></a>    </li>
                 <li class="sub-nav"><a href="trending.html" class="sidenav-menu-holder"><span class="sidenav-menu">Trending</span></a>    </li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"><span class="sidenav-menu">Help</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <li class="sub-nav"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">FAQs</span><span class="pull-left mr5"></span></a></li>
               </div>
-              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
-              <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-                <li class="sub-nav"><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details</span><span class="pull-left mr5"></span></a>    </li>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav "><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details</span><span class="pull-left mr5"></span></a>    </li>
                 <li class="sub-nav "><a href="account-subscription.html" class="sidenav-menu-holder"><span class="sidenav-menu">Subscriptions</span><span class="pull-left mr5"></span></a>    </li>
-                <li class="sub-nav active"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Licences </span></a>    </li>
                 <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
-
               </div>
+              <li class="">
+                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-orange.png" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
             </div>
+           
           </ul>
+
         </div>
+        
 
         <!-- /#sidebar-wrapper -->
 
@@ -127,69 +139,75 @@
                 <div class="row">
                             <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
                               <div class="page-title"> 
-                      <h3>Licences</h3>
-                      <h6 class="mt5">Manage your account and update your details as and when you need to</h6>
+                      <h3>Licenses</h3>
+                      <h6 class="mt5">Invite new users to join your team account and manage their access</h6>
                     </div>
                     <hr>
-                          
-                    <h5 class="mt30">Add Users</h5>
-                    <hr>
-                    <div class="alert alert-info"><i class="fa fa-info-circle mr5"></i> To allocate Licences you can either manually type the email addresses of users or upload in batch using a .CSV file.</div>
-                      <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">Enter Email Address:</label>
-                        <div class="col-sm-5">
-                          <input type="email" class="form-control" value="" placeholder="Email Address">
-                        </div>
-                        <div class="col-sm-2">
-                          <a href="#" class="btn btn-primary"><i class="fa fa-plus mr5"></i> Add new User</a>
-                        </div>
-                        <div class="col-sm-2">
-                          <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info"><i class="fa fa-upload mr5"></i> Upload .CSV</a>
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <h6 class="mt10">Invite New Users</h6>
+                        <hr>
+                        <form class="form-horizontal">
+                        <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-3 control-label">Enter Email Address:</label>
+                          <div class="col-sm-4">
+                            <input type="email" class="form-control" value="" placeholder="Email Address">
+                          </div>
+                          <div class="col-sm-2">
+                            <a href="#" class="btn btn-primary"><i class="fa fa-plus mr5"></i> Add new User</a>
+                          </div>
+                          <div class="col-sm-2">
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info"><i class="fa fa-upload mr5"></i> Upload .CSV</a>
+                          </div>
                         </div>
                       </div>
+                    </div>
                     
                     </form>
-                    <h5 class="mt30">Licences remaining <b>(10/390)</b></h5>
-                    <hr>
-                    <table class="table"><thead> <tr> <th>Email Address</th> <th>Status</th> <th>Action</th> <th>Invite</th> 
-                      </tr> </thead> <tbody> <tr> <th scope="row">richardb@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr> 
-                      <tr> <th scope="row">nickf@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr>
-                      <tr> <th scope="row">andrewt@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">oliviam@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">bryank@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">amito@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">veda@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">palomaf@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">ronank@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                      <tr> <th scope="row">flipflop@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
-                    </tbody> </table>
-                    <nav>
-                                            <ul class="pagination pull-right mt0">
-                                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
-                                                    <a href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">«</span>
-                                                    </a>
-                                                </li>
-                                                <!-- ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
-                                                        <a href="#" class="ng-binding">1</a>
-                                                        <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
-                                                        <a href="#" class="ng-binding">2</a>
-                                                        <li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
-                                                        <a href="#" class="ng-binding">...</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
-                                                        <a href="#" class="ng-binding">30</a>
-                                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
-                                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class=""> 
-                                                    <a href="#" aria-label="Next">
-                                                        <span aria-hidden="true">»</span>
-                                                    </a>
-                                                </li>
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                    <ul class="list-group">
+                      <h6 class="mt10">Licenses remaining <b>(10/390)</b></h6>
+                      <hr>
+                      <table class="table "><thead> <tr> <th>Email Address</th> <th>Status</th> <th>Action</th> <th>Invite</th> 
+                        </tr> </thead> <tbody> <tr> <th scope="row">richardb@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr> 
+                        <tr> <th scope="row">nickf@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr>
+                        <tr> <th scope="row">andrewt@packtpub.com</th> <td>Expired on 17/05/2016</td> <td><a href="#">Renew</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">oliviam@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">bryank@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">amito@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">veda@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">palomaf@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">ronank@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                        <tr> <th scope="row">flipflop@packtpub.com</th> <td>Expires on 17/09/2016</td> <td><a href="#">Revoke</a></td> <td></td> </tr> <tr>
+                      </tbody> </table>
+                      </div>
+                      <div class="panel-footer text-right" ng-show="myList.pagination > 1">
+                        <nav>
+                            <ul class="pagination">
+                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <!-- ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
+                                        <a href="#" class="ng-binding">1</a>
+                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope">
+                                        <a href="#" class="ng-binding">2</a>
+                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
+                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class=""> 
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
 
-                                            </ul>
-                                            
-                                            </nav>
-                    
+                            </ul>
+                            
+                            </nav>
+                        </div>
+                      </div>
+                    </div>
+                      
                     
                     
 
