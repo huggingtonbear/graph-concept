@@ -117,73 +117,67 @@
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <div class="row">
-                      <div class="col-sm-12 col-md-4 col-lg-3 mb30">
-                            <a href="account-licences.html" class="btn btn-primary"><i class="fa fa-user-plus mr5"></i> Invite new users</a> 
+                      <div class="col-sm-12 col-md-4 col-lg-3 mb15">
+                        <select class="form-control">
+                          <option>Last 30 Days</option>
+                          <option>Last 7 Days</option>
+                          <option>Past 3 Months</option>
+                          <option>Past 12 Months</option>
+                        </select>
                       </div>
-                      <div class="col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-6 col-lg-3 mb30">
-                            <select class="form-control">
-                              <option>Last 30 Days</option>
-                              <option>Last 7 Days</option>
-                              <option>Past 3 Months</option>
-                              <option>Past 12 Months</option>
-                            </select>
+                      <div class="col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-6 col-lg-3 mb15">
+                         <a href="account-licences.html" class="btn btn-primary pull-right"><i class="fa fa-user-plus mr5"></i> Invite new users</a>    
                       </div>
-                      <div class="col-sm-12 col-lg-3">
-                                  <div class="clearfix"></div>
+                      <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">3</h2><h1 class="mt0"> Licences available</h1>
+                                <h3 class="mt0 mb0">3</h3><h1 class="mt0"> Licences available</h1>
                             </div>
                             </li>
-                          </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-3">
-                                  <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">34</h2><h1 class="mt0"> Licences used</h1>
+                                <h3 class="mt0 mb0">34</h3><h1 class="mt0"> Licences used</h1>
                             </div>
                             </li>
-                          </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-3">
-                                  <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">145</h2><h1 class="mt0">Sections viewed</h1>
+                                <h3 class="mt0 mb0">145</h3><h1 class="mt0">Sections viewed</h1>
                             </div>
                           
                             </li>
-                          </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-3">
-                                  <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">10.5</h2><h1 class="mt0">Avg sections / user </h1>
+                                <h3 class="mt0 mb0">10.5</h3><h1 class="mt0">Avg sections / user </h1>
                             </div>
                           
                             </li>
-                          </a>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <div class="clearfix"></div>
                   <div class="col-lg-offset-1 col-lg-10 hidden-xs">
-                    <h5>Daily Usage</h5>
-                    <hr>
-                    <div id="chartdiv" style="height:250px;"></div>
+                     <ul class="list-group">
+                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                                              <h6 class="mt0">Daily Usage</h6>
+
+                        <div id="chartdiv"></div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-5 mt30">
                     <h5>My Team (Last 14 Days):</h5>
@@ -358,7 +352,7 @@
         });
       });
     </script>
-    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="js/amcharts.js"></script>
     <script src="https://www.amcharts.com/lib/3/serial.js"></script>
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
@@ -370,6 +364,7 @@
       "theme": "light",
       "marginTop": 30,
       "marginBottom": 30,
+      "title":"Daily Usage",
       "autoMarginOffset": 20,
       "fontFamily" : "Montserrat",
       "fontSize" : 12,
