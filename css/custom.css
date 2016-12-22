@@ -157,8 +157,16 @@ h1, .h1 {
 .early-access-holder .section-name {
   color: white;
 }
-#chartdiv { 
+#usageGraph { 
   height: 225px;
+  width: 100%;
+}
+#popularCourses { 
+  height: 325px;
+  width: 100%;
+}
+#activeUsers { 
+  height: 325px;
   width: 100%;
 }
 .page-title ol.breadcrumb {
