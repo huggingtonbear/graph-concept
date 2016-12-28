@@ -27,6 +27,13 @@
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
 
+
+    <!-- Select2 -->
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="css/select2.css" rel="stylesheet" />
+
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
@@ -164,10 +171,39 @@
                         </form>
                       </div>
                     </div>
-                    
-                    
-                    
-
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h6 class="mt5 mb5">Account Details</h6>
+                      </div>
+                      <div class="panel-body">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Company Name:</label>
+                            <div class="col-sm-9">
+                              <input type="name" class="form-control" value="Acme Inc." placeholder="Enter your Company Name">
+                            </div>
+                           
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Admins:</label>
+                            <div class="col-sm-9">
+                              <select class="admin-select form-control" multiple="multiple">
+                                <option selected>Oli Huggins</option>
+                                <option selected>Nick Falkowski</option>
+                                <option selected>Ed Gordon</option>
+                                <option>Julian Ursell</option>
+                                <option>Kerry George</option>
+                                <option>Akram Hussain</option>
+                                <option>Greg Roberts</option>
+                                <option>Erol Staveley</option>
+                              </select>
+                               <a href="#" class="btn btn-primary mt15 pull-right">Save Changes</a>
+                            </div>
+                           
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                           
 
@@ -179,15 +215,18 @@
 
     <!-- JAVASCRIPT BLOCKS -->
 
-    <!-- jQuery Script-->
-    <script src="js/jquery.js"></script>
-    <!-- Syntax Highlighting Script -->
     <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
+    <script type="text/javascript">
+      $(".admin-select").select2({ 
+      placeholder: "Select Team Members"
+    });
+
+    </script>
 
     <script type="text/javascript">
     $("#myButton").click(function() {
