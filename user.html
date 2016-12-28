@@ -150,6 +150,13 @@
                        
                       </div>
                       <div class="col-sm-8 col-lg-9">
+                        
+                        <ul class="list-group">
+                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                            <h6 class="mt0">Daily Usage - Last 30 days</h6>
+                            <div id="usageGraph"></div>
+                          </li>
+                        </ul>
                         <div class="panel panel-default skill-plan-dashboard">
                           <div class="panel-body">
                             <h6><b>Angular 2 Developer</b> - 33%</h6>
@@ -160,15 +167,9 @@
                             </div>
                           </div>
                         </div>
-                        <ul class="list-group">
-                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
-                            <h6 class="mt0">Daily Usage - Last 30 days</h6>
-                            <div id="usageGraph"></div>
-                          </li>
-                        </ul>
                         <div class="panel panel-default">
                           <div class="panel-heading">
-                            Skills
+                            <h6 class="mt5 mb5">Completed Skills</h6>
                           </div>
                         <ul class="list-group">
                           <li href="index.html" class="list-group-item">
