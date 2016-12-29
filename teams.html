@@ -26,6 +26,12 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
+    <!-- Select2 -->
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    
+    <link href="css/select2.css" rel="stylesheet" />
 
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -53,26 +59,40 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Upload .CSV</h4>
+        <h4>Create New Team</h4>
       </div>
       <div class="modal-body">
-              <p>Please make sure that when saving the CSV for uploads, Save As -> Windows Comma Seperated CSV. The format for the CSV is as follows:</p>
-              <p>email address , first name , last name</p>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputFile">Upload file:</label>
-                  <input type="file" id="exampleInputFile">
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Notify Users via Email
-                  </label>
-                </div>
-              </form>
+        <p>Creating Teams within Mapt is a helpful way of tracking the development of the core teams within your organisation.
+        <form>
+                          <div class="form-group">
+                            <label>Team Name</label>
+                            <input type="name" class="form-control" placeholder="Enter Team Name" value="">
+                          </div>
+                          <div class="form-group">
+                            <label>Team Members</label>
+                            <select class="team-select form-control" multiple="multiple" style="width:100%">
+                              <option >Oli Huggins</option>
+                              <option >Nick Falkowski</option>
+                              <option >Ed Gordon</option>
+                              <option >Julian Ursell</option>
+                              <option >Kerry George</option>
+                              <option>Akram Hussain</option>
+                              <option>Greg Roberts</option>
+                              <option>Erol Staveley</option>
+                            </select>
+                        </div>
+                          
+                        </form>
+                        <script type="text/javascript">
+      $(".team-select").select2({ 
+      placeholder: "Select Team",
+    });
+
+    </script>
       </div>
 
       <div class="modal-footer">
-        <button ref="#" type="button" class="btn btn-primary">Upload .CSV</button>
+        <button type="submit" class="btn btn-primary">Create Team</button>
       </div>
     </div>
   </div>
@@ -155,7 +175,7 @@
                         </form>  
                       </div>
                       <div class="col-sm-12 col-md-4 col-lg-3">
-                        <a href="account-licences.html" class="btn btn-info pull-right"><i class="fa fa-user-plus mr5"></i> Create New Team</a>
+                        <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info pull-right"><i class="fa fa-user-plus mr5"></i> Create New Team</a>
                       </div>
                     </div> 
                     <div class="clearfix"></div>
@@ -289,9 +309,6 @@
     
 
     <!-- JAVASCRIPT BLOCKS -->
-
-    <!-- jQuery Script-->
-    <script src="js/jquery.js"></script>
     <!-- Syntax Highlighting Script -->
     <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -299,6 +316,7 @@
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
+    
 
     <script type="text/javascript">
     $("#myButton").click(function() {
