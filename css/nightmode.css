@@ -104,3 +104,16 @@ body.nightmode .well {
     background-color: #1B1C1E;
     border: 1px solid #57585A;
 }
+
+body.nightmode ol .tip p
+{ background: inherit; }
+
+body.nightmode ol .note p
+{ background: inherit; }
+
+body.nightmode .orderedlist ol
+{ border: none; }
+
+body.nightmode #menu-toggle {
+    color: white;
+}

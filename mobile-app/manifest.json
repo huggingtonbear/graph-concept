@@ -1,0 +1,13 @@
+{
+  "short_name": "Mapt Reader",
+  "name": "Mapt Reader",
+  "icons": [
+    {
+      "src": "https://www.packtpub.com/mapt/images/apple-icons/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://supachris28.github.io/graph-concept/mobile-app/login.html",
+  "display": "standalone"
+}

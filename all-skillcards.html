@@ -38,7 +38,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
 </head>
 
 <body class="language-markup">
@@ -138,6 +138,9 @@
                                 <input type="text" class="form-control home-search" placeholder="&#xf002;  Search for a Skill you want to learn...">
                                 <span class="input-group-btn">
                                   <button class="btn btn-primary" type="button">Search</button>
+                                </span>
+                                <span class="input-group-btn" id="clear-search" style="display: none;">
+                                  <button class="btn btn-warning" type="reset" onclick="inSearch=false;toggle();">Clear</button>
                                 </span>
                               </div><!-- /input-group -->
                           </form>
@@ -242,7 +245,7 @@
                           </div> 
                         </div>
                       </div>
-                      <div class="col-sm-9 col-lg-7 col-xl-8">
+                      <div class="col-sm-9 col-lg-7 col-xl-8" id="content">
                         
                         <div class="clearfix"></div>
                                     <div class="panel panel-default">
@@ -475,7 +478,28 @@
     <script type="text/javascript">
       $('#filters a').click(function(){
         $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
-    });
+      });
+      
+      var inSearch = false;
+        
+      $(".home-search").on('input', function(e) {
+          console.log('change: ' + inSearch + ', ' + $(".home-search").val());
+          if (inSearch == false && $(".home-search").val() != "") {
+              inSearch = true;
+              toggle();
+          }
+          if (inSearch && $(".home-search").val() == "") {
+              inSearch = false;
+              toggle();
+          }
+      });
+
+    function toggle() {
+        $('#filters').parent().toggleClass('col-lg-3 col-xl-2 col-lg-offset-1 col-sm-3 hidden-sm hidden-lg hidden-xl')
+        $('#content').toggleClass('col-lg-offset-1 col-lg-7 col-lg-10 col-xl-8')
+        $('#clear-search').toggle();
+    }
+        
     </script>
 
 </body>
