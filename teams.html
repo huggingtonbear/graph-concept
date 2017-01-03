@@ -26,12 +26,11 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
-
-
     <!-- Select2 -->
     <!-- jQuery Script-->
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    
     <link href="css/select2.css" rel="stylesheet" />
 
     <!-- Devicons -->
@@ -60,26 +59,40 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Upload .CSV</h4>
+        <h4>Create New Team</h4>
       </div>
       <div class="modal-body">
-              <p>Please make sure that when saving the CSV for uploads, Save As -> Windows Comma Seperated CSV. The format for the CSV is as follows:</p>
-              <p>email address , first name , last name</p>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputFile">Upload file:</label>
-                  <input type="file" id="exampleInputFile">
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Notify Users via Email
-                  </label>
-                </div>
-              </form>
+        <p>Creating Teams within Mapt is a helpful way of tracking the development of the core teams within your organisation.
+        <form>
+                          <div class="form-group">
+                            <label>Team Name</label>
+                            <input type="name" class="form-control" placeholder="Enter Team Name" value="">
+                          </div>
+                          <div class="form-group">
+                            <label>Team Members</label>
+                            <select class="team-select form-control" multiple="multiple" style="width:100%">
+                              <option >Oli Huggins</option>
+                              <option >Nick Falkowski</option>
+                              <option >Ed Gordon</option>
+                              <option >Julian Ursell</option>
+                              <option >Kerry George</option>
+                              <option>Akram Hussain</option>
+                              <option>Greg Roberts</option>
+                              <option>Erol Staveley</option>
+                            </select>
+                        </div>
+                          
+                        </form>
+                        <script type="text/javascript">
+      $(".team-select").select2({ 
+      placeholder: "Select Team",
+    });
+
+    </script>
       </div>
 
       <div class="modal-footer">
-        <button ref="#" type="button" class="btn btn-primary">Upload .CSV</button>
+        <button type="submit" class="btn btn-primary">Create Team</button>
       </div>
     </div>
   </div>
@@ -102,8 +115,8 @@
               <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseEight">
                 <li class="sub-nav"><a href="dashboard-team.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
                 <li class="sub-nav "><a href="users.html" class="sidenav-menu-holder"><span class="sidenav-menu">Users </span></a>    </li>
-                <li class="sub-nav "><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Teams </span></a>    </li>
-                <li class="sub-nav active"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account </span></a>    </li>
+                <li class="sub-nav active"><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Teams </span></a>    </li>
+                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account </span></a>    </li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -146,64 +159,146 @@
                 <div class="row">
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
                     <div class="page-title"> 
-                      <h3>Account</h3>
-                      <h6 class="mt5">From here you can manage the account for Acme Inc.</h6>
+                      <h3>Teams</h3>
+                      <h6 class="mt5">From here you can create and manage teams and understand their skills</h6>
                     </div>
                     <hr>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h6 class="mt5 mb5">Invite Users<span class="pull-right"><b>10</b> License(s) remaining </span></h6>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-8 col-lg-9">
+                        <form class="mb25">
+                            <div class="input-group">
+                              <input type="text" class="form-control home-search " placeholder="&#xf002;  Search teams...">
+                              <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">Search</button>
+                              </span>
+                            </div><!-- /input-group -->
+                        </form>  
                       </div>
-                      <div class="panel-body">
-                        <form class="form-horizontal">
-                          <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">Enter Email Address:</label>
-                            <div class="col-sm-4">
-                              <input type="email" class="form-control" value="" placeholder="Email Address">
-                            </div>
-                            <div class="col-sm-2">
-                              <a href="#" class="btn btn-primary"><i class="fa fa-user-plus mr5"></i> Invite User</a>
-                            </div>
-                            <div class="col-sm-2">
-                              <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info"><i class="fa fa-upload mr5"></i> Upload .CSV</a>
+                      <div class="col-sm-12 col-md-4 col-lg-3">
+                        <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info pull-right"><i class="fa fa-user-plus mr5"></i> Create New Team</a>
+                      </div>
+                    </div> 
+                    <div class="clearfix"></div>
+                      <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h6 class="mt5 mb5"> <b>5</b> Teams</h6>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="btn-group pull-right" role="group" aria-label="...">
+                            <div class="btn-group ">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="ml5 caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="team.html">View Team</a>
+                                <li><a href="#">Delete Team</a></li>
+                              </ul>
                             </div>
                           </div>
-                        </form>
+                          <div class="col-sm-8">
+                            <h6 class="mb0 "><a href="team.html">Platform Team</a></h6>
+                          </div>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="btn-group pull-right" role="group" aria-label="...">
+                            <div class="btn-group ">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="ml5 caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="team.html">View Team</a>
+                                <li><a href="#">Delete Team</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <h6 class="mb0 "><a href="team.html">Data Team</a></h6>
+                          </div>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="btn-group pull-right" role="group" aria-label="...">
+                            <div class="btn-group ">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="ml5 caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="team.html">View Team</a>
+                                <li><a href="#">Delete Team</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <h6 class="mb0 "><a href="team.html">Marketing Team</a></h6>
+                          </div>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="btn-group pull-right" role="group" aria-label="...">
+                            <div class="btn-group ">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="ml5 caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="team.html">View Team</a>
+                                <li><a href="#">Delete Team</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <h6 class="mb0 "><a href="team.html">BIT Team</a></h6>
+                          </div>
+                          <div class="clearfix"></div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="btn-group pull-right" role="group" aria-label="...">
+                            <div class="btn-group ">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="ml5 caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="team.html">View Team</a>
+                                <li><a href="#">Delete Team</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <h6 class="mb0 "><a href="team.html">Publishing Team</a></h6>
+                          </div>
+                          <div class="clearfix"></div>
+                        </li>
+                        
+                      </ul>
+                      
+                      <div class="panel-footer text-right" ng-show="myList.pagination > 1">
+                        <nav>
+                            <ul class="pagination">
+                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.previous, 'list');" class="disabled">
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <!-- ngRepeat: i in getNumber(myList.pagination) track by $index --><li ng-repeat="i in getNumber(myList.pagination) track by $index" id="paginationNumber" ng-class="{active: myList.offset == $index}" data-page="list" ng-click="$event.preventDefault();click_pagination($event, $index, 'list');" class="ng-scope active">
+                                        <a href="#" class="ng-binding">1</a>
+                                </li><!-- end ngRepeat: i in getNumber(myList.pagination) track by $index -->
+                                <li id="paginationNumber" data-page="list" ng-click="$event.preventDefault();click_pagination($event, myList.next, 'list');" class="disabled"> 
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            
+                            </nav>
+                        </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h6 class="mt5 mb5">Account Details</h6>
-                      </div>
-                      <div class="panel-body">
-                        <form class="form-horizontal">
-                          <div class="form-group">
-                            <label class="col-sm-3 control-label">Company Name:</label>
-                            <div class="col-sm-9">
-                              <input type="name" class="form-control" value="Acme Inc." placeholder="Enter your Company Name">
-                            </div>
-                           
-                          </div>
-                          <div class="form-group">
-                            <label class="col-sm-3 control-label">Admins:</label>
-                            <div class="col-sm-9">
-                              <select class="admin-select form-control" multiple="multiple">
-                                <option selected>Oli Huggins</option>
-                                <option selected>Nick Falkowski</option>
-                                <option selected>Ed Gordon</option>
-                                <option>Julian Ursell</option>
-                                <option>Kerry George</option>
-                                <option>Akram Hussain</option>
-                                <option>Greg Roberts</option>
-                                <option>Erol Staveley</option>
-                              </select>
-                               <a href="#" class="btn btn-primary mt15 pull-right">Save Changes</a>
-                            </div>
-                           
-                          </div>
-                        </form>
-                      </div>
-                    </div>
+                      
+                    
+                    
+
                   </div>
                           
 
@@ -214,19 +309,14 @@
     
 
     <!-- JAVASCRIPT BLOCKS -->
-
+    <!-- Syntax Highlighting Script -->
     <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
-    <script type="text/javascript">
-      $(".admin-select").select2({ 
-      placeholder: "Select Team Members"
-    });
-
-    </script>
+    
 
     <script type="text/javascript">
     $("#myButton").click(function() {

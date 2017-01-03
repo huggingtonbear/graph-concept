@@ -92,9 +92,9 @@
               <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
               <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <li class="sub-nav active"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
-                <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
                 <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+                <li class="sub-nav active"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span></a>    </li>
+                <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -259,23 +259,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                                <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>                                              
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/python-high-performance-programming.png" class="img-card-list"></a>
@@ -286,23 +281,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Performance bottlenecks can break otherwise great applications and it’s important that you know how to avoid them. High performance techniques can help your applications scale and perform consistently, no matter how much data you’re crunching or how many users you’re serving.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-primary" title="Click to remove from Plan"><i class="fa fa-refresh"></i></button>
+                                                  <a href="card.html" class="btn btn-primary">View Card</a>
+                                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-times-circle-o fa-lg mr5"></i> Remove from Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/unity.png" class="img-card-list"></a>
@@ -313,23 +303,17 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Performance bottlenecks can break otherwise great applications and it’s important that you know how to avoid them. High performance techniques can help your applications scale and perform consistently, no matter how much data you’re crunching or how many users you’re serving.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-success" title="Click to add to Plan"><i class="fa fa-check-circle"></i></button>
+                                                  <a href="card.html" class="btn btn-success">View Card</a>
+                                                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-times-circle-o fa-lg mr5"></i> Remove from Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/python-fundamentals.png" class="img-card-list"></a>
@@ -340,23 +324,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/git-fundamentals.png" class="img-card-list"></a>
@@ -367,24 +346,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
-                                          </li>
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/android-studio-fundamentals.png" class="img-card-list"></a>
                                               <h1>Android Studio Fundamentals
@@ -394,23 +367,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-success "><i class="fa fa-check fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Completed Skill</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/production-ready-django.png" class="img-card-list"></a>
@@ -421,23 +389,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
                                           <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
                                               <a href="card.html" class=""><img src="images/skillcards/ux-design-basics.png" class="img-card-list"></a>
@@ -448,23 +411,18 @@
                                               <!-- <small class="title-duration mr10">Jan 2016</small>
                                               <small class="title-duration hidden-xs"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small> -->
                                               <p class="product-desc hidden-xs mt10"><small>Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development.</small></p>
-                                              <!-- Desktop Buttons START -->
-                                              <div class="btn-group pull-right mt5 hidden-xs">
-                                               <!--  <a href="index.html" class="btn btn-default "><i class="fa fa-shopping-bag fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Claim with Token</span></a> -->
-                                                <a href="index.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                  <span class="hidden-xs ml5">Add to Completed Skills</span></a>
-                                                <a href="card.html" class="btn btn-info ">View Skill Card <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Desktop Buttons END -->
-                                              <!-- Mobile Buttons START -->
-                                              <div class="clearfix"></div>
-                                              <div class="btn-group btn-group-justified visible-xs mt15">
-                                                <a href="card.html" class="btn btn-default "><i class="fa fa-plus fa-lg"></i>
-                                                   </a>
-                                                <a href="card.html" class="btn btn-info"><i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                              </div>
-                                              <!-- Mobile Buttons END -->
+                                              <div class="btn-group dropup pull-right mt10">
+                                                  <button type="button" class="btn btn-info" title="Click to add to Plan"><i class="fa fa-plus"></i></button>
+                                                  <a href="card.html" class="btn btn-info">View Card</a>
+                                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                  </button>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-plus fa-lg mr5"></i> Add to Custom Plan</a></li>
+                                                    <li><a href="#"><i class="fa fa-check-circle-o fa-lg mr5"></i> Add to Completed Skills</a></li>
+                                                  </ul>
+                                                </div>
                                           </li>
 
                                             </ul>

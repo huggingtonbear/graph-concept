@@ -20,7 +20,7 @@
     <!-- Bootstrap Core CSS -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
@@ -52,49 +52,31 @@
 </head>
 
 <body class="language-markup">
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4>Add to Completed Skill Cards</h4>
-      </div>
-      <div class="modal-body">
-              <p>Are you sure you want to mark this Skill Card as complete and remove it from your Plan</p>
-      </div>
-      <div class="modal-footer">
-        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-      </div>
-    </div>
-  </div>
-</div>
-  
-
     <div id="wrapper">
         
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
             <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
-              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/logo.png" height="30px" class=""></span><span class="pull-left mr5"></span></a>    </li>
               <form class="col-sm-12 mb15 pl25 pr35">
                 <input type="text" class="form-control mb10" placeholder="&#xf002;  Search all courses...">
               </form>
               <div class="clearfix"></div>
               <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
-              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">Team</span><span class="pull-left mr5"></span></a>    </li>
+              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">ACME INC.</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseEight">
-                <li class="sub-nav active"><a href="dashboard-b2b.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
-                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Users </span></a>    </li>
-                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Seats </span></a>    </li>
+                <li class="sub-nav active"><a href="dashboard-team.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
+                <li class="sub-nav "><a href="users.html" class="sidenav-menu-holder"><span class="sidenav-menu">Users </span></a>    </li>
+                <li class="sub-nav "><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Teams </span></a>    </li>
+                <li class="sub-nav "><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account </span></a>    </li>
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
                 <li class="sub-nav"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
                 <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
-                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+                
               </div>
               <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -114,7 +96,7 @@
                 <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
               </div>
               <li class="">
-                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-logo.svg" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
+                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-orange.png" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
             </div>
            
           </ul>
@@ -131,158 +113,113 @@
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
                     <div class="page-title"> 
                       <h3>Overview</h3>
-                      <h6 class="mt5">Detailed below is information about your team's usage of Mapt</h6>
+                      <h6 class="mt5">Detailed below is information about Acme Inc.'s usage of Mapt</h6>
                     </div>
                     <hr>
                   </div>
                   <div class="col-sm-12 col-lg-offset-1 col-lg-10">
                     <div class="row">
-                      <div class="col-sm-12 col-lg-4">
-                                  <div class="clearfix"></div>
+                      <div class="col-sm-12 col-md-4 col-lg-3 mb15">
+                        <select class="form-control">
+                          <option>Last 30 Days</option>
+                          <option>Last 7 Days</option>
+                          <option>Past 3 Months</option>
+                          <option>Past 12 Months</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-6 col-lg-3 mb15">
+                         <a href="account-licences.html" class="btn btn-info pull-right"><i class="fa fa-user-plus mr5"></i> Invite New Users</a>    
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">57</h2><h1 class="mt0"> Users</h1>
+                                <h3 class="mt0 mb0">3</h3><h6 class="mt0 mb0"> Licenses available</h6>
                             </div>
                             </li>
-                          </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-4">
-                                  <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class=" list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">34</h2><h1 class="mt0"> Active in Last Week</h1>
+                                <h3 class="mt0 mb0">34</h3><h6 class="mt0 mb0"> Licenses used</h6>
                             </div>
                             </li>
-                          </a>
                         </ul>
                       </div>
-                      <div class="col-sm-12 col-lg-4">
-                                  <div class="clearfix"></div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
                         <ul class="list-group">
-                          <a class="dashboard-kpi" href="my-library.html">
-                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item kpi-name ng-scope">
                               <div class="text-center">
-                                <h2 class="mt0 mb0">3</h2><h1 class="mt0"> Seats Available</h1>
+                                <h3 class="mt0 mb0">145</h3><h6 class="mt0 mb0">Sections Viewed</h6>
                             </div>
                           
                             </li>
-                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <ul class="list-group">
+                            <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item kpi-name ng-scope">
+                              <div class="text-center">
+                                <h3 class="mt0 mb0">10.5</h3><h6 class="mt0 mb0">Avg Sections / User </h6>
+                            </div>
+                          
+                            </li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <div class="clearfix"></div>
                   <div class="col-lg-offset-1 col-lg-10 hidden-xs">
-                    <h5>Section Views - Last 30 Days</h5>
-                    <hr>
-                    <div id="chartdiv" style="height:320px;"></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h6 class="mt5 mb5">Daily Usage</h6>
+                        </div>
+                       <ul class="list-group">
+                        <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                          <div id="usageGraph"></div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="col-sm-12 col-lg-offset-1 col-lg-5 mt30">
-                    <h5>My Team (Last 14 Days):</h5>
-                    <hr>
-                    <div class="table-responsive panel panel-default"> <!-- class table-responsive -->
-                        <table class="table table-striped"> <!-- class table-condensed -->
-                                <thead><!-- table head-->
-                                    <tr>
-                                       <th><h6>User</h6></th>
-                                       
-                                        <th class="text-center"><h6>Sections Viewed</h6></th>
-                                        <th class="text-center"><h6>Sections Completed</h6></th>
-                                    </tr>
-                                </thead>
-                            
-                                <tbody>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><a href="#"><h6 class="mt20"> John Smith</h6></a></td>
- 
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><a href="#"><h6 class="mt20"> Nick Jones</h6></a></td>
-
-                                        <td class="text-center"><h6 class="mt20">56</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5hr(s) 14min(s) </h6></td>
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><a href="#"><h6 class="mt20"> Craig David</h6></a></td>
-                                       
-                                        <td class="text-center"><h6 class="mt20">79</h6></td>
-                                        <td class="text-center"><h6 class="mt20">2hr(s) 29min(s) </h6></td>
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><a href="#"><h6 class="mt20"> Michelle O'Neill</h6></a></td>
-
-                                        <td class="text-center"><h6 class="mt20">85</h6></td>
-                                        <td class="text-center"><h6 class="mt20">1hr(s) 45min(s)</h6></td>
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><a href="#"><h6 class="mt20"> Paulius Retz</h6></a></td>
-  
-                                        <td class="text-center"><h6 class="mt20">42</h6></td>
-                                        <td class="text-center"><h6 class="mt20">0hr(s) 5min(s)</h6></td>
-                                    </tr>
-                                </tbody>
-                        </table>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h6 class="mt5 mb5">Most Viewed Courses</h6>
                         </div>
+                      <ul class="list-group">
+                        <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                          <div id="popularCourses"></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h6 class="mt5 mb5">Most Active Users<a href="users.html" class="pull-right">View All</a></h6>
+                        </div>
+                      <ul class="list-group">
+                        <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                          <div id="activeUsers"></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-offset-1 col-lg-10 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h6 class="mt5 mb5">Team Usage<a href="teams.html" class="pull-right">View All</a></h6>
+                        </div>
+                         <ul class="list-group">
+                          <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item ng-scope">
+                            <div id="topTeams"></div>
+                          </li>
+                        </ul>
                       </div>
-                  <div class="col-lg-5 mt30">
-                    <h5>Most viewed Courses:</h5>
-                    <hr>
-                    <div class="table-responsive panel panel-default"> <!-- class table-responsive -->
-                        <table class="table table-striped"> <!-- class table-condensed -->
-                                <thead><!-- table head-->
-                                    <tr>
-                                       <th><h6>Course</h6></th>
-                                        <th class="text-center"><h6>Sections Viewed</h6></th>
-                                        <th class="text-center"><h6>Sections Completed</h6></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><h6 class="mt20">Practical Data Science...</h6></td>
-                                        
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><h6 class="mt20">Mastering JavaScript</h6></td>
-                                        
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><h6 class="mt20">Building a Road in Civ...</h6></td>
-                                        
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><h6 class="mt20">Mastering Python</h6></td>
-                                        
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    <tr class=""><!-- Row 1 , success class-->
-                                        <td><h6 class="mt20">UX Design Fundamentals</h6></td>
-                                        
-                                        <td class="text-center"><h6 class="mt20">102</h6></td>
-                                        <td class="text-center"><h6 class="mt20">5 </h6></td>
-                                        
-                                    </tr>
-                                    
-                                </tbody>
-                        </table>
-                        </div>
+                    </div>
                   
                       <div class="clearfix"></div>
                     </div>
@@ -304,68 +241,267 @@
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
     <script src="js/sidenav-accordion.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.skill-plan').slick({
-          dots: true,
-          infinite: false,
-          arrows: false,
-          speed: 300,
-          slidesToShow: 5.5,
-          slidesToScroll: 5,
-          responsive: [
-            {
-              breakpoint: 1450,
-              settings: {
-                slidesToShow: 4.5,
-                slidesToScroll: 4,
-                infinite: false,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 1250,
-              settings: {
-                slidesToShow: 3.5,
-                slidesToScroll: 3,
-                infinite: false,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-      });
-    </script>
-    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    
+    <script src="js/amcharts.js"></script>
     <script src="https://www.amcharts.com/lib/3/serial.js"></script>
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
     <!-- Chart code -->
     <script>
-    var chart = AmCharts.makeChart("chartdiv", {
+      var chart = AmCharts.makeChart("activeUsers", {
+        "type": "serial",
+        "theme": "light",
+        "rotate":true,
+        "fontFamily" : "Montserrat",
+        "dataProvider": [{
+          "user": "Nick Falkowski",
+          "views": 267,
+          "color": "#e45138"
+        }, {
+          "user": "Ed Gordon",
+          "views": 254,
+          "color": "#eb711e"
+        }, {
+          "user": "Julian Ursell",
+          "views": 189,
+          "color": "#ec9720"
+        }, {
+          "user": "Oli Huggins",
+          "views": 176,
+          "color": "#f2b146"
+        }, {
+          "user": "Akram Hussain",
+          "views": 124,
+          "color": "#e45138"
+        }, {
+          "user": "Toby Knight",
+          "views": 89,
+          "color": "#eb711e"
+        }, {
+          "user": "Chris Key",
+          "views": 35,
+          "color": "#ec9720"
+        }, {
+          "user": "Kerry George",
+          "views": 17,
+          "color": "#f2b146"
+        }, {
+          "user": "Greg Roberts",
+          "views": 5,
+          "color": "#e45138"
+        }],
+        "valueAxes": [{
+        "gridColor": "#eee",
+        "axisColor": "#eee",
+        "gridAlpha": 1,
+        "axisAlpha": 0,
+        "position": "top",
+        "title": "Sections Viewed",
+        "titleColor": "#cccccc",
+        "titleBold": false,
+        }],
+        "startDuration": 1,
+        "graphs": [{
+          "balloonText": "<b>[[category]]: [[value]]</b>",
+          "fillColorsField": "color",
+          "fillAlphas": 0.9,
+          "lineAlpha": 0.2,
+          "cornerRadiusTop": 4,
+          "type": "column",
+          "valueField": "views"
+        }],
+        "chartCursor": {
+          "categoryBalloonEnabled": false,
+          "cursorAlpha": 0,
+          "zoomable": false
+        },
+        "categoryField": "user",
+        "categoryAxis": {
+          "gridPosition": "start",
+          "axisAlpha": 0,
+          "gridAlpha": 0,
+          "labelRotation": 90,
+          "labelFunction": function(valueText, serialDataItem, categoryAxis) {
+            if (valueText.length > 15)
+              return valueText.substring(0, 15) + '...';
+            else
+              return valueText;
+          }
+        },
+        "export": {
+          "enabled": false
+        }
+
+      });
+    </script>
+    <script>
+      var chart = AmCharts.makeChart("topTeams", {
+        "type": "serial",
+        "theme": "light",
+        "fontFamily" : "Montserrat",
+        "dataProvider": [{
+          "user": "Data Team",
+          "views": 1245,
+          "color": "#e45138"
+        }, {
+          "user": "Platform Team",
+          "views": 892,
+          "color": "#eb711e"
+        }, {
+          "user": "Marketing Team",
+          "views": 182,
+          "color": "#ec9720"
+        }, {
+          "user": "Publishing Team",
+          "views": 37,
+          "color": "#f2b146"
+        }, {
+          "user": "BIT Team",
+          "views": 4,
+          "color": "#e45138"
+        }],
+        "valueAxes": [{
+        "gridColor": "#eee",
+        "axisColor": "#eee",
+        "gridAlpha": 1,
+        "axisAlpha": 0,
+        "position": "top",
+        "title": "Sections Viewed",
+        "titleColor": "#cccccc",
+        "titleBold": false,
+        }],
+        "startDuration": 1,
+        "graphs": [{
+          "balloonText": "<b>[[category]]: [[value]]</b>",
+          "fillColorsField": "color",
+          "fillAlphas": 0.9,
+          "lineAlpha": 0.2,
+          "cornerRadiusTop": 4,
+          "type": "column",
+          "valueField": "views"
+        }],
+        "chartCursor": {
+          "categoryBalloonEnabled": false,
+          "cursorAlpha": 0,
+          "zoomable": false
+        },
+        "categoryField": "user",
+        "categoryAxis": {
+          "gridPosition": "start",
+          "axisAlpha": 0,
+          "gridAlpha": 0,
+          "labelRotation": 0,
+          "labelFunction": function(valueText, serialDataItem, categoryAxis) {
+            if (valueText.length > 15)
+              return valueText.substring(0, 15) + '...';
+            else
+              return valueText;
+          }
+        },
+        "export": {
+          "enabled": false
+        }
+
+      });
+    </script>
+    <script>
+      var chart = AmCharts.makeChart("popularCourses", {
+        "type": "serial",
+        "theme": "light",
+        "rotate":true,
+        "fontFamily" : "Montserrat",
+        "dataProvider": [{
+          "course": "Mastering MEAN [video]",
+          "views": 3025,
+          "color": "#e45138"
+        }, {
+          "course": "Responsive Web Design 2nd Edition",
+          "views": 1882,
+          "color": "#eb711e"
+        }, {
+          "course": "Learning Python",
+          "views": 1809,
+          "color": "#ec9720"
+        }, {
+          "course": "Mastering Python [video]",
+          "views": 1322,
+          "color": "#f2b146"
+        }, {
+          "course": "Learning Angular2",
+          "views": 1122,
+          "color": "#e45138"
+        }, {
+          "course": "Mastering CSS [video]",
+          "views": 1114,
+          "color": "#eb711e"
+        }, {
+          "course": "Building Robotics Projects with Arduino",
+          "views": 984,
+          "color": "#ec9720"
+        }, {
+          "course": "Node.JS for beginners",
+          "views": 711,
+          "color": "#f2b146"
+        }, {
+          "course": "Getting Started with ReactJS",
+          "views": 665,
+          "color": "#e45138"
+        }],
+        "valueAxes": [{
+        "gridColor": "#eee",
+        "axisColor": "#eee",
+        "gridAlpha": 1,
+        "axisAlpha": 0,
+        "position": "top",
+        "title": "Sections Viewed",
+        "titleColor": "#cccccc",
+        "titleBold": false,
+        }],
+        "startDuration": 1,
+        "graphs": [{
+          "balloonText": "<b>[[category]]: [[value]]</b>",
+          "fillColorsField": "color",
+          "fillAlphas": 0.9,
+          "lineAlpha": 0.2,
+          "cornerRadiusTop": 4,
+          "type": "column",
+          "valueField": "views"
+        }],
+        "chartCursor": {
+          "categoryBalloonEnabled": false,
+          "cursorAlpha": 0,
+          "zoomable": false
+        },
+        "categoryField": "course",
+        "categoryAxis": {
+          "gridPosition": "start",
+          "labelRotation": 90,
+          "axisAlpha": 0,
+          "gridAlpha": 0,
+          "labelFunction": function(valueText, serialDataItem, categoryAxis) {
+            if (valueText.length > 15)
+              return valueText.substring(0, 15) + '...';
+            else
+              return valueText;
+          }
+        },
+        "export": {
+          "enabled": false
+        }
+
+      });
+    </script>
+    <script>
+    var chart = AmCharts.makeChart("usageGraph", {
       "type": "serial",
       "theme": "light",
       "marginTop": 30,
+      "marginBottom": 30,
+      "title":"Daily Usage",
       "autoMarginOffset": 20,
+      "fontFamily" : "Montserrat",
+      "fontSize" : 12,
       "marginRight": 30,
       "marginBottom": 30,
       "backgroundAlpha": 1,
@@ -374,28 +510,28 @@
       "dataProvider": [
       {
         "year": "11/08",
-        "sales": 0,
+        "sales": 87,
       }, {
         "year": "12/08",
-        "sales": 0,
+        "sales": 99,
       }, {
         "year": "13/08",
-        "sales": 0,
+        "sales": 68,
       }, {
         "year": "14/08",
-        "sales": 0,
+        "sales": 13,
       }, {
         "year": "15/08",
-        "sales": 0,
+        "sales": 25,
       }, {
         "year": "02/08",
-        "sales": 0,
+        "sales": 36,
       }, {
         "year": "03/08",
-        "sales": 0,
+        "sales": 46,
       }, {
         "year": "04/08",
-        "sales": 0,
+        "sales": 24,
       }, {
         "year": "05/08",
         "sales": 572,
@@ -404,7 +540,7 @@
         "sales": 257,
       }, {
         "year": "07/08",
-        "sales": 3,
+        "sales": 49,
       }, {
         "year": "08/08",
         "sales": 108,
@@ -417,7 +553,7 @@
       },
       {
         "year": "11/08",
-        "sales": 0,
+        "sales": 44,
       }, {
         "year": "12/08",
         "sales": 390,
@@ -435,10 +571,10 @@
         "sales": 450,
       }, {
         "year": "17/08",
-        "sales": 0,
+        "sales": 45,
       }, {
         "year": "18/08",
-        "sales": 0,
+        "sales": 32,
       }, {
         "year": "19/08",
         "sales": 149,
@@ -456,10 +592,10 @@
         "sales": 294,
       }, {
         "year": "24/08",
-        "sales": 0,
+        "sales": 99,
       }],
       "graphs": [{
-        "title": "Total Views",
+        "title": "Section Views",
         "lineColor": "#eb711e",
         "lineAlpha": 0.7,
         "lineThickness": 2,
@@ -467,8 +603,11 @@
         "bullet": "round",
         "bulletBorderThickness": 2,
         "bulletBorderAlpha": 1,
+        "bulletBorderColor": "#eb711e",
+        "fillAlphas": 0.75,
+        "fillColorsField": "lineColor",
         "bulletSize": 10,
-        "bulletColor": "#eb711e",
+        "bulletColor": "#ffffff",
         "useLineColorForBulletBorder": true,
         "valueField": "sales",
         "balloonText": "<span style='font-family: Montserrat;'>[[title]]</span><br /><span style='font-size: 16px;'>[[value]]</span>"
@@ -482,11 +621,16 @@
       },
       "valueAxes": [{
         "gridColor": "#eee",
+        "axisColor": "#eee",
         "gridAlpha": 1,
-        "axisAlpha": 0
+        "axisAlpha": 0,
+        "title": "Sections Viewed",
+        "titleColor": "#cccccc",
+        "titleBold": false
       }],
       "chartCursor": {
-        "cursorAlpha": 0,
+        "cursorAlpha": 1,
+        "cursorColor": "#cccccc",
         "categoryBalloonEnabled": true,
         "categoryBalloonColor": "#f2b146",
         "color": "#fff",
