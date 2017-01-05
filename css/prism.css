@@ -40,7 +40,7 @@ pre[class*="language-"] {
 	background-size: 3em 3em;
 	background-origin: content-box;
 	overflow: auto;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	max-height: 30em;
 }
 

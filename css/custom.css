@@ -1,12 +1,28 @@
+@font-face
+{
+    font-family: 'montserrat-hairline';
+    font-weight: normal;
+    font-style: normal;
+    
+    src: url('./fonts/montserrat-hairline.eot');
+    src: url('./fonts/montserrat-hairline.eot') format('embedded-opentype'), url('./fonts/montserrat-hairline.ttf') format('truetype'), url('./fonts/montserrat-hairline.woff') format('woff'), url('./fonts/montserrat-hairline.svg') format('svg');
+}
 /*Boostrap Overwritten Rules*/
 body {
   font-family: 'Lato', Helvetica, sans-serif;
   background: #fcfcfc;
+
 }
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Montserrat', Helvetica,Arial,sans-serif;
     font-weight: 300;
     line-height: 1.1;
+}
+.in-ya-face {
+    font-family: montserrat-hairline, montserrat, helvetica;
+    font-size: 20pt;
+    font-weight: normal;
+    text-align: center;
 }
 .reader-container p,
 .reader-container ul,
@@ -286,6 +302,19 @@ a.early-access:after {
 }
 .btn {
   min-height: 36px;
+}
+.btn-call {
+    background-color: #F76D35;
+    color: white;
+}
+.btn-call:hover {
+    background-color: #C5572A;
+    color: white;
+}
+.promo {
+    color: #F76D35;
+    font-size: 16pt;
+    text-align: center;
 }
 .product-desc {
   line-height: 20px;
