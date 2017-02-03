@@ -46,30 +46,26 @@
       <div class="container">
         <div class="col-sm-12 text-center">
           <img src="images/logo.png" class="login-logo mt50">
-          <p class="mt15"><a href="https://mapt.io">Find out more</a></p>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-lg-offset-2 col-lg-8">
+        <div class="alert alert-success mt20">
+          <p><i class="fa fa-check mr5"></i> Your business has provided you with access to Mapt. Complete your details to get access now.</p>
+        </div>
           <div class="card card-container mt20">
+
               <img id="profile-img" class="profile-img-card" src="images/avatar.png" />
               <p id="profile-name" class="profile-name-card"></p>
-              <form class="form-signin">
-                  <span id="reauth-email" class="reauth-email"></span>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <div id="remember" class="checkbox">
-                      <label>
-                          <input type="checkbox" value="remember-me"> Remember me
-                      </label>
-                  </div>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-              </form><!-- /form -->
-              <a href="#" class="forgot-password">
-                 Forgot the password?
-              </a>
-              <hr>
-              <div class="text-center">
-                <a href="create-account.html">Create account</a>
-              </div>
+              <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="name" type="name" class="form-control mb10" id="firstName" placeholder="Enter your First Name">
+                            <input name="name" type="name" class="form-control mb30" id="firstName" placeholder="Enter your Last Name">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                            
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg mt20" value="Create Account">
+                        </form>
           </div><!-- /card-container -->
         </div>
     </div><!-- /container -->
