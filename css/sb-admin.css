@@ -3,12 +3,18 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
+
 html {
   position: relative;
   min-height: 100%; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  font-family: 'Open Sans'
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat'
+}
 
 body.sticky-footer {
   margin-bottom: 56px; }
