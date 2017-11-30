@@ -33,13 +33,13 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="proposals.html">
             <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">Proposals</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="products.html">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Products</span>
@@ -92,124 +92,71 @@
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active">Proposals</li>
+        <li class="breadcrumb-item">
+          <a href="#">Products</a>
+        </li>
+        <li class="breadcrumb-item active">Angular 2 Components</li>
       </ol>
-      <!-- Example DataTables Card-->
+        <div class="row">
+          <div class="col-xl-9 mb-3">
+              <h1>Angular 2 Components</h1>
+              <hr>
+              <p><b>A quick and concise guide to Angular 2 Components</b></p>
+              <h4>Description</h4>
+              <p>This book is a concise guide to Angular 2 Components and is based on the stable version of Angular 2. You will start with learning about the Angular 2 Components architecture and how components differ from Angular directives in Angular 1. You will then move on to quickly set up an Angular 2 development environment and grasp the basics of TypeScript. With this strong foundation in place, you will start building components.</p>
+              
+              <p>The book will teach you, with an example, how to define component behavior, create component templates, and use the controller of your component. You will also learn how to make your components communicate with each other. Once you have built a component, you will learn how to extend it by integrating third-party components with it. By the end of the book, you will be confident with building and using components for your applications.</p>
+              <h4>Learning Points</h4>
+              <ul>
+                <li>Break your application into reusable dynamic components</li>
+                <li>Take advantage of TypeScript in Angular 2</li>
+                <li>Migrate your Angular 1 directive to an Angular 2 Component</li>
+                <li>Understand the Angular 2 component structure and APIs</li>
+                <li>Hook to component life cycle events</li>
+                <li>Bind dynamic data to your component properties</li>
+                <li>Communicate with other components using events</li>
+                <li>Compose complicated UIs from simple components</li>
+              </ul>
+          </div>
+          <div class="col-xl-3 mb-3">
+             <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fa fa-info-circle"></i> Tool Information
+                </div>
+                 <div class="card-body">
+                   <img src="images/product-image.png" class="img-product"/>
+                     <p> ISBN 13: 9781785882340</p>
+                     <p> Page Count: 124 Pages</p>
+                     <p> Category: <a href="#">Web Development</a></p>
+                     <p> Concept: <a href="#">Building Web Apps</a></p>
+                     <p> Primary Tool: <a href="#">Angular</a></p>
+                     <p> Primary Tool Type: <a href="#">Frameworks</a></p>
+                     <p> Primary Tool Language: <a href="#">JavaScript</a></p>
+                     <p> Primary Tool Version: 2</p>
+                     <p> Vendor: <a href="#">Google</a></p>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
               <div class="card mb-3">
                 <div class="card-header">
-                  <i class="fa fa-table"></i> All Proposals</div>
+                  <i class="fa fa-area-chart"></i> Book Unit Sales</div>
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
-                      <thead>
-                        <tr>
-                          <th>Product Name</th>
-                          <th>Submitted By</th>
-                          <th>Format</th>
-                          <th>Status</th>
-                          <th>Comments</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tfoot>
-                        <tr>
-                          <th>Product Name</th>
-                          <th>Publish Date</th>
-                          <th>Format</th>
-                          <th>Units Sold</th>
-                          <th>Total Revenue</th>
-                          <th>Action</th>
-                        </tr>
-                      </tfoot>
-                      <tbody>
-                        <tr>
-                          <td><a href="tool-angular.html">Learning Python - Second Edition</a></td>
-                          <td>John Smith</td>
-                          <td>Book</td>
-                          <td>Draft</td>
-                          <td>3</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Mastering Flask</a></td>
-                          <td>John Smith</td>
-                          <td>Book</td>
-                          <td>Draft</td>
-                          <td>0</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Hands-On Python Machine Learning</a></td>
-                          <td>Jane Jones</td>
-                          <td>Book</td>
-                          <td>Submitted</td>
-                          <td>3</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Learn JavaScript in 7 Days</a></td>
-                          <td>Jane Jones</td>
-                          <td>Video</td>
-                          <td>Draft</td>
-                          <td>1</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Hands-On AI Programming with Unity 5</a></td>
-                          <td>Billy Riggs</td>
-                          <td>Course</td>
-                          <td>Submitted</td>
-                          <td>3</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Getting Started with Angular 2</a></td>
-                          <td>John Smith</td>
-                          <td>Book</td>
-                          <td>Draft</td>
-                          <td>1</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Angular Components</a></td>
-                          <td>Emily Editor</td>
-                          <td>Book</td>
-                          <td>Draft</td>
-                          <td>1</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Learn Angular and .NET Core 2</a></td>
-                          <td>Emily Editor</td>
-                          <td>Book</td>
-                          <td>Submitted</td>
-                          <td>34</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Learning AngularJS</a></td>
-                          <td>Billy Riggs</td>
-                          <td>Video</td>
-                          <td>Draft</td>
-                          <td>0</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Building Web Apps with Angular 5 and Node.js</a></td>
-                          <td>Jane Jones</td>
-                          <td>Course</td>
-                          <td>Submitted</td>
-                          <td>0</td>
-                          <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <canvas id="myAreaChart" width="100%" height="60"></canvas>
                 </div>
                 <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-              </div> 
-        
-      </div>  
+              </div>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fa fa-area-chart"></i> Video Revenue</div>
+                <div class="card-body">
+                  <canvas id="myBarChart" width="100" height="60"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+          </div>
+       </div>  
+    </div>  
         
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->

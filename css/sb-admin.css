@@ -51,7 +51,12 @@ body.fixed-nav {
 
 .z-1 {
   z-index: 1; }
-
+.img-product {
+    max-width:180px;
+    margin-bottom:1em;
+    width:100%;
+    
+}
 #mainNav .navbar-collapse {
   overflow: auto;
   max-height: 75vh; }
