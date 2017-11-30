@@ -27,7 +27,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
@@ -54,7 +54,7 @@
             <li>
               <a href="languages.html">Languages</a>
             </li>
-            <li>
+            <li class="active">
               <a href="tools.html">Tools</a>
             </li>
             <li>
@@ -87,10 +87,110 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="#">Product Taxonomy</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item">
+          <a href="#">Tools</a>
+        </li>
+        <li class="breadcrumb-item active">Angular</li>
       </ol>
+      <div class="row">
+          <div class="col-xl-9 mb-3">
+              <h1>Angular</h1>
+              <hr>
+              <p>Angular (commonly referred to as "Angular 2+" or "Angular 2") is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations to address all of the parts of the developer's workflow while building complex web applications. Angular is a complete rewrite from the same team that built AngularJS.</p>
+              <!-- Example DataTables Card-->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fa fa-table"></i> Published Products</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Product Name</th>
+                          <th>Publish Date</th>
+                          <th>Format</th>
+                          <th>Units Sold</th>
+                          <th>Total Revenue</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>Product Name</th>
+                          <th>Publish Date</th>
+                          <th>Format</th>
+                          <th>Units Sold</th>
+                          <th>Total Revenue</th>
+                          <th>Action</th>
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td><a href="tool-angular.html">Getting Started with Angular 2</a></td>
+                          <td>2016-01-29</td>
+                          <td>Book</td>
+                          <td>131</td>
+                          <td>£3,478</td>
+                          <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="tool-angular.html">Angular Components</a></td>
+                          <td>2017-02-22</td>
+                          <td>Book</td>
+                          <td>255</td>
+                          <td>£12,478</td>
+                          <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="tool-angular.html">Learn Angular and .NET Core 2</a></td>
+                          <td>2017-05-20</td>
+                          <td>Book</td>
+                          <td>133</td>
+                          <td>£4,144</td>
+                          <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="tool-angular.html">Learning AngularJS</a></td>
+                          <td>2015-01-23</td>
+                          <td>Video</td>
+                          <td>33</td>
+                          <td>£2,987</td>
+                          <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="tool-angular.html">Building Web Apps with Angular 5 and Node.js</a></td>
+                          <td>2017-09-13</td>
+                          <td>Course</td>
+                          <td>1</td>
+                          <td>£1,212</td>
+                          <td><a href="#">View</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>    
+          </div>
+          <div class="col-xl-3 mb-3">
+             <div class="card mb3">
+                <div class="card-header">
+                    <i class="fa fa-info-circle"></i> Tool Information
+                </div>
+                 <div class="card-body">
+                   <p> Tool Type: <a href="#">Frameworks</a></p>
+                   <p> Tool Language: <a href="#">JavaScript</a></p>
+                   <p> Vendor: <a href="#">Google</a></p>
+                   <p> Versions: JS, 2, 4, 5, 6</p>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+          </div>
+       </div>
+    </div>  
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">

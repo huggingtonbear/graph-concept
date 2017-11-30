@@ -27,7 +27,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
@@ -54,7 +54,7 @@
             <li>
               <a href="languages.html">Languages</a>
             </li>
-            <li>
+            <li class="active">
               <a href="tools.html">Tools</a>
             </li>
             <li>
@@ -87,10 +87,154 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="#">Product Taxonomy</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item active">Tools</li>
       </ol>
+      <div class="clearfix">
+        <a class="pull-right btn btn-info" href="#"><i class="fa fa-plus"></i> Create new Tool</a>
+      </div>
+      <br/>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Tools</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Tools</th>
+                  <th>Books</th>
+                  <th>Video Courses</th>
+                  <th>Courses</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Tools</th>
+                  <th>Books</th>
+                  <th>Video Courses</th>
+                  <th>Courses</th>
+                  <th>Action</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td><a href="tool-angular.html">Angular</a></td>
+                  <td>56</td>
+                  <td>13</td>
+                  <td>2</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Docker</a></td>
+                  <td>16</td>
+                  <td>6</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">ASP.NET Core</a></td>
+                  <td>11</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">TensorFlow</a></td>
+                  <td>20</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Scikit-learn</a></td>
+                  <td>9</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Keras</a></td>
+                  <td>421</td>
+                  <td>19</td>
+                  <td>5</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">React</a></td>
+                  <td>31</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                  </tr>
+                <tr>
+                  <td><a href="#">Vulkan</a></td>
+                  <td>121</td>
+                  <td>34</td>
+                  <td>9</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Vue.js</a></td>
+                  <td>13</td>
+                  <td>44</td>
+                  <td>6</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">jQuery</a></td>
+                  <td>101</td>
+                  <td>23</td>
+                  <td>1</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Node.js</a></td>
+                  <td>22</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Unity</a></td>
+                  <td>18</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Unreal</a></td>
+                  <td>25</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Spring</a></td>
+                  <td>5</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Azure</a></td>
+                  <td>55</td>
+                  <td>13</td>
+                  <td>1</td>
+                  <td><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>    
+        
+      </div>  
+        
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
