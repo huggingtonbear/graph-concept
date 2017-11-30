@@ -15,7 +15,12 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat'
 }
-
+.action a {
+ margin-right: 15px;
+}
+.action {
+ text-align: center;
+}
 body.sticky-footer {
   margin-bottom: 56px; }
   body.sticky-footer .content-wrapper {
