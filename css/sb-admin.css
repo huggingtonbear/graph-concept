@@ -10,8 +10,14 @@ html {
 
 body {
   overflow-x: hidden; 
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
+  font-weight: 400;
 }
+body b {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat'
 }

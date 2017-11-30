@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <title>Category Management Prototype</title>
   <!-- Bootstrap core CSS-->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400,700" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
@@ -95,7 +95,7 @@
         <li class="breadcrumb-item active">Proposals</li>
       </ol>
       <!-- Example DataTables Card-->
-      <h1>Proposals<a class="pull-right btn btn-info" href="#"><i class="fa fa-plus"></i> New Proposal</a></h1>
+      <h1>Proposals<a class="pull-right btn btn-info" href="#" data-toggle="modal" data-target="#proposalModal"><i class="fa fa-plus"></i> New Proposal</a></h1>
       <hr>
       <div class="table-responsive mb-3">
         <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
@@ -232,6 +232,51 @@
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New Proposal Modal-->
+    <div class="modal fade" id="proposalModal" tabindex="-1" role="dialog" aria-labelledby="proposalModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Proposal</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+                <label><b>Select a Format:</b></label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Book
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Video Course
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Courseware 
+                  </label>
+                </div>
+            </div>
+            <label><b>Proposed Product Title:</b></label>
+            <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+            <span id="helpBlock" class="help-block"><small>Please ensure that your title does not exceed the 255 character limit</small></span>
+
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-info" href="new-proposal.html">Create Proposal</a>
           </div>
         </div>
       </div>

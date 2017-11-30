@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <title>Category Management Prototype</title>
   <!-- Bootstrap core CSS-->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400,600" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
@@ -92,117 +92,87 @@
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active">Proposals</li>
+        <li class="breadcrumb-item"><a href="proposals.html">Proposals</a></li>
+        <li class="breadcrumb-item active">Hands-On Machine Learning with Python</li>
       </ol>
       <!-- Example DataTables Card-->
-      <h1>Proposals<a class="pull-right btn btn-info" href="#"><i class="fa fa-plus"></i> New Proposal</a></h1>
+      <h1>Hands-On Machine Learning with Python<a class="pull-right btn btn-info" href="#"> Submit Proposal <i class="fa fa-chevron-right"></i></a></h1>
       <hr>
-      <div class="table-responsive mb-3">
-        <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Product Name</th>
-              <th>Submitted By</th>
-              <th>Format</th>
-              <th>Status</th>
-              <th>Comments</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Product Name</th>
-              <th>Publish Date</th>
-              <th>Format</th>
-              <th>Units Sold</th>
-              <th>Total Revenue</th>
-              <th>Action</th>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td><a href="tool-angular.html">Learning Python - Second Edition</a></td>
-              <td>John Smith</td>
-              <td>Book</td>
-              <td>Draft</td>
-              <td>3</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Mastering Flask</a></td>
-              <td>John Smith</td>
-              <td>Book</td>
-              <td>Draft</td>
-              <td>0</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Hands-On Python Machine Learning</a></td>
-              <td>Jane Jones</td>
-              <td>Book</td>
-              <td>Submitted</td>
-              <td>3</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Learn JavaScript in 7 Days</a></td>
-              <td>Jane Jones</td>
-              <td>Video</td>
-              <td>Draft</td>
-              <td>1</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Hands-On AI Programming with Unity 5</a></td>
-              <td>Billy Riggs</td>
-              <td>Course</td>
-              <td>Submitted</td>
-              <td>3</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Getting Started with Angular 2</a></td>
-              <td>John Smith</td>
-              <td>Book</td>
-              <td>Draft</td>
-              <td>1</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Angular Components</a></td>
-              <td>Emily Editor</td>
-              <td>Book</td>
-              <td>Draft</td>
-              <td>1</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Learn Angular and .NET Core 2</a></td>
-              <td>Emily Editor</td>
-              <td>Book</td>
-              <td>Submitted</td>
-              <td>34</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Learning AngularJS</a></td>
-              <td>Billy Riggs</td>
-              <td>Video</td>
-              <td>Draft</td>
-              <td>0</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <td><a href="tool-angular.html">Building Web Apps with Angular 5 and Node.js</a></td>
-              <td>Jane Jones</td>
-              <td>Course</td>
-              <td>Submitted</td>
-              <td>0</td>
-              <td class="action"><a href="#">Edit</a> <a href="#">View</a> <a href="#">Delete</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="summary" role="tab" data-toggle="tab">Summary Information</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="description" role="tab" data-toggle="tab">Product Description</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="audience" role="tab" data-toggle="tab">Audience</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="evidence" role="tab" data-toggle="tab">Evidence</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="summary">
+            <form>
+              <div class="form-group mt-3">
+                <label for="exampleInputEmail1">Product Title</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Please add a Product Title" value="Hands-On Machine Learning with Python">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Product Subtitle</label>
+                <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Please add a Product Subtitle">
+                <span><small>Please do not exceed the character limit of 250 characters</small></span>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Product Reviewer (Publisher)</label>
+                <select class="form-control">
+                  <option>Mark Smith</option>
+                  <option>Barry Evans</option>
+                  <option>Sarah Rose</option>
+                  <option>Katherine Watson</option>
+                  <option>Mary Sue</option>
+                </select>
+                <span><small>Please define who will be reviewing this product proposal</small></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Commissioning Editor</label>
+                <select class="form-control">
+                 <option>Sarah Rose</option>
+                  <option>Katherine Watson</option>
+                  <option>Mary Sue</option> 
+                <option>Mark Smith</option>
+                  <option>Barry Evans</option>
+                  
+                </select>
+                <span><small>Please define who will be writing this product proposal</small></span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                <label for="exampleInputEmail1">Product RRP</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Please enter RRP in $ USD">
+                <span><small>For Book products please define the print sale price</small></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Predicted 18m £LTV</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" value="£14,530" disabled>
+                <span><small>Please refer to inputs in 'Evidence' tab to amend predicted LTV</small></span>
+              </div>
+            </div>
+            </div>
+              
+            </form>
+              
+              
+            </div>
+            <div role="tabpanel" class="tab-pane" id="metadata">...</div>
+            <div role="tabpanel" class="tab-pane" id="description">...</div>
+            <div role="tabpanel" class="tab-pane" id="audience">...</div>
+            <div role="tabpanel" class="tab-pane" id="evidence">...</div>
+          </div>
+
+        </div>
     </div>
         
     <!-- /.container-fluid-->
@@ -238,6 +208,7 @@
     </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
