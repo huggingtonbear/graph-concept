@@ -388,18 +388,21 @@
              <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group mt-3">
-                        <label for="exampleInputPassword1">Target Persona</label>
-                        <select class="form-control">
-                          <option>Career Builder</option>
-                          <option>Established Professional</option>
-                          <option>Tech Powered Pro</option>
-                        </select>
+                        <label for="exampleInputPassword1">Audience Segment</label>
+                        <textarea class="form-control" rows="4" placeholder="Please describe the audience segment of the product..."></textarea>
+                    <span><small>Please do not exceed the character limit of 650 characters</small></span>
+                        
                     </div>
                     <div class="form-group">
                     <label for="exampleInputPassword1">Customer Needs</label>
                     <textarea class="form-control" rows="6" placeholder="Please describe what the key customer needs are..."></textarea>
                     <span><small>Please do not exceed the character limit of 850 characters</small></span>
-                </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Title Demand Summary</label>
+                    <textarea class="form-control" rows="6" placeholder="Please explain what the demand for this title is..."></textarea>
+                    <span><small>Please do not exceed the character limit of 850 characters</small></span>
+                    </div>
                 </div>
                  <div class="col-sm-6">
                     
@@ -475,7 +478,147 @@
                 </div>
               </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="evidence">...</div>
+            <div role="tabpanel" class="tab-pane" id="evidence">
+                <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Target Release Date</label>
+                        <div class="input-group date">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </div>
+                    <span><small>Please select a date greater than 3 months in the future</small></span>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Target Release Rationale</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            First to Market
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Version Update
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Competition
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Conference
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Natural Lifetime
+                          </label>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Fit:</label>
+                        <select class="form-control">
+                              <option>Unconventional Audience</option>
+                              <option>Hybrid Audience</option>
+                              <option>Core Packt Audience/Target Personas</option>
+                            </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Complexity:</label>
+                        <select class="form-control">
+                              <option>Low</option>
+                              <option>Medium</option>
+                              <option>High</option>
+                            </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Google Trends Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state evidence you have gathered regarding Google Trends data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Growth:</label>
+                        <select class="form-control">
+                              <option>Decline</option>
+                              <option>Maturity</option>
+                              <option>Adoption/Growth</option>
+                              <option>Exploring/Emerging</option>
+                            </select>
+                        <span><small>What phase is the market growth for the tool/topic at?</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Product Demand Summary</label>
+                        <textarea class="form-control" rows="4" placeholder="Please summarise why this product is in demand..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                </div>
+                 <div class="col-sm-6 mb-3">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Job Market Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please list evidence you have gathered regarding Job Market data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">BookScan Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please list evidence you have gathered regarding BookScan data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Numerical Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state any other evidence you have gathered regarding market size..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Size:</label>
+                        <select class="form-control">
+                              <option>Micro</option>
+                              <option>Small</option>
+                              <option>Medium</option>
+                              <option>Large</option>
+                              <option>Extra Large</option>
+                            </select>
+                        <span><small>Considering the size of the potential audience, establish how large the market for the tool/topic is?</small></span>   
+                    </div>
+                      <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Community Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state any other evidence you have gathered regarding the community..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Insight:</label>
+                        <select class="form-control">
+                              <option>No Insight</option>
+                              <option>Insight from B2B Partners/Vendor Releases/Author Ideas</option>
+                              <option>Insight from Top Expert/Reputable Research Reports</option>
+                              <option>Insight from more than 1 source</option>
+                            </select>
+                    </div>
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Previous Publication Performance:</label>
+                        <select class="form-control">
+                              <option>Below £12,000</option>
+                              <option>£12,000 - £15,999/No Past Performance</option>
+                              <option>£16,000 - £24,999</option>
+                              <option>£25,000 - £39,999</option>
+                              <option>£40,000 or more</option>
+                            </select>
+                        <span><small>What is the average LTV of (up to) 3 relevant titles, published in the last 24 months?</small></span>   
+                    </div>
+                    
+                   
+                </div>
+              </div>  
+            </div>
           </div>
 
         </div>
