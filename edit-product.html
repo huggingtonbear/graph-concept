@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Category Management Prototype</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400,700" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html"><img height="25px" src="images/packt-logo.svg"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proposals">
+          <a class="nav-link" href="proposals.html">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Proposals</span>
+          </a>
+        </li>
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Products">
+          <a class="nav-link" href="products.html">
+            <i class="fa fa-fw fa-book"></i>
+            <span class="nav-link-text">Products</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Product Taxonomy">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Product Taxonomy</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="concepts.html">Concepts</a>
+            </li>
+            <li>
+              <a href="languages.html">Languages</a>
+            </li>
+            <li class="">
+              <a href="tools.html">Tools</a>
+            </li>
+            <li>
+              <a href="tooltypes.html">Tool Types</a>
+            </li>
+            <li>
+              <a href="vendors.html">Vendors</a>
+            </li>
+              
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Products</a>
+        </li>
+        <li class="breadcrumb-item active">Angular 2 Components</li>
+      </ol>
+        <div class="row">
+          <div class="col-sm-12 mb-3">
+              <h1>Angular 2 Components<a href="products.html" class="btn btn-info pull-right"><i class="fa fa-save"></i> Save Changes</a></h1>
+              <hr>
+              <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">1. Summary Information</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">2. Metadata</a></li>
+            <li role="presentation"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">3. Product Description</a></li>
+            <li role="presentation"><a href="#audience" aria-controls="audience" role="tab" data-toggle="tab">4. Audience</a></li>
+              <li role="presentation"><a href="#evidence" aria-controls="evidence" role="tab" data-toggle="tab">5. Evidence</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="summary">
+              <div class="form-group mt-3">
+                <label for="exampleInputEmail1">Product Title</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Please add a Product Title" value="Angular 2 Components" disabled>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Product Subtitle</label>
+                <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Please add a Product Subtitle" value="A quick and concise guide to Angular 2 Components">
+                <span><small>Please do not exceed the character limit of 250 characters</small></span>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Category</label>
+                            <select class="form-control">
+                              <option>Web Development</option>
+                              <option>Programming</option>
+                              <option>DevOps</option>
+                              <option>Security</option>
+                              <option>Data</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Concept</label>
+                            <select class="form-control">
+                              <option>Front-End Web Development</option>
+                              <option>Building Web Apps</option>
+                              <option>Functional Programming</option>
+                              <option>Data Storage</option>
+                              <option>Machine Learning</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Series/Approach</label>
+                            <select class="form-control">
+                              <option>Hands-On (Do x with y)</option>
+                              <option>Learn</option>
+                              <option>Mastering (Do x with y)</option>
+                              <option>Condensed</option>
+                              <option>Cookbook</option>
+                            </select>
+                        </div>
+                    </div>  
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Format</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" value="Book" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Length</label>
+                    <select class="form-control">
+                      <option>300 - 450</option>
+                      <option>150 - 200</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Edition</label>
+                    <select class="form-control">
+                      <option>First</option>
+                      <option>Second</option>
+                      <option>Third</option>
+                      <option>Forth</option>
+                      <option>Fifth</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Original Product ID</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter Product ID" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Product Reviewer (Publisher)</label>
+                    <select class="form-control">
+                      <option>Mark Smith</option>
+                      <option>Barry Evans</option>
+                      <option>Sarah Rose</option>
+                      <option>Katherine Watson</option>
+                      <option>Mary Sue</option>
+                    </select>
+                    <span><small>Please define who will be reviewing this product proposal</small></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Commissioning Editor</label>
+                    <select class="form-control">
+                     <option>Sarah Rose</option>
+                      <option>Katherine Watson</option>
+                      <option>Mary Sue</option> 
+                    <option>Mark Smith</option>
+                      <option>Barry Evans</option>
+
+                    </select>
+                    <span><small>Please define who will be writing this product proposal</small></span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Product RRP</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Please enter RRP in $ USD">
+                    <span><small>For Book products please define the print sale price</small></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Predicted 18m £LTV</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" value="£14,530" disabled>
+                    <span><small>Please refer to inputs in 'Evidence' tab to amend predicted LTV</small></span>
+                  </div>
+                </div>
+            </div>              
+              
+            </div>
+            <div role="tabpanel" class="tab-pane" id="metadata">
+                <div class="row mt-3">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Language</label>
+                            <select class="form-control">
+                              <option>JavaScript</option>
+                              <option>R</option>
+                              <option>Python</option>
+                              <option>PHP</option>
+                              <option>Julia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Language Version</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1" placeholder="e.g., ES6, 3.4, 2017" value="ES6" >
+                    <span><small>Please refrain from using .x in versions</small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Vendor</label>
+                            <select class="form-control" >
+                              <option>Google</option>
+                              <option>Facebook</option>
+                              <option>Oracle</option>
+                              <option>IBM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Tool</label>
+                            <select class="form-control">
+                              <option>Angular</option>
+                              <option>Keras</option>
+                              <option>TensorFlow</option>
+                              <option>jQuery</option>
+                              <option>React</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Tool Version</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1" placeholder="e.g., ES6, 3.4, 2017" value="2">
+                    <span><small>Please refrain from using .x in versions</small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Primary Tool Type</label>
+                            <select class="form-control" disabled>
+                              <option>JavaScript</option>
+                              <option>R</option>
+                              <option>Python</option>
+                              <option>PHP</option>
+                              <option>Julia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Secondary Tool</label>
+                            <select class="form-control">
+                              <option>Please Select a Tool</option>
+                              <option>Keras</option>
+                              <option>TensorFlow</option>
+                              <option>jQuery</option>
+                              <option>React</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Secondary Tool Version</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1" placeholder="e.g., ES6, 3.4, 2017" >
+                    <span><small>Please refrain from using .x in versions</small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Secondary Tool Type</label>
+                            <select class="form-control" disabled>
+                              <option></option>
+                              <option>R</option>
+                              <option>Python</option>
+                              <option>PHP</option>
+                              <option>Julia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">BISAC Code 1</label>
+                            <select class="form-control">
+                              <option>Please Select a Code</option>
+                              <option>Keras</option>
+                              <option>TensorFlow</option>
+                              <option>jQuery</option>
+                              <option>React</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">BISAC Code 2</label>
+                            <select class="form-control">
+                              <option>Please Select a Code</option>
+                              <option>Keras</option>
+                              <option>TensorFlow</option>
+                              <option>jQuery</option>
+                              <option>React</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">BISAC Code 3</label>
+                            <select class="form-control">
+                              <option>Please Select a Code</option>
+                              <option>Keras</option>
+                              <option>TensorFlow</option>
+                              <option>jQuery</option>
+                              <option>React</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="description">
+                <div class="form-group mt-3">
+                    <label for="exampleInputPassword1">Product Description</label>
+                    <textarea class="form-control" rows="5" placeholder="Please describe what the product is..." value="">This book is a concise guide to Angular 2 Components and is based on the stable version of Angular 2. You will start with learning about the Angular 2 Components architecture and how components differ from Angular directives in Angular 1. You will then move on to quickly set up an Angular 2 development environment and grasp the basics of TypeScript. With this strong foundation in place, you will start building components. The book will teach you, with an example, how to define component behavior, create component templates, and use the controller of your component. You will also learn how to make your components communicate with each other. Once you have built a component, you will learn how to extend it by integrating third-party components with it. By the end of the book, you will be confident with building and using components for your applications.
+                    </textarea>
+                    <span><small>Please do not exceed the character limit of 850 characters</small></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Product Key Features</label>
+                    <textarea class="form-control" rows="5" placeholder="Please describe what the key features of the product are...">Break your application into reusable dynamic components, Take advantage of TypeScript in Angular 
+                    </textarea>
+                    <span><small>Please do not exceed the character limit of 850 characters</small></span>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="audience">
+             <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Audience Segment</label>
+                        <textarea class="form-control" rows="4" placeholder="Please describe the audience segment of the product..."></textarea>
+                    <span><small>Please do not exceed the character limit of 650 characters</small></span>
+                        
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Customer Needs</label>
+                    <textarea class="form-control" rows="6" placeholder="Please describe what the key customer needs are..."></textarea>
+                    <span><small>Please do not exceed the character limit of 850 characters</small></span>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Title Demand Summary</label>
+                    <textarea class="form-control" rows="6" placeholder="Please explain what the demand for this title is..."></textarea>
+                    <span><small>Please do not exceed the character limit of 850 characters</small></span>
+                    </div>
+                </div>
+                 <div class="col-sm-6">
+                    
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Competancy of Concept:</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <select class="form-control disabled" disabled>
+                              <option>Front-End Web Development</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-6">
+                            <select class="form-control">
+                              <option>Intermediate</option>
+                              <option>Expert</option>
+                            </select>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Competancy of Primary Language:</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <select class="form-control disabled" disabled>
+                              <option>JavaScript</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-6">
+                            <select class="form-control">
+                              <option>Intermediate</option>
+                              <option>Expert</option>
+                            </select>
+                         </div>
+                        </div>
+                    </div>
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Competancy of Primary Tool:</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <select class="form-control disabled" disabled>
+                              <option>Angular</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-6">
+                            <select class="form-control">
+                              <option>Intermediate</option>
+                              <option>Expert</option>
+                            </select>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Competancy of Secondary Language:</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <select class="form-control disabled" disabled>
+                              <option></option>
+                            </select>
+                            </div>
+                            <div class="col-sm-6">
+                            <select class="form-control" disabled>
+                              <option></option>
+                              <option>Intermediate</option>
+                              <option>Expert</option>
+                            </select>
+                         </div>
+                        </div>
+                    </div>
+                   
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="evidence">
+                <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Target Release Date</label>
+                        <div class="input-group date">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </div>
+                    <span><small>Please select a date greater than 3 months in the future</small></span>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Target Release Rationale</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            First to Market
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Version Update
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Competition
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Conference
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Natural Lifetime
+                          </label>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Fit:</label>
+                        <select class="form-control">
+                              <option>Unconventional Audience</option>
+                              <option>Hybrid Audience</option>
+                              <option>Core Packt Audience/Target Personas</option>
+                            </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Complexity:</label>
+                        <select class="form-control">
+                              <option>Low</option>
+                              <option>Medium</option>
+                              <option>High</option>
+                            </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Google Trends Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state evidence you have gathered regarding Google Trends data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Growth:</label>
+                        <select class="form-control">
+                              <option>Decline</option>
+                              <option>Maturity</option>
+                              <option>Adoption/Growth</option>
+                              <option>Exploring/Emerging</option>
+                            </select>
+                        <span><small>What phase is the market growth for the tool/topic at?</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Product Demand Summary</label>
+                        <textarea class="form-control" rows="4" placeholder="Please summarise why this product is in demand..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                </div>
+                 <div class="col-sm-6 mb-3">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Job Market Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please list evidence you have gathered regarding Job Market data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">BookScan Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please list evidence you have gathered regarding BookScan data..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Numerical Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state any other evidence you have gathered regarding market size..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Size:</label>
+                        <select class="form-control">
+                              <option>Micro</option>
+                              <option>Small</option>
+                              <option>Medium</option>
+                              <option>Large</option>
+                              <option>Extra Large</option>
+                            </select>
+                        <span><small>Considering the size of the potential audience, establish how large the market for the tool/topic is?</small></span>   
+                    </div>
+                      <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Community Data</label>
+                        <textarea class="form-control" rows="4" placeholder="Please state any other evidence you have gathered regarding the community..."></textarea>
+                        <span><small>Please do not exceed the character limit of 650 characters</small></span>   
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Market Insight:</label>
+                        <select class="form-control">
+                              <option>No Insight</option>
+                              <option>Insight from B2B Partners/Vendor Releases/Author Ideas</option>
+                              <option>Insight from Top Expert/Reputable Research Reports</option>
+                              <option>Insight from more than 1 source</option>
+                            </select>
+                    </div>
+                     <div class="form-group mt-3">
+                        <label for="exampleInputPassword1">Previous Publication Performance:</label>
+                        <select class="form-control">
+                              <option>Below £12,000</option>
+                              <option>£12,000 - £15,999/No Past Performance</option>
+                              <option>£16,000 - £24,999</option>
+                              <option>£25,000 - £39,999</option>
+                              <option>£40,000 or more</option>
+                            </select>
+                        <span><small>What is the average LTV of (up to) 3 relevant titles, published in the last 24 months?</small></span>   
+                    </div>
+                    
+                   
+                </div>
+              </div>  
+            </div>
+          </div>
+
+        </div>
+          </div>
+       </div>  
+    </div> 
+    </div> 
+        
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Packt 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+</body>
+
+</html>
