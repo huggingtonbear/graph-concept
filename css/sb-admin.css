@@ -72,7 +72,11 @@ body.fixed-nav {
     max-width:180px;
     margin-bottom:1em;
     width:100%;
-    
+}
+.img-author {
+    margin-bottom:1em;
+    width:100%;
+    border: 1px solid #ddd;
 }
 #mainNav .navbar-collapse {
   overflow: auto;
