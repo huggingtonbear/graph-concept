@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Category Management Prototype</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400,700" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html"><img height="25px" src="images/packt-logo.svg"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proposals">
+          <a class="nav-link" href="proposals.html">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Proposals</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Product Taxonomy">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Product Taxonomy</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="concepts.html">Concepts</a>
+            </li>
+            <li class="active">
+              <a href="languages.html">Languages</a>
+            </li>
+            <li>
+              <a href="tools.html">Tools</a>
+            </li>
+            <li>
+              <a href="tooltypes.html">Tool Types</a>
+            </li>
+            <li>
+              <a href="vendors.html">Vendors</a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">
+          Product Taxonomy
+        </li>
+        <li class="breadcrumb-item"><a href="languages.html">Languages</a></li>
+        <li class="breadcrumb-item active">Python</li>
+      </ol>
+      <div class="row">
+          <div class="col-xl-9 mb-3">
+              <h1>Python</h1>
+              <hr>
+              <h4>What is it?</h4>
+              <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+              <hr>
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fa fa-area-chart"></i> Amazon US Print Unit Sales (Last 12 Months)</div>
+                <div class="card-body">
+                  <canvas id="myAreaChart" width="100%" height="20"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h3 class="mb-3">Output (Last 12 Months)</h3>
+                </div>
+                <div class="col-sm-8">
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Book Pipeline
+                        </div>
+                        <div class="card-body">
+                            <p><b>Published:</b> 64</p>
+                            <p><b>In-Development:</b> 17</p>
+                            <p><b>Uncontracted:</b> 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Video Course Pipeline
+                        </div>
+                        <div class="card-body">
+                            <p><b>Published:</b> 64</p>
+                            <p><b>In-Development:</b> 2</p>
+                            <p><b>Uncontracted:</b> 0</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Example DataTables Card-->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fa fa-table"></i> Published Products</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Product Name</th>
+                          <th>Publish Date</th>
+                          <th>Format</th>
+                          <th>Units Sold</th>
+                          <th>Total Revenue</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>Product Name</th>
+                          <th>Publish Date</th>
+                          <th>Format</th>
+                          <th>Units Sold</th>
+                          <th>Total Revenue</th>
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td>Getting Started with Python 2</td>
+                          <td>2016-01-29</td>
+                          <td>Book</td>
+                          <td>131</td>
+                          <td>£3,478</td>
+
+                        </tr>
+                        <tr>
+                          <td>Python Components</td>
+                          <td>2017-02-22</td>
+                          <td>Book</td>
+                          <td>255</td>
+                          <td>£12,478</td>
+
+                        </tr>
+                        <tr>
+                          <td>Learn Python and .NET Core 2</td>
+                          <td>2017-05-20</td>
+                          <td>Book</td>
+                          <td>133</td>
+                          <td>£4,144</td>
+
+                        </tr>
+                        <tr>
+                          <td>Learning Python</td>
+                          <td>2015-01-23</td>
+                          <td>Video</td>
+                          <td>33</td>
+                          <td>£2,987</td>
+
+                        </tr>
+                        <tr>
+                          <td>Building Web Apps with Python</td>
+                          <td>2017-09-13</td>
+                          <td>Course</td>
+                          <td>1</td>
+                          <td>£1,212</td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+          </div>
+          <div class="col-xl-3 mb-3">
+            <a href="edit-language.html" class="btn btn-info btn-block mb-3"><i class="fa fa-pencil"></i> Edit Info</a>
+             <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fa fa-info-circle"></i> Tool Information
+                </div>
+                 <div class="card-body">
+                   <p> Project Site: <a href="https://www.python.org">https://www.python.org</a></p>
+                   <p> Latest Version: 5</p>
+                   <p> Concepts: <a href="#">Machine Learning</a>, <a href="#">High Performance</a>, <a href="#">Design Patterns</a>, <a href="#">Deep Learning</a>, <a href="#">Artificial Intelligence</a>, <a href="#">Software Programming</a></p>
+                </div>
+              </div>
+               <div class="card mb-3">
+                  <div class="card-header">
+                      <i class="fa fa-stack-overflow"></i> StackOverflow Tags
+                  </div>
+                   <div class="card-body">
+                     <h3 class="text-center">86,593</h3>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                   <div class="card-header">
+                       <i class="fa fa-google"></i> Google Trends
+                   </div>
+                    <div class="card-body">
+                      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1243_RC11/embed_loader.js"></script>
+                      <script type="text/javascript">
+                          trends.embed.renderExploreWidget("TIMESERIES",
+                           {"comparisonItem":
+                            [{"keyword":"python","geo":"","time":"today 12-m"}]
+                            ,"category":0,"property":""
+                          }, {"exploreQuery":"q=python&date=today 12-m","guestPath":"https://trends.google.co.uk:443/trends/embed/"});
+                      </script>
+                    </div>
+                   <div class="card-footer small text-muted">Live Feed from Google</div>
+                 </div>
+          </div>
+
+       </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Packt 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+</body>
+
+</html>
