@@ -9,9 +9,12 @@ html {
   min-height: 100%; }
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
   font-family: 'Open Sans';
   font-weight: 400;
+}
+#trends-widget-1 {
+  height: 370px;
 }
 body b {
   font-family: 'Open Sans';
