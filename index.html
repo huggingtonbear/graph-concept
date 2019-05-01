@@ -2,232 +2,396 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Category Management Prototype</title>
-  <!-- Bootstrap core CSS-->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans:400,700" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <title>Title Commitment Management System</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html"><img height="25px" src="images/packt-logo.svg"></a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
-            <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proposals">
-          <a class="nav-link" href="proposals.html">
-            <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Proposals</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Outlines">
-          <a class="nav-link" href="outlines.html">
-            <i class="fa fa-fw fa-file-text-o"></i>
-            <span class="nav-link-text">Outlines</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Products">
-          <a class="nav-link" href="products.html">
-            <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Products</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Product Taxonomy">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Product Taxonomy</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseComponents">
-            <li>
-              <a href="categories.html">Categories</a>
-            </li>
-            <li>
-              <a href="concepts.html">Concepts</a>
-            </li>
-            <li>
-              <a href="languages.html">Languages</a>
-            </li>
-            <li>
-              <a href="tools.html">Tools</a>
-            </li>
-            <li>
-              <a href="tooltypes.html">Tool Types</a>
-            </li>
-            <li>
-              <a href="vendors.html">Vendors</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Products">
-          <a class="nav-link" href="authors.html">
-            <i class="fa fa-fw fa-user"></i>
-            <span class="nav-link-text">Authors</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav sidenav-toggler">
-        <li class="nav-item">
-          <a class="nav-link text-center" id="sidenavToggler">
-            <i class="fa fa-fw fa-angle-left"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="content-wrapper">
-    <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item active">Dashboard</li>
-      </ol>
-      <h1>Dashboard</h1>
-      <hr>
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="card mb-3">
-            <div class="card-header">
-              <i class="fa fa-area-chart"></i> Unit Sales
-            </div>
-            <div class="card-body">
-              <canvas id="myAreaChart" width="100%" height="20"></canvas>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">
-              <i class="fa fa-area-chart"></i> Revenue
-            </div>
-            <div class="card-body">
-              <canvas id="myBarChart" width="100" height="20"></canvas>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
-    </div>
-      <div class="col-sm-5">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fa fa-table"></i> Bestselling Products (Last 30 Days)</div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-bordered table-striped" width="100%" cellspacing="0">
-                      <thead>
-                        <tr>
-                          <th>Product Name</th>
-                          <th>Format</th>
-                          <th>Units Sold</th>
-                          <th>Total Revenue</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="tool-angular.html">Getting Started with Angular 2</a></td>
-                          <td>Book</td>
-                          <td>131</td>
-                          <td>£3,478</td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Angular Components</a></td>
-                          <td>Book</td>
-                          <td>255</td>
-                          <td>£12,478</td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Learn Angular and .NET Core 2</a></td>
-                          <td>Book</td>
-                          <td>133</td>
-                          <td>£4,144</td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Learning AngularJS</a></td>
-                          <td>Video</td>
-                          <td>33</td>
-                          <td>£2,987</td>
-                        </tr>
-                        <tr>
-                          <td><a href="tool-angular.html">Building Web Apps with Angular 5 and Node.js</a></td>
-                          <td>Course</td>
-                          <td>1</td>
-                          <td>£1,212</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-              </div>
-      </div>
-      </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Packt 2018</small>
-        </div>
-      </div>
-    </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container"
+      <a class="navbar-brand" href="#"><img src="images/packt-logo.svg" class="logo"</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Proposals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Metadata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product Information</a>
+          </li>
+         
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Out</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-    <!-- Custom scripts for this page-->
-    <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
-  </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="#">Proposals</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Hands-On Machine Learning with TensorFlow</li>
+		  </ol>
+		</nav>
+
+      	<div class="row">
+      	  <div class="col-3">
+      	    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      	      <a class="nav-link active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary</a>
+      	      <a class="nav-link" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Metadata</a>
+      	      <a class="nav-link" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">3. Description</a>
+      	      <a class="nav-link" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Audience</a>
+      	      <a class="nav-link" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Evidence</a>
+      	      <a class="nav-link" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">6. Competition</a>
+      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">6. Author</a>
+      	    </div>
+      	  </div>
+      	  <div class="col-9">
+      	    <div class="tab-content" id="v-pills-tabContent">
+      	    <!-- Summary Tab -->
+      	      <div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+      	      	<h1 class="text-left">Summary</h1>
+      	      	<hr>
+      	      	<form>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1" class="float-left">Title</label>
+				    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Please enter the Title name" value="Hands-On Machine Learning with TensorFlow">
+				    <small id="title-help" class="form-text text-muted text-left"> The title helps the target audience find the book! It identifies content and places it in context.</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1" class="float-left">Subtitle</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Please enter the Subtitle of the product"></textarea>
+				    <small id="title-help" class="form-text text-muted text-left"> An extension or explaination of the title: Consider content, benefits, SEO keywords (max 100 characters)</small>
+
+				  </div>
+				  <div class="row">
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Category Manager</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>AK</option>
+					      <option>KP</option>
+					      <option>VN</option>
+					      <option>KL</option>
+					      <option>WD</option>
+					    </select>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">CM Category</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Coding & Tools</option>
+					      <option>Programming</option>
+					      <option>Data Science</option>
+					      <option>Cloud & Admin</option>
+					    </select>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Series</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Learn</option>
+					      <option>Hands-On</option>
+					      <option>Certification</option>
+					      <option>Cookbook</option>
+					    </select>
+					  </div>
+				  </div>
+				  <div class="row">
+					  
+					  <div class="form-group col-9">
+					    <label for="exampleFormControlInput1" class="float-left">Length</label>
+					    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Please enter the length of the title">
+					    <small id="title-help" class="form-text text-muted text-left"> What will the approximate length be? (We look to average around 350 pages per Book)</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Product Type</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Book</option>
+					      <option>Video</option>
+					      <option>Courseware</option>
+					    </select>
+					  </div>
+				  </div>	
+				  
+				  
+				  <div class="row">
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Edition</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>1</option>
+					      <option>2</option>
+					      <option>3</option>
+					      <option>4</option>
+					      <option>5</option>
+					    </select>
+						<small id="title-help" class="form-text text-muted text-left">What edition number is this title?</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlInput1" class="float-left">Prev. Edition Product ID</label>
+					    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="e.g., B03452">
+					    <small id="title-help" class="form-text text-muted text-left"> Provide the Product ID of the previous edition where applicable</small>
+					  </div>
+					   <div class="form-group col">
+					   <label for="exampleFormControlSelect1" class="float-left">Prev. Edition 90 Day VPT</label>
+					   <input class="form-control" id="version" placeholder="e.g., 45"/>
+					   <small id="title-help" class="form-text text-muted text-left">Provide the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/383c29cb-1642-4da1-abe6-b52a2facc654/ReportSection380d2f7e9461a3285902">90 Day VPT</a> of the previous edition where applicable</small>
+					  </div>
+					</div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1" class="float-left">Target Release Date</label>
+				    <input class="form-control" id="datepicker" />
+					    <script>
+					        $('#datepicker').datepicker({
+					            uiLibrary: 'bootstrap4'
+					        });
+					    </script>
+				    <small id="title-help" class="form-text text-muted text-left"> What date should we aim to publish the title by? This could be as a result of tech updates or internal factors.</small>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1" class="float-left">Target Release Date Rationale</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Please enter the Subtitle of the product"></textarea>
+				    <small id="title-help" class="form-text text-muted text-left"> Why is the release date important? Take into account tech updates, B2B interests, curriculum content</small>
+
+				  </div>
+      	    	</form>
+      	    	<hr>
+      	   		<button type="submit" class="btn btn-info float-right">Save Changes</button>
+      	   		
+      	   	  </div>
+      	   	  <!-- END Summary Tab -->
+      	   	  <!-- Metadata Tab -->
+      	   	  <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata-tab">
+      	      	<h1 class="text-left">Metadata</h1>
+      	      	<hr>
+      	      	<form>
+				  <div class="row">
+					  <div class="form-group col-8">
+					    <label for="exampleFormControlSelect1" class="float-left">Concept</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Machine Learning</option>
+					      <option>Deep Learning</option>
+					      <option>Front-end Web Development</option>
+					      <option>Cybersecurity</option>
+					      <option>Penetration Testing</option>
+					    </select>
+					     <small id="title-help" class="form-text text-muted text-left">The discipline that the book addresses; e.g. Containerisation, Crytocurrency</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Category</label>
+					    <select class="form-control" id="exampleFormControlSelect1" disabled>
+					      <option>Data</option>
+					      <option>Web Development</option>
+					      <option>Security</option>
+					      <option>Game Development</option>
+					    </select>
+					  </div>
+				  </div>
+				   <div class="row">
+					  <div class="form-group col-8">
+					    <label for="exampleFormControlSelect1" class="float-left">Language</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Python</option>
+					      <option>Java</option>
+					      <option>JavaScript</option>
+					      <option>R</option>
+					    </select>
+					    <small id="title-help" class="form-text text-muted text-left">The dominant programming language used in the book</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Language Version</label>
+					   <input class="form-control" id="version" placeholder="e.g., ES6" />
+					  </div>
+				  </div>
+				  <div class="row">
+					  <div class="form-group col-8">
+					    <label for="exampleFormControlSelect1" class="float-left">Primary Tool</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>TensorFlow</option>
+					      <option>Angular</option>
+					      <option>Node JS</option>
+					      <option>React</option>
+					      <option>jQuery</option>
+					    </select>
+					    <small id="title-help" class="form-text text-muted text-left">The dominant tool used in the book; e.g. Angular, TensorFlow</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Primary Tool Version</label>
+					   <input class="form-control" id="version" placeholder="e.g., 6.5"/>
+					  </div>
+				  </div>
+				  <div class="row">
+					  <div class="form-group col-8">
+					    <label for="exampleFormControlSelect1" class="float-left">Secondary Tool</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>TensorFlow</option>
+					      <option>Angular</option>
+					      <option>Node JS</option>
+					      <option>React</option>
+					      <option>jQuery</option>
+					    </select>
+					    <small id="title-help" class="form-text text-muted text-left">Additional tool used in the book; e.g. Tensorflow with Sciit-learn</small>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Secondary Tool Version</label>
+					   <input class="form-control" id="version" placeholder="e.g., 6.5"/>
+					  </div>
+				  </div>
+				  <div class="row">
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">BISAC Code 1</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>COM000000 - COMPUTERS / General</option>
+					      <option>COM082000 - COMPUTERS / Bioinformatics</option>
+					      <option>COM006000 - COMPUTERS / Buyer's Guides</option>
+					    </select>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">BISAC Code 2</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>COM000000 - COMPUTERS / General</option>
+					      <option>COM082000 - COMPUTERS / Bioinformatics</option>
+					      <option>COM006000 - COMPUTERS / Buyer's Guides</option>
+					    </select>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">BISAC Code 3</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>COM000000 - COMPUTERS / General</option>
+					      <option>COM082000 - COMPUTERS / Bioinformatics</option>
+					      <option>COM006000 - COMPUTERS / Buyer's Guides</option>
+					    </select>
+					  </div>
+				  </div>
+      	    	</form>
+      	    	<hr>
+      	   		<button type="submit" class="btn btn-info float-right">Save Changes</button>
+      	   	  </div>
+      	   	  <!-- END Metadata Tab -->
+      	   	  <!-- Evidence Tab -->
+      	   	  <div class="tab-pane fade" id="evidence" role="tabpanel" aria-labelledby="evidence-tab">
+      	   	  	
+      	      	<h1 class="text-left">Evidence</h1>
+      	      	<hr>
+      	      	<div class="row mb-4">
+      	   	  		<div class="col ">
+      	   	  			<img src="https://www.festisite.com/static/partylogo/img/logos/google.png" class="img-fluid align-middle">
+      	   	  		</div>
+      	   	  		<div class="col">
+      	   	  			<img src="https://www.boom-online.co.uk/wp-content/uploads/2017/11/SEMrush-Logo.png" class="img-fluid">
+      	   	  		</div>
+      	   	  		<div class="col">
+      	   	  			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Nielsen_logo.svg/1280px-Nielsen_logo.svg.png" class="img-fluid">
+      	   	  		</div>
+      	   	  		<div class="col">
+      	   	  			<img src="https://www.coloradorealtors.com/wp-content/uploads/2018/05/amazon_logo_RGB.jpg" class="img-fluid">
+      	   	  		</div>
+      	   	  		<div class="col">
+      	   	  			<img src="https://storage.googleapis.com/mw-imagelibrary/MerchantWords_logo_stacked_purple.jpg" class="img-fluid">
+      	   	  		</div>
+      	   	  	</div>	
+      	      	<form>
+      	      		<div class="form-group">
+					   <label for="exampleFormControlSelect1" class="float-left">Keyword(s) used for evidence research</label>
+					   <input class="form-control" id="version" placeholder="e.g., 'Machine Learning with Python'"/>
+					   <small id="title-help" class="form-text text-muted text-left">What keyword(s) has/have been used in SEMRush, MerchantWords and Google Trends for evidence research</small>
+					  </div>
+				  <div class="row">
+					  <div class="form-group col-5">
+					    <label for="exampleFormControlSelect1" class="float-left">Google Trends Velocity</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Growth</option>
+					      <option>Stable</option>
+					      <option>Decline</option>
+					    </select>
+					    <small id="title-help" class="form-text text-muted text-left">What is the shape of the curve for the US in <a href="https://trends.google.com/trends/?geo=US">Trends</a> over the last 2 years? </small>
+					  </div>
+					  <div class="form-group col">
+					   <label for="exampleFormControlSelect1" class="float-left">US Monthly Search Volume</label>
+					   <input class="form-control" id="version" placeholder="e.g., 14,500"/>
+					   <small id="title-help" class="form-text text-muted text-left">Search volume on <a href="https://www.semrush.com/analytics/seomagic/start/">SEMRush Keyword Magic</a> (Target: 3,000+ searches per month)</small>
+					  </div>
+					  
+				  </div>
+				  <div class="row">
+					  <div class="form-group col-5">
+					    <label for="exampleFormControlSelect1" class="float-left">Amazon Search Volume</label>
+					    <input class="form-control" id="version" placeholder="e.g., 5,000"/>
+					    <small id="title-help" class="form-text text-muted text-left">Search volume on <a href="https://www.merchantwords.com/">Merchant Words</a> (Target: 1,000+ searches per month)</small>
+					  </div>
+					  <div class="form-group col">
+					   <label for="exampleFormControlSelect1" class="float-left">Value of Amazon Category</label>
+					   <input class="form-control" id="version" placeholder="e.g., $2,300,000"/>
+					   <small id="title-help" class="form-text text-muted text-left">Using the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/fc04f058-b0b6-4c13-be0a-f40f6d3f191e/ReportSection2f216a88d9ab458fdb62">Global Domination Report</a> , provide the value of the Category which the title would be part of in Amazon over the past 12m</small>
+					  </div>
+					  
+				  </div>
+				  <div class="row">
+					  <div class="form-group col-5">
+					    <label for="exampleFormControlSelect1" class="float-left">Amazon Category Velocity</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Growth</option>
+					      <option>Stable</option>
+					      <option>Decline</option>
+					    </select>
+					    <small id="title-help" class="form-text text-muted text-left">What is the shape of the sales curve for the Amazon category in the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/fc04f058-b0b6-4c13-be0a-f40f6d3f191e/ReportSection2f216a88d9ab458fdb62">Global Domination Report</a> over the last year? </small>
+					  </div>
+					  <div class="form-group col">
+					   <label for="exampleFormControlSelect1" class="float-left">Share % of Amazon Category</label>
+					   <input class="form-control" id="version" placeholder="e.g., 2.3%"/>
+					   <small id="title-help" class="form-text text-muted text-left">Using the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/fc04f058-b0b6-4c13-be0a-f40f6d3f191e/ReportSection2f216a88d9ab458fdb62">Global Domination Report</a> , provide the % market share that Packt has of the Amazon category over the past 12m</small>
+					  </div>
+					  
+				  </div>
+
+      	    	</form>
+      	    	<hr>
+      	   		<button type="submit" class="btn btn-info float-right">Save Changes</button>
+      	   	  </div>
+      	   	  <!-- END Evidence Tab -->
+      	  </div>
+      	</div>
+
+      
+
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+
 </body>
 
 </html>

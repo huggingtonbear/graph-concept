@@ -1,0 +1,38 @@
+
+.logo {
+  height: 30px;
+  margin-right: 20px;
+}
+
+ .sidebar-heading {
+  text-align: center;
+ }
+
+ body {
+  padding-top: 3rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ec670e;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+a {
+    color: #ec670e;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #d25908;
+    text-decoration: underline;
+}
