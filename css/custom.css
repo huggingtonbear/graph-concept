@@ -43,3 +43,10 @@ a:hover {
     color: #d25908;
     text-decoration: underline;
 }
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #28a2b7;
+    border-color: #28a2b7;
+}

@@ -70,15 +70,15 @@
       	  <div class="col-3">
       	  	<h5 class="text-left mt-4">Proposal Sections</h5>
       	  	<hr>
-      	    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      	      <a class="nav-link active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary</a>
-      	      <a class="nav-link" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">2. Evidence</a>
-      	      <a class="nav-link" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">3. Portfolio</a>
-      	      <a class="nav-link" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Competition</a>
-      	      <a class="nav-link" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Audience</a>
-      	      <a class="nav-link" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">6. Description</a>
-      	      <a class="nav-link" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">7. Metadata</a>
-      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">8. Author</a>
+      	    <div class="list-group text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      	      <a class="list-group-item list-group-item-action active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary <i class="fas fa-info-circle float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">2. Evidence <i class="fas fa-binoculars float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">3. Portfolio <i class="fas fa-book-open float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Competition <i class="fas fa-angry float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Audience <i class="fas fa-book-reader float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">6. Description <i class="fas fa-comment-alt float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">7. Metadata <i class="fas fa-code float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">8. Author <i class="fas fa-user-edit float-right mt-1"></i></a>
       	    </div>
       	    <h5 class="text-left mt-3">Actions</h5>
       	  	<hr>
@@ -246,8 +246,8 @@
 					  <div class="form-group col-8">
 					    <label for="exampleFormControlSelect1" class="float-left">Language</label>
 					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>-</option>
 					      <option>Python</option>
-					      <option>Java</option>
 					      <option>JavaScript</option>
 					      <option>R</option>
 					    </select>
@@ -262,7 +262,7 @@
 					  <div class="form-group col-8">
 					    <label for="exampleFormControlSelect1" class="float-left">Primary Tool</label>
 					    <select class="form-control" id="exampleFormControlSelect1">
-					      <option>TensorFlow</option>
+					      <option>-</option>
 					      <option>Angular</option>
 					      <option>Node JS</option>
 					      <option>React</option>
@@ -279,7 +279,7 @@
 					  <div class="form-group col-8">
 					    <label for="exampleFormControlSelect1" class="float-left">Secondary Tool</label>
 					    <select class="form-control" id="exampleFormControlSelect1">
-					      <option>TensorFlow</option>
+					      <option>-</option>
 					      <option>Angular</option>
 					      <option>Node JS</option>
 					      <option>React</option>
@@ -508,7 +508,7 @@
 					  <div class="form-group">
 					    <label for="exampleFormControlInput1" class="float-left">Why do we need this title in our Portfolio?</label>
 					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please enter a rationale..."></textarea>
-					    <small id="title-help" class="form-text text-muted text-left">Write a rationale about what this value this product provides in our wider portfolio</small>
+					    <small id="title-help" class="form-text text-muted text-left">Write a rationale about what value this product provides in our wider portfolio</small>
 					  </div>
       	    	</form>
       	    	<hr>
