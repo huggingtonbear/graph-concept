@@ -77,7 +77,7 @@
       	      <a class="nav-link" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Audience</a>
       	      <a class="nav-link" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Evidence</a>
       	      <a class="nav-link" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">6. Competition</a>
-      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">6. Author</a>
+      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">7. Author</a>
       	    </div>
       	    <h5 class="text-left mt-3">Actions</h5>
       	  	<hr>
@@ -101,7 +101,7 @@
 				  <div class="form-group">
 				    <label for="exampleFormControlInput1" class="float-left">Subtitle</label>
 				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Please enter the Subtitle of the product"></textarea>
-				    <small id="title-help" class="form-text text-muted text-left"> An extension or explaination of the title: Consider content, benefits, SEO keywords (max 100 characters)</small>
+				    <small id="title-help" class="form-text text-muted text-left"> An extension or explanation of the title: Consider content, benefits, SEO keywords (max 100 characters)</small>
 
 				  </div>
 				  <div class="form-group">
@@ -142,17 +142,26 @@
 				  </div>
 				  <div class="row">
 					  
-					  <div class="form-group col-9">
+					  <div class="form-group col-5">
 					    <label for="exampleFormControlInput1" class="float-left">Length</label>
 					    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Please enter the length of the title">
-					    <small id="title-help" class="form-text text-muted text-left"> What will the approximate length be? (We look to average around 350 pages per Book)</small>
+					    <small id="title-help" class="form-text text-muted text-left"> We look to average around 350 pages per Book</small>
 					  </div>
 					  <div class="form-group col">
-					    <label for="exampleFormControlSelect1" class="float-left">Product Type</label>
+					    <label for="exampleFormControlSelect1" class="float-left">Product Format</label>
 					    <select class="form-control" id="exampleFormControlSelect1">
 					      <option>Book</option>
 					      <option>Video</option>
 					      <option>Courseware</option>
+					    </select>
+					  </div>
+					  <div class="form-group col">
+					    <label for="exampleFormControlSelect1" class="float-left">Product Type</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+					      <option>Normal</option>
+					      <option>Mini</option>
+					      <option>BLP</option>
+					      <option>Video FTM</option>
 					    </select>
 					  </div>
 				  </div>	
@@ -501,24 +510,24 @@
 					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write a rationale about why our product could be superior..."></textarea>
 					    <small id="title-help" class="form-text text-muted text-left"> Why would someone buy our product over a competitor?</small>
 					  </div>
-					  <div class="row">
-						  <div class="form-group col">
+					  <div class="form-group ">
 						    <label for="exampleFormControlSelect1" class="float-left">Topic Strategy</label>
 						    <select class="form-control" id="exampleFormControlSelect1">
 						      <option>Explore</option>
 						      <option>Consolidate</option>
 						      <option>Attack</option>
 						    </select>
+						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li>Consolidate: Defend our position with a new edition or supplementary products</li> <li>Attack: Attack competitors market share and create a stronger customer proposition</li> <li>Explore: Exploring new tech/topic or market opportunities that we have not published into</li></ul></small>
 						  </div>
-						  <div class="form-group col">
+						  <div class="form-group ">
 						    <label for="exampleFormControlSelect1" class="float-left">Pricing Strategy</label>
 						    <select class="form-control" id="exampleFormControlSelect1">
 						      <option>Skim</option>
 						      <option>Penetration</option>
 						      <option>Standard</option>
 						    </select>
+						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li>Skim: Title has relatively little competition and can be priced high with the view it will sell low units</li> <li>Penetration: Competition is high and price must be competitive/low with a view to selling high units</li> <li>Normal: Priced based on comparitive titles and length of product </li></ul></small>
 						  </div>
-					  </div>
 				 
 				  
       	    	</form>
