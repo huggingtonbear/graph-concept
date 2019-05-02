@@ -1,4 +1,7 @@
 
+
+
+
 .logo {
   height: 30px;
   margin-right: 20px;
@@ -11,12 +14,16 @@
  body {
   padding-top: 2rem;
   background: #e0e0e0;
+  font-family: "Lato";
+  font-size: 0.9em;
 }
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat"
+}
 main {  
   background: white;
   box-shadow: #616161 0px 0px 3px;
@@ -50,4 +57,8 @@ a:hover {
     color: #fff;
     background-color: #28a2b7;
     border-color: #28a2b7;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
 }
