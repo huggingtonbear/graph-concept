@@ -72,12 +72,13 @@
       	  	<hr>
       	    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       	      <a class="nav-link active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary</a>
-      	      <a class="nav-link" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Metadata</a>
-      	      <a class="nav-link" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">3. Description</a>
-      	      <a class="nav-link" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Audience</a>
-      	      <a class="nav-link" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Evidence</a>
-      	      <a class="nav-link" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">6. Competition</a>
-      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">7. Author</a>
+      	      <a class="nav-link" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">2. Evidence</a>
+      	      <a class="nav-link" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">3. Portfolio</a>
+      	      <a class="nav-link" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Competition</a>
+      	      <a class="nav-link" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Audience</a>
+      	      <a class="nav-link" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">6. Description</a>
+      	      <a class="nav-link" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">7. Metadata</a>
+      	      <a class="nav-link" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">8. Author</a>
       	    </div>
       	    <h5 class="text-left mt-3">Actions</h5>
       	  	<hr>
@@ -340,12 +341,6 @@
 					</small>
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1" class="float-left">What You Will Learn?</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please enter what the individual will learn from the title"></textarea>
-				    <small id="title-help" class="form-text text-muted text-left"> The key search terms related to the book content
-					</small>
-				  </div>
-				  <div class="form-group">
 					    <label for="exampleFormControlInput1" class="float-left">Amazon Keywords</label>
 					    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="E.g., 'Kubernetes, DevOps">
 					    <small id="title-help" class="form-text text-muted text-left"> The key search terms related to the book content</small>
@@ -372,6 +367,12 @@
 				    <label for="exampleFormControlInput1" class="float-left">Prerequisites</label>
 				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please enter the audience prerequisite knowledge required"></textarea>
 				    <small id="title-help" class="form-text text-muted text-left"> Prerequisite knowledge of language/tool required by the customer
+					</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1" class="float-left">What Will the Audience Learn?</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please enter what the individual will learn from the title"></textarea>
+				    <small id="title-help" class="form-text text-muted text-left"> 3-5 bullets: (70 characters) that describe the main things that the book will cover
 					</small>
 				  </div>
 				  <div class="row">
@@ -482,6 +483,39 @@
       	   		<button type="submit" class="btn btn-info float-right">Save Changes</button>
       	   	  </div>
       	   	  <!-- END Evidence Tab -->
+      	   	  <!-- Portfolio Tab -->
+      	      <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+      	      	<h5 class="text-left mt-4">Portfolio</h5>
+      	      	<hr>
+      	      	<form>
+      	      		<div class="row">
+	      	      		<div class="form-group col">
+						    <label for="exampleFormControlInput1" class="float-left">Count of Published Titles</label>
+						    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="e.g., 57">
+					  </div>
+					  <div class="form-group col">
+						    <label for="exampleFormControlInput1" class="float-left">Count of Titles in Development</label>
+						    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="e.g., 3">
+					  </div>
+					  <small id="title-help" class="form-text text-muted text-left col-12 mb-4"> Using the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/33f13014-108e-473f-bb04-129b15191022/ReportSection">Topic Performance Report</a>, provide the count of published/in development titles of the same product format that provide coverage for the primary language and/or primary tool and concept. For example, for 'Python Machine Learning' you would select 'Python' as the primary language and 'Machine Learning' as the concept as filters giving you the count of '57'. </small>
+
+					</div>
+					 <div class="form-group ">
+						    <label for="exampleFormControlInput1" class="float-left">Average of 90 Day VPT</label>
+						    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="e.g., 78">
+						     <small id="title-help" class="form-text text-muted text-left"> Using the <a href="https://app.powerbi.com/groups/78e6db80-f1d5-42bd-b4d6-de486d2334f4/reports/33f13014-108e-473f-bb04-129b15191022/ReportSection">Topic Performance Report</a>, identify the average 90 Day VPT of the titles that make up the existing published portfolio (where applicable). </small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleFormControlInput1" class="float-left">Why do we need this title in our Portfolio?</label>
+					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please enter a rationale..."></textarea>
+					    <small id="title-help" class="form-text text-muted text-left">Write a rationale about what this value this product provides in our wider portfolio</small>
+					  </div>
+      	    	</form>
+      	    	<hr>
+      	   		<button type="submit" class="btn btn-info float-right">Save Changes</button>
+      	   		
+      	   	  </div>
+      	   	  <!-- END Portfolio Tab -->
       	   	  <!-- Competition Tab -->
       	      <div class="tab-pane fade" id="competition" role="tabpanel" aria-labelledby="competition-tab">
       	      	<h5 class="text-left mt-4">Competition</h5>
@@ -517,7 +551,7 @@
 						      <option>Consolidate</option>
 						      <option>Attack</option>
 						    </select>
-						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li>Consolidate: Defend our position with a new edition or supplementary products</li> <li>Attack: Attack competitors market share and create a stronger customer proposition</li> <li>Explore: Exploring new tech/topic or market opportunities that we have not published into</li></ul></small>
+						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li><b>Consolidate:</b> Defend our position with a new edition or supplementary products</li> <li><b>Attack:</b> Attack competitors market share and create a stronger customer proposition</li> <li><b>Explore:</b> Exploring new tech/topic or market opportunities that we have not published into previously.</li></ul></small>
 						  </div>
 						  <div class="form-group ">
 						    <label for="exampleFormControlSelect1" class="float-left">Pricing Strategy</label>
@@ -526,7 +560,7 @@
 						      <option>Penetration</option>
 						      <option>Standard</option>
 						    </select>
-						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li>Skim: Title has relatively little competition and can be priced high with the view it will sell low units</li> <li>Penetration: Competition is high and price must be competitive/low with a view to selling high units</li> <li>Normal: Priced based on comparitive titles and length of product </li></ul></small>
+						    <small id="title-help" class="form-text text-muted text-left mt-3"><ul><li><b>Skim:</b> Title has relatively little competition and can be priced high with the view it will sell low units</li> <li><b>Penetration:</b> Competition is high and price must be competitive/low with a view to selling high units</li> <li><b>Normal:</b> Priced based on comparitive titles and length of product </li></ul></small>
 						  </div>
 				 
 				  
