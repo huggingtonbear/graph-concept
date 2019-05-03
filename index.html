@@ -20,7 +20,7 @@
   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,400|Lato" rel="stylesheet">
 	<link rel="icon" type="image/png" href="favicon.png">
 
 
@@ -67,33 +67,35 @@
 		    <li class="breadcrumb-item active" aria-current="page">Hands-On Machine Learning with TensorFlow</li>
 		  </ol>
 		</nav>
+		<h2 class="text-left">Hands-On Machine Learning with TensorFlow</h2>
+		<hr>
 
       	<div class="row">
       	  <div class="col-3">
       	  	<h5 class="text-left mt-4">Proposal Sections</h5>
       	  	<hr>
       	    <div class="list-group text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      	      <a class="list-group-item list-group-item-action active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary <i class="fas fa-info-circle float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">2. Evidence <i class="fas fa-binoculars float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">3. Portfolio <i class="fas fa-book-open float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Competition <i class="fas fa-skull-crossbones float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Audience <i class="fas fa-book-reader float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">6. Description <i class="fas fa-comment-alt float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">7. Metadata <i class="fas fa-code float-right mt-1"></i></a>
-      	      <a class="list-group-item list-group-item-action" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">8. Author <i class="fas fa-user-edit float-right mt-1"></i></a>
+      	      <a class="list-group-item list-group-item-action active" id="summary-tab" data-toggle="pill" href="#summary" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Summary</a>
+      	      <a class="list-group-item list-group-item-action" id="evidence-tab" data-toggle="pill" href="#evidence" role="tab" aria-controls="v-pills-settings" aria-selected="false">2. Evidence</a>
+      	      <a class="list-group-item list-group-item-action" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">3. Portfolio </a>
+      	      <a class="list-group-item list-group-item-action" id="competition-tab" data-toggle="pill" href="#competition" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Competition </a>
+      	      <a class="list-group-item list-group-item-action" id="audience-tab" data-toggle="pill" href="#audience" role="tab" aria-controls="v-pills-settings" aria-selected="false">5. Audience </a>
+      	      <a class="list-group-item list-group-item-action" id="description-tab" data-toggle="pill" href="#description" role="tab" aria-controls="v-pills-messages" aria-selected="false">6. Description </a>
+      	      <a class="list-group-item list-group-item-action" id="metadata-tab" data-toggle="pill" href="#metadata" role="tab" aria-controls="v-pills-profile" aria-selected="false">7. Metadata </a>
+      	      <a class="list-group-item list-group-item-action" id="author-tab" data-toggle="pill" href="#author" role="tab" aria-controls="v-pills-settings" aria-selected="false">8. Author </a>
       	    </div>
       	    <h5 class="text-left mt-3">Actions</h5>
       	  	<hr>
-      	    <button type="button" class="btn btn-info btn-block"><i class="far fa-paper-plane mr-1"></i> Commit</button>
-			<button type="button" class="btn btn-secondary btn-block"><i class="fas fa-book-reader mr-1"></i> Review</button>
-			<button type="button" class="btn btn-secondary btn-block"><i class="far fa-file-pdf mr-1"></i> Export</button>
+      	    <button type="button" class="btn btn-info btn-block"><i class="far fa-paper-plane mt-1 float-left"></i> Commit</button>
+			<button type="button" class="btn btn-secondary btn-block"><i class="fas fa-book-reader mt-1 float-left"></i> Review</button>
+			<button type="button" class="btn btn-secondary btn-block"><i class="far fa-file-pdf mt-1 float-left"></i> Export</button>
 
       	  </div>
       	  <div class="col-9">
       	    <div class="tab-content" id="v-pills-tabContent">
       	    <!-- Summary Tab -->
       	      <div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
-      	      	<h5 class="text-left mt-4">Summary</h5>
+      	      	<h5 class="text-left mt-4">Summary<i class="fas fa-info-circle float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
 				  <div class="form-group">
@@ -227,7 +229,7 @@
 
       	   	  <!-- Metadata Tab -->
       	   	  <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata-tab">
-      	      	<h5 class="text-left mt-4">Metadata</h5>
+      	      	<h5 class="text-left mt-4">Metadata <i class="fas fa-code float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
 				  <div class="row">
@@ -335,7 +337,7 @@
       	   	  <!-- END Metadata Tab -->
       	   	  <!-- Description Tab -->
       	      <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
-      	      	<h5 class="text-left mt-4">Description</h5>
+      	      	<h5 class="text-left mt-4">Description <i class="fas fa-comment-alt float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
 				  <div class="form-group">
@@ -370,7 +372,7 @@
       	   	  <!-- END Description Tab -->
       	   	  <!-- Audience Tab -->
       	      <div class="tab-pane fade" id="audience" role="tabpanel" aria-labelledby="audience-tab">
-      	      	<h5 class="text-left mt-4">Audience</h5>
+      	      	<h5 class="text-left mt-4">Audience <i class="fas fa-book-reader float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
 				  <div class="form-group">
@@ -415,7 +417,7 @@
       	   	  <!-- Evidence Tab -->
       	   	  <div class="tab-pane fade" id="evidence" role="tabpanel" aria-labelledby="evidence-tab">
       	   	  	
-      	      	<h5 class="text-left mt-4">Evidence</h5>
+      	      	<h5 class="text-left mt-4">Evidence<i class="fas fa-binoculars float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<div class="row mb-4">
       	   	  		<div class="col ">
@@ -495,7 +497,7 @@
       	   	  <!-- END Evidence Tab -->
       	   	  <!-- Portfolio Tab -->
       	      <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-      	      	<h5 class="text-left mt-4">Portfolio</h5>
+      	      	<h5 class="text-left mt-4">Portfolio<i class="fas fa-book-open float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
       	      		<div class="row">
@@ -533,7 +535,7 @@
       	   	  <!-- END Portfolio Tab -->
       	   	  <!-- Competition Tab -->
       	      <div class="tab-pane fade" id="competition" role="tabpanel" aria-labelledby="competition-tab">
-      	      	<h5 class="text-left mt-4">Competition</h5>
+      	      	<h5 class="text-left mt-4">Competition<i class="fas fa-skull-crossbones float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
       	      		<div class="form-group">
@@ -587,7 +589,7 @@
       	   	  <!-- END Competition Tab -->
       	   	  <!-- Author Tab -->
       	      <div class="tab-pane fade" id="author" role="tabpanel" aria-labelledby="author-tab">
-      	      	<h5 class="text-left mt-4">Author</h5>
+      	      	<h5 class="text-left mt-4">Author <i class="fas fa-user-edit float-right mt-1 fa-lg"></i></h5>
       	      	<hr>
       	      	<form>
 				  <div class="form-group">
